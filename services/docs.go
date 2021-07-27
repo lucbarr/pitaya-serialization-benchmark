@@ -3,7 +3,6 @@ package services
 import (
 	"context"
 	"encoding/json"
-	"fmt"
 
 	"github.com/topfreegames/pitaya"
 	"github.com/topfreegames/pitaya/component"
@@ -24,8 +23,6 @@ func (c *DocsHandler) Docs(ctx context.Context) (*protos.Doc, error) {
 	if err != nil {
 		return nil, err
 	}
-
-	fmt.Println(string(data))
 
 	return &protos.Doc{
 		Doc: string(data),
