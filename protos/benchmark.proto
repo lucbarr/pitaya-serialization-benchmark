@@ -1,0 +1,48 @@
+syntax = "proto3";
+
+package protos;
+
+enum SizeType {
+  Small = 0;
+  Medium = 1;
+  Large = 2;
+}
+
+message FetchProtoDataRequest {
+  SizeType size = 1;
+}
+
+message FetchProtoDataResponse {
+  repeated int32 some_int32 = 1;
+  repeated int64 some_int64 = 2;
+  repeated float some_float = 3;
+  repeated double some_double = 4;
+  repeated bool some_bool = 5;
+  repeated string some_string = 6;
+  int32 a_int32 = 7;
+  int64 a_int64 = 8;
+  float a_float = 9;
+  double a_double = 10;
+  bool a_bool = 11;
+  string a_string = 12;
+  bytes some_bytes = 13;
+  AStruct a_struct = 14;
+  map<string,AStruct> a_struct_map = 15;
+  repeated AStruct some_struct = 16;
+}
+
+message AStruct {
+  repeated int32 some_int32 = 1;
+  repeated int64 some_int64 = 2;
+  repeated float some_float = 3;
+  repeated double some_double = 4;
+  repeated bool some_bool = 5;
+  repeated string some_string = 6;
+  int32 a_int32 = 7;
+  int64 a_int64 = 8;
+  float a_float = 9;
+  double a_double = 10;
+  bool a_bool = 11;
+  string a_string = 12;
+  bytes some_bytes = 13;
+}
