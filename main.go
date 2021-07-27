@@ -6,6 +6,7 @@ import (
 	"pitaya-serialization-benchmark/services"
 	"strings"
 
+	"github.com/spf13/viper"
 	"github.com/topfreegames/pitaya"
 	"github.com/topfreegames/pitaya/acceptor"
 	"github.com/topfreegames/pitaya/component"
@@ -13,7 +14,6 @@ import (
 )
 
 func main() {
-	fmt.Println("potato start")
 	port := flag.Int("port", 3250, "the port to listen")
 	svType := flag.String("type", "connector", "the server type")
 	isFrontend := flag.Bool("frontend", true, "if server is frontend")
@@ -34,7 +34,12 @@ func main() {
 		configureFrontend(*port)
 	}
 
-	pitaya.Configure(*isFrontend, *svType, pitaya.Cluster, map[string]string{})
+	config := viper.New()
+
+	config.SetEnvPrefix("PSB")
+	config.SetEnvKeyReplacer(strings.NewReplacer(".", "_"))
+
+	pitaya.Configure(*isFrontend, *svType, pitaya.Cluster, map[string]string{}, config)
 	pitaya.Start()
 }
 
