@@ -24,29 +24,27 @@ namespace Protos {
     static BenchmarkReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "Cg9iZW5jaG1hcmsucHJvdG8SBnByb3RvcyI3ChVGZXRjaFByb3RvRGF0YVJl",
-            "cXVlc3QSHgoEc2l6ZRgBIAEoDjIQLnByb3Rvcy5TaXplVHlwZSLfAwoWRmV0",
-            "Y2hQcm90b0RhdGFSZXNwb25zZRISCgpzb21lX2ludDMyGAEgAygFEhIKCnNv",
-            "bWVfaW50NjQYAiADKAMSEgoKc29tZV9mbG9hdBgDIAMoAhITCgtzb21lX2Rv",
-            "dWJsZRgEIAMoARIRCglzb21lX2Jvb2wYBSADKAgSEwoLc29tZV9zdHJpbmcY",
-            "BiADKAkSDwoHYV9pbnQzMhgHIAEoBRIPCgdhX2ludDY0GAggASgDEg8KB2Ff",
-            "ZmxvYXQYCSABKAISEAoIYV9kb3VibGUYCiABKAESDgoGYV9ib29sGAsgASgI",
-            "EhAKCGFfc3RyaW5nGAwgASgJEhIKCnNvbWVfYnl0ZXMYDSABKAwSIQoIYV9z",
-            "dHJ1Y3QYDiABKAsyDy5wcm90b3MuQVN0cnVjdBJECgxhX3N0cnVjdF9tYXAY",
-            "DyADKAsyLi5wcm90b3MuRmV0Y2hQcm90b0RhdGFSZXNwb25zZS5BU3RydWN0",
-            "TWFwRW50cnkSJAoLc29tZV9zdHJ1Y3QYECADKAsyDy5wcm90b3MuQVN0cnVj",
-            "dBpCCg9BU3RydWN0TWFwRW50cnkSCwoDa2V5GAEgASgJEh4KBXZhbHVlGAIg",
-            "ASgLMg8ucHJvdG9zLkFTdHJ1Y3Q6AjgBIv0BCgdBU3RydWN0EhIKCnNvbWVf",
-            "aW50MzIYASADKAUSEgoKc29tZV9pbnQ2NBgCIAMoAxISCgpzb21lX2Zsb2F0",
-            "GAMgAygCEhMKC3NvbWVfZG91YmxlGAQgAygBEhEKCXNvbWVfYm9vbBgFIAMo",
-            "CBITCgtzb21lX3N0cmluZxgGIAMoCRIPCgdhX2ludDMyGAcgASgFEg8KB2Ff",
-            "aW50NjQYCCABKAMSDwoHYV9mbG9hdBgJIAEoAhIQCghhX2RvdWJsZRgKIAEo",
-            "ARIOCgZhX2Jvb2wYCyABKAgSEAoIYV9zdHJpbmcYDCABKAkSEgoKc29tZV9i",
-            "eXRlcxgNIAEoDCosCghTaXplVHlwZRIJCgVTbWFsbBAAEgoKBk1lZGl1bRAB",
-            "EgkKBUxhcmdlEAJiBnByb3RvMw=="));
+            "Cg9iZW5jaG1hcmsucHJvdG8SBnByb3RvcyIlChVGZXRjaFByb3RvRGF0YVJl",
+            "cXVlc3QSDAoEc2l6ZRgBIAEoBSLfAwoWRmV0Y2hQcm90b0RhdGFSZXNwb25z",
+            "ZRISCgpzb21lX2ludDMyGAEgAygFEhIKCnNvbWVfaW50NjQYAiADKAMSEgoK",
+            "c29tZV9mbG9hdBgDIAMoAhITCgtzb21lX2RvdWJsZRgEIAMoARIRCglzb21l",
+            "X2Jvb2wYBSADKAgSEwoLc29tZV9zdHJpbmcYBiADKAkSDwoHYV9pbnQzMhgH",
+            "IAEoBRIPCgdhX2ludDY0GAggASgDEg8KB2FfZmxvYXQYCSABKAISEAoIYV9k",
+            "b3VibGUYCiABKAESDgoGYV9ib29sGAsgASgIEhAKCGFfc3RyaW5nGAwgASgJ",
+            "EhIKCnNvbWVfYnl0ZXMYDSABKAwSIQoIYV9zdHJ1Y3QYDiABKAsyDy5wcm90",
+            "b3MuQVN0cnVjdBJECgxhX3N0cnVjdF9tYXAYDyADKAsyLi5wcm90b3MuRmV0",
+            "Y2hQcm90b0RhdGFSZXNwb25zZS5BU3RydWN0TWFwRW50cnkSJAoLc29tZV9z",
+            "dHJ1Y3QYECADKAsyDy5wcm90b3MuQVN0cnVjdBpCCg9BU3RydWN0TWFwRW50",
+            "cnkSCwoDa2V5GAEgASgJEh4KBXZhbHVlGAIgASgLMg8ucHJvdG9zLkFTdHJ1",
+            "Y3Q6AjgBIv0BCgdBU3RydWN0EhIKCnNvbWVfaW50MzIYASADKAUSEgoKc29t",
+            "ZV9pbnQ2NBgCIAMoAxISCgpzb21lX2Zsb2F0GAMgAygCEhMKC3NvbWVfZG91",
+            "YmxlGAQgAygBEhEKCXNvbWVfYm9vbBgFIAMoCBITCgtzb21lX3N0cmluZxgG",
+            "IAMoCRIPCgdhX2ludDMyGAcgASgFEg8KB2FfaW50NjQYCCABKAMSDwoHYV9m",
+            "bG9hdBgJIAEoAhIQCghhX2RvdWJsZRgKIAEoARIOCgZhX2Jvb2wYCyABKAgS",
+            "EAoIYV9zdHJpbmcYDCABKAkSEgoKc29tZV9ieXRlcxgNIAEoDGIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
-          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Protos.SizeType), }, null, new pbr::GeneratedClrTypeInfo[] {
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Protos.FetchProtoDataRequest), global::Protos.FetchProtoDataRequest.Parser, new[]{ "Size" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Protos.FetchProtoDataResponse), global::Protos.FetchProtoDataResponse.Parser, new[]{ "SomeInt32", "SomeInt64", "SomeFloat", "SomeDouble", "SomeBool", "SomeString", "AInt32", "AInt64", "AFloat", "ADouble", "ABool", "AString", "SomeBytes", "AStruct", "AStructMap", "SomeStruct" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, }),
             new pbr::GeneratedClrTypeInfo(typeof(global::Protos.AStruct), global::Protos.AStruct.Parser, new[]{ "SomeInt32", "SomeInt64", "SomeFloat", "SomeDouble", "SomeBool", "SomeString", "AInt32", "AInt64", "AFloat", "ADouble", "ABool", "AString", "SomeBytes" }, null, null, null, null)
@@ -55,15 +53,6 @@ namespace Protos {
     #endregion
 
   }
-  #region Enums
-  public enum SizeType {
-    [pbr::OriginalName("Small")] Small = 0,
-    [pbr::OriginalName("Medium")] Medium = 1,
-    [pbr::OriginalName("Large")] Large = 2,
-  }
-
-  #endregion
-
   #region Messages
   public sealed partial class FetchProtoDataRequest : pb::IMessage<FetchProtoDataRequest> {
     private static readonly pb::MessageParser<FetchProtoDataRequest> _parser = new pb::MessageParser<FetchProtoDataRequest>(() => new FetchProtoDataRequest());
@@ -101,9 +90,9 @@ namespace Protos {
 
     /// <summary>Field number for the "size" field.</summary>
     public const int SizeFieldNumber = 1;
-    private global::Protos.SizeType size_ = global::Protos.SizeType.Small;
+    private int size_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Protos.SizeType Size {
+    public int Size {
       get { return size_; }
       set {
         size_ = value;
@@ -130,7 +119,7 @@ namespace Protos {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (Size != global::Protos.SizeType.Small) hash ^= Size.GetHashCode();
+      if (Size != 0) hash ^= Size.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -144,9 +133,9 @@ namespace Protos {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (Size != global::Protos.SizeType.Small) {
+      if (Size != 0) {
         output.WriteRawTag(8);
-        output.WriteEnum((int) Size);
+        output.WriteInt32(Size);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -156,8 +145,8 @@ namespace Protos {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (Size != global::Protos.SizeType.Small) {
-        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Size);
+      if (Size != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Size);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -170,7 +159,7 @@ namespace Protos {
       if (other == null) {
         return;
       }
-      if (other.Size != global::Protos.SizeType.Small) {
+      if (other.Size != 0) {
         Size = other.Size;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -185,7 +174,7 @@ namespace Protos {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 8: {
-            Size = (global::Protos.SizeType) input.ReadEnum();
+            Size = input.ReadInt32();
             break;
           }
         }

@@ -2,14 +2,8 @@ syntax = "proto3";
 
 package protos;
 
-enum SizeType {
-  Small = 0;
-  Medium = 1;
-  Large = 2;
-}
-
 message FetchProtoDataRequest {
-  SizeType size = 1;
+  int32 size = 1;
 }
 
 message FetchProtoDataResponse {

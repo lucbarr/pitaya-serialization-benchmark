@@ -54,7 +54,7 @@ func configureBackend() {
 		component.WithNameFunc(strings.ToLower),
 	)
 
-	pitaya.Register(&services.BenchmarkHandler{},
+	pitaya.Register(services.NewBenchmarkHandler(),
 		component.WithName("benchmark"),
 		component.WithNameFunc(strings.ToLower),
 	)

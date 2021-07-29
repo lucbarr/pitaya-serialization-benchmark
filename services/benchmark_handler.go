@@ -1,38 +1,133 @@
 package services
 
 import (
-	"context"
-	"pitaya-serialization-benchmark/protos"
+	"fmt"
+	"io/ioutil"
+	"log"
 
 	"github.com/topfreegames/pitaya/component"
+	"golang.org/x/xerrors"
 )
 
 type BenchmarkHandler struct {
 	component.Base
+	dataExamplesFetcher DataExamplesFetcher
 }
 
-type FetchJSONDataRequest struct {
-	Size string `json:"size"`
+func NewBenchmarkHandler() *BenchmarkHandler {
+	dataExamplesFetcher := NewDataExamplesRepository()
+
+	return &BenchmarkHandler{
+		dataExamplesFetcher: dataExamplesFetcher,
+	}
 }
 
-type FetchJSONDataResponse struct {
-	Data map[string]interface{} `json:"data"`
+type Size int
+type DataType int
+
+const (
+	Small Size = iota
+	Medium
+	Large
+)
+
+var allSizes = []Size{
+	Small,
+	Medium,
+	Large,
 }
 
-func (b *BenchmarkHandler) FetchJSONData(ctx context.Context, req *FetchJSONDataRequest) (*FetchJSONDataResponse, error) {
-	return &FetchJSONDataResponse{
-		Data: map[string]interface{}{
-			"potato": "tomato",
-		},
-	}, nil
+func (s Size) String() string {
+	switch s {
+	case Small:
+		return "small"
+	case Medium:
+		return "medium"
+	case Large:
+		return "large"
+	}
+
+	return ""
 }
 
-func (b *BenchmarkHandler) FetchProtoData(ctx context.Context, req *protos.FetchProtoDataRequest) (*protos.FetchProtoDataResponse, error) {
-	return &protos.FetchProtoDataResponse{
-		AStructMap: map[string]*protos.AStruct{
-			"potato": &protos.AStruct{
-				AString: "tomato",
-			},
-		},
-	}, nil
+const (
+	JSON DataType = iota
+	Protobuf
+)
+
+type DataExamplesFetcher interface {
+	Fetch(size Size, dataType DataType) ([]byte, error)
+}
+
+type dataExamplesRepository struct {
+	protos map[Size][]byte
+	json   map[Size][]byte
+}
+
+func loadProtos() map[Size][]byte {
+	loadedProtos := map[Size][]byte{}
+	for _, size := range allSizes {
+		filename := fmt.Sprintf("examples/proto/%s.pb", size.String())
+		data, err := ioutil.ReadFile(filename)
+		if err != nil {
+			log.Fatalln(err)
+		}
+
+		loadedProtos[size] = data
+	}
+
+	return loadedProtos
+}
+
+func loadJSON() map[Size][]byte {
+	loadedProtos := map[Size][]byte{}
+	for _, size := range allSizes {
+		filename := fmt.Sprintf("examples/json/%s.json", size.String())
+		data, err := ioutil.ReadFile(filename)
+		if err != nil {
+			log.Fatalln(err)
+		}
+
+		loadedProtos[size] = data
+	}
+
+	return loadedProtos
+}
+
+func NewDataExamplesRepository() *dataExamplesRepository {
+	loadedProtos := loadProtos()
+	loadedJSON := loadJSON()
+
+	return &dataExamplesRepository{
+		protos: loadedProtos,
+		json:   loadedJSON,
+	}
+}
+
+var (
+	ErrInvalidDataType error = xerrors.New("invalid data type")
+	ErrInvalidSize     error = xerrors.New("invalid size")
+)
+
+func (d *dataExamplesRepository) Fetch(size Size, dataType DataType) ([]byte, error) {
+	var data []byte
+	var ok bool
+
+	switch dataType {
+	case Protobuf:
+		data, ok = d.protos[size]
+		break
+	case JSON:
+		data, ok = d.json[size]
+		break
+	default:
+		return nil, ErrInvalidDataType
+	}
+
+	if !ok {
+		return nil, ErrInvalidSize
+	}
+
+	return data, nil
+
 }
