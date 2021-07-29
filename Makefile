@@ -11,10 +11,10 @@ build-linux-json:
 	@chmod a+x bin/pitaya-serialization-benchmark
 
 docker-build-proto:
-	docker build -t pitaya-serialization-benchmark:proto . --build-arg is_proto=true
+	docker build -t pitaya-serialization-benchmark:proto . --build-arg is_proto="true"
 
 docker-build-json:
-	docker build -t pitaya-serialization-benchmark:json .
+	docker build -t pitaya-serialization-benchmark:json . --build-arg is_proto="false"
 
 docker-push-proto: docker-build-proto
 	docker tag pitaya-serialization-benchmark:proto lucianobarreira/pitaya-serialization-benchmark:proto

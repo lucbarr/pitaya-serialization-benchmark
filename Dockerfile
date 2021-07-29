@@ -1,8 +1,10 @@
 FROM golang:alpine AS build-env
+ARG is_proto
+RUN echo $is_proto
 
 ADD . /src
 RUN apk add make
-RUN if [[ -z "$is_proto" ]]; then echo "building with protos"; cd /src && make build-linux-proto; else "building with json"; cd /src && make build-linux-json; fi
+RUN if [[ "$is_proto" == "true" ]]; then echo "building with protos"; cd /src && make build-linux-proto; else echo "building with json"; cd /src && make build-linux-json; fi
 
 RUN apk update && apk add ca-certificates && rm -rf /var/cache/apk/*
 
