@@ -61,7 +61,7 @@ func configureBackend() {
 }
 
 func configureFrontend(port int) {
-	ws := acceptor.NewWSAcceptor(fmt.Sprintf(":%d", port))
+	tcp := acceptor.NewTCPAcceptor(fmt.Sprintf(":%d", port))
 	pitaya.Register(&services.Connector{},
 		component.WithName("connector"),
 		component.WithNameFunc(strings.ToLower),
@@ -71,5 +71,5 @@ func configureFrontend(port int) {
 		component.WithNameFunc(strings.ToLower),
 	)
 
-	pitaya.AddAcceptor(ws)
+	pitaya.AddAcceptor(tcp)
 }
