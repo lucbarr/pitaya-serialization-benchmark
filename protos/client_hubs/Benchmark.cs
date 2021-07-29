@@ -44,10 +44,10 @@ namespace Protos {
             "EAoIYV9zdHJpbmcYDCABKAkSEgoKc29tZV9ieXRlcxgNIAEoDGIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
-          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Protos.FetchProtoDataRequest), global::Protos.FetchProtoDataRequest.Parser, new[]{ "Size" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Protos.FetchProtoDataResponse), global::Protos.FetchProtoDataResponse.Parser, new[]{ "SomeInt32", "SomeInt64", "SomeFloat", "SomeDouble", "SomeBool", "SomeString", "AInt32", "AInt64", "AFloat", "ADouble", "ABool", "AString", "SomeBytes", "AStruct", "AStructMap", "SomeStruct" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, }),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Protos.AStruct), global::Protos.AStruct.Parser, new[]{ "SomeInt32", "SomeInt64", "SomeFloat", "SomeDouble", "SomeBool", "SomeString", "AInt32", "AInt64", "AFloat", "ADouble", "ABool", "AString", "SomeBytes" }, null, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Protos.FetchProtoDataRequest), global::Protos.FetchProtoDataRequest.Parser, new[]{ "Size" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Protos.FetchProtoDataResponse), global::Protos.FetchProtoDataResponse.Parser, new[]{ "SomeInt32", "SomeInt64", "SomeFloat", "SomeDouble", "SomeBool", "SomeString", "AInt32", "AInt64", "AFloat", "ADouble", "ABool", "AString", "SomeBytes", "AStruct", "AStructMap", "SomeStruct" }, null, null, new pbr::GeneratedClrTypeInfo[] { null, }),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Protos.AStruct), global::Protos.AStruct.Parser, new[]{ "SomeInt32", "SomeInt64", "SomeFloat", "SomeDouble", "SomeBool", "SomeString", "AInt32", "AInt64", "AFloat", "ADouble", "ABool", "AString", "SomeBytes" }, null, null, null)
           }));
     }
     #endregion
@@ -383,7 +383,7 @@ namespace Protos {
     /// <summary>Field number for the "a_struct_map" field.</summary>
     public const int AStructMapFieldNumber = 15;
     private static readonly pbc::MapField<string, global::Protos.AStruct>.Codec _map_aStructMap_codec
-        = new pbc::MapField<string, global::Protos.AStruct>.Codec(pb::FieldCodec.ForString(10, ""), pb::FieldCodec.ForMessage(18, global::Protos.AStruct.Parser), 122);
+        = new pbc::MapField<string, global::Protos.AStruct>.Codec(pb::FieldCodec.ForString(10), pb::FieldCodec.ForMessage(18, global::Protos.AStruct.Parser), 122);
     private readonly pbc::MapField<string, global::Protos.AStruct> aStructMap_ = new pbc::MapField<string, global::Protos.AStruct>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::MapField<string, global::Protos.AStruct> AStructMap {
