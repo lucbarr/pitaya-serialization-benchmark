@@ -30,3 +30,7 @@ build-proto:
 
 build-json:
 	go build --tags=json .
+
+generate-protos:
+	go generate ./...
+
