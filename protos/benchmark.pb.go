@@ -60,25 +60,11 @@ func (m *FetchProtoDataRequest) GetSize() int32 {
 }
 
 type FetchProtoDataResponse struct {
-	SomeInt32            []int32             `protobuf:"varint,1,rep,packed,name=some_int32,json=someInt32,proto3" json:"some_int32,omitempty"`
-	SomeInt64            []int64             `protobuf:"varint,2,rep,packed,name=some_int64,json=someInt64,proto3" json:"some_int64,omitempty"`
-	SomeFloat            []float32           `protobuf:"fixed32,3,rep,packed,name=some_float,json=someFloat,proto3" json:"some_float,omitempty"`
-	SomeDouble           []float64           `protobuf:"fixed64,4,rep,packed,name=some_double,json=someDouble,proto3" json:"some_double,omitempty"`
-	SomeBool             []bool              `protobuf:"varint,5,rep,packed,name=some_bool,json=someBool,proto3" json:"some_bool,omitempty"`
-	SomeString           []string            `protobuf:"bytes,6,rep,name=some_string,json=someString,proto3" json:"some_string,omitempty"`
-	AInt32               int32               `protobuf:"varint,7,opt,name=a_int32,json=aInt32,proto3" json:"a_int32,omitempty"`
-	AInt64               int64               `protobuf:"varint,8,opt,name=a_int64,json=aInt64,proto3" json:"a_int64,omitempty"`
-	AFloat               float32             `protobuf:"fixed32,9,opt,name=a_float,json=aFloat,proto3" json:"a_float,omitempty"`
-	ADouble              float64             `protobuf:"fixed64,10,opt,name=a_double,json=aDouble,proto3" json:"a_double,omitempty"`
-	ABool                bool                `protobuf:"varint,11,opt,name=a_bool,json=aBool,proto3" json:"a_bool,omitempty"`
-	AString              string              `protobuf:"bytes,12,opt,name=a_string,json=aString,proto3" json:"a_string,omitempty"`
-	SomeBytes            []byte              `protobuf:"bytes,13,opt,name=some_bytes,json=someBytes,proto3" json:"some_bytes,omitempty"`
-	AStruct              *AStruct            `protobuf:"bytes,14,opt,name=a_struct,json=aStruct,proto3" json:"a_struct,omitempty"`
-	AStructMap           map[string]*AStruct `protobuf:"bytes,15,rep,name=a_struct_map,json=aStructMap,proto3" json:"a_struct_map,omitempty" protobuf_key:"bytes,1,opt,name=key,proto3" protobuf_val:"bytes,2,opt,name=value,proto3"`
-	SomeStruct           []*AStruct          `protobuf:"bytes,16,rep,name=some_struct,json=someStruct,proto3" json:"some_struct,omitempty"`
-	XXX_NoUnkeyedLiteral struct{}            `json:"-"`
-	XXX_unrecognized     []byte              `json:"-"`
-	XXX_sizecache        int32               `json:"-"`
+	Weapons              *Weapons `protobuf:"bytes,1,opt,name=weapons,proto3" json:"weapons,omitempty"`
+	AString              string   `protobuf:"bytes,2,opt,name=a_string,json=aString,proto3" json:"a_string,omitempty"`
+	XXX_NoUnkeyedLiteral struct{} `json:"-"`
+	XXX_unrecognized     []byte   `json:"-"`
+	XXX_sizecache        int32    `json:"-"`
 }
 
 func (m *FetchProtoDataResponse) Reset()         { *m = FetchProtoDataResponse{} }
@@ -106,81 +92,11 @@ func (m *FetchProtoDataResponse) XXX_DiscardUnknown() {
 
 var xxx_messageInfo_FetchProtoDataResponse proto.InternalMessageInfo
 
-func (m *FetchProtoDataResponse) GetSomeInt32() []int32 {
+func (m *FetchProtoDataResponse) GetWeapons() *Weapons {
 	if m != nil {
-		return m.SomeInt32
+		return m.Weapons
 	}
 	return nil
-}
-
-func (m *FetchProtoDataResponse) GetSomeInt64() []int64 {
-	if m != nil {
-		return m.SomeInt64
-	}
-	return nil
-}
-
-func (m *FetchProtoDataResponse) GetSomeFloat() []float32 {
-	if m != nil {
-		return m.SomeFloat
-	}
-	return nil
-}
-
-func (m *FetchProtoDataResponse) GetSomeDouble() []float64 {
-	if m != nil {
-		return m.SomeDouble
-	}
-	return nil
-}
-
-func (m *FetchProtoDataResponse) GetSomeBool() []bool {
-	if m != nil {
-		return m.SomeBool
-	}
-	return nil
-}
-
-func (m *FetchProtoDataResponse) GetSomeString() []string {
-	if m != nil {
-		return m.SomeString
-	}
-	return nil
-}
-
-func (m *FetchProtoDataResponse) GetAInt32() int32 {
-	if m != nil {
-		return m.AInt32
-	}
-	return 0
-}
-
-func (m *FetchProtoDataResponse) GetAInt64() int64 {
-	if m != nil {
-		return m.AInt64
-	}
-	return 0
-}
-
-func (m *FetchProtoDataResponse) GetAFloat() float32 {
-	if m != nil {
-		return m.AFloat
-	}
-	return 0
-}
-
-func (m *FetchProtoDataResponse) GetADouble() float64 {
-	if m != nil {
-		return m.ADouble
-	}
-	return 0
-}
-
-func (m *FetchProtoDataResponse) GetABool() bool {
-	if m != nil {
-		return m.ABool
-	}
-	return false
 }
 
 func (m *FetchProtoDataResponse) GetAString() string {
@@ -188,34 +104,6 @@ func (m *FetchProtoDataResponse) GetAString() string {
 		return m.AString
 	}
 	return ""
-}
-
-func (m *FetchProtoDataResponse) GetSomeBytes() []byte {
-	if m != nil {
-		return m.SomeBytes
-	}
-	return nil
-}
-
-func (m *FetchProtoDataResponse) GetAStruct() *AStruct {
-	if m != nil {
-		return m.AStruct
-	}
-	return nil
-}
-
-func (m *FetchProtoDataResponse) GetAStructMap() map[string]*AStruct {
-	if m != nil {
-		return m.AStructMap
-	}
-	return nil
-}
-
-func (m *FetchProtoDataResponse) GetSomeStruct() []*AStruct {
-	if m != nil {
-		return m.SomeStruct
-	}
-	return nil
 }
 
 type AStruct struct {
@@ -353,11 +241,817 @@ func (m *AStruct) GetSomeBytes() []byte {
 	return nil
 }
 
+type Weapons struct {
+	Weapons              map[string]*Weapons_Weapon `protobuf:"bytes,1,rep,name=weapons,proto3" json:"weapons,omitempty" protobuf_key:"bytes,1,opt,name=key,proto3" protobuf_val:"bytes,2,opt,name=value,proto3"`
+	XXX_NoUnkeyedLiteral struct{}                   `json:"-"`
+	XXX_unrecognized     []byte                     `json:"-"`
+	XXX_sizecache        int32                      `json:"-"`
+}
+
+func (m *Weapons) Reset()         { *m = Weapons{} }
+func (m *Weapons) String() string { return proto.CompactTextString(m) }
+func (*Weapons) ProtoMessage()    {}
+func (*Weapons) Descriptor() ([]byte, []int) {
+	return fileDescriptor_17088f88d67e5b2d, []int{3}
+}
+
+func (m *Weapons) XXX_Unmarshal(b []byte) error {
+	return xxx_messageInfo_Weapons.Unmarshal(m, b)
+}
+func (m *Weapons) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
+	return xxx_messageInfo_Weapons.Marshal(b, m, deterministic)
+}
+func (m *Weapons) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Weapons.Merge(m, src)
+}
+func (m *Weapons) XXX_Size() int {
+	return xxx_messageInfo_Weapons.Size(m)
+}
+func (m *Weapons) XXX_DiscardUnknown() {
+	xxx_messageInfo_Weapons.DiscardUnknown(m)
+}
+
+var xxx_messageInfo_Weapons proto.InternalMessageInfo
+
+func (m *Weapons) GetWeapons() map[string]*Weapons_Weapon {
+	if m != nil {
+		return m.Weapons
+	}
+	return nil
+}
+
+type Weapons_Weapon struct {
+	BaseAttributes       *Weapons_Weapon_BaseAttributes  `protobuf:"bytes,1,opt,name=baseAttributes,proto3" json:"baseAttributes,omitempty"`
+	BuyRequirements      *Weapons_Weapon_BuyRequirements `protobuf:"bytes,2,opt,name=buyRequirements,proto3" json:"buyRequirements,omitempty"`
+	Category             string                          `protobuf:"bytes,3,opt,name=category,proto3" json:"category,omitempty"`
+	Cost                 *Weapons_Weapon_Cost            `protobuf:"bytes,4,opt,name=cost,proto3" json:"cost,omitempty"`
+	Id                   string                          `protobuf:"bytes,5,opt,name=id,proto3" json:"id,omitempty"`
+	IsExclusive          bool                            `protobuf:"varint,6,opt,name=isExclusive,proto3" json:"isExclusive,omitempty"`
+	IsSpecial            bool                            `protobuf:"varint,7,opt,name=isSpecial,proto3" json:"isSpecial,omitempty"`
+	Tier                 int32                           `protobuf:"varint,8,opt,name=tier,proto3" json:"tier,omitempty"`
+	Title                string                          `protobuf:"bytes,9,opt,name=title,proto3" json:"title,omitempty"`
+	UpgradesPerPart      *Weapons_Weapon_UpgradesPerPart `protobuf:"bytes,10,opt,name=upgradesPerPart,proto3" json:"upgradesPerPart,omitempty"`
+	XXX_NoUnkeyedLiteral struct{}                        `json:"-"`
+	XXX_unrecognized     []byte                          `json:"-"`
+	XXX_sizecache        int32                           `json:"-"`
+}
+
+func (m *Weapons_Weapon) Reset()         { *m = Weapons_Weapon{} }
+func (m *Weapons_Weapon) String() string { return proto.CompactTextString(m) }
+func (*Weapons_Weapon) ProtoMessage()    {}
+func (*Weapons_Weapon) Descriptor() ([]byte, []int) {
+	return fileDescriptor_17088f88d67e5b2d, []int{3, 1}
+}
+
+func (m *Weapons_Weapon) XXX_Unmarshal(b []byte) error {
+	return xxx_messageInfo_Weapons_Weapon.Unmarshal(m, b)
+}
+func (m *Weapons_Weapon) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
+	return xxx_messageInfo_Weapons_Weapon.Marshal(b, m, deterministic)
+}
+func (m *Weapons_Weapon) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Weapons_Weapon.Merge(m, src)
+}
+func (m *Weapons_Weapon) XXX_Size() int {
+	return xxx_messageInfo_Weapons_Weapon.Size(m)
+}
+func (m *Weapons_Weapon) XXX_DiscardUnknown() {
+	xxx_messageInfo_Weapons_Weapon.DiscardUnknown(m)
+}
+
+var xxx_messageInfo_Weapons_Weapon proto.InternalMessageInfo
+
+func (m *Weapons_Weapon) GetBaseAttributes() *Weapons_Weapon_BaseAttributes {
+	if m != nil {
+		return m.BaseAttributes
+	}
+	return nil
+}
+
+func (m *Weapons_Weapon) GetBuyRequirements() *Weapons_Weapon_BuyRequirements {
+	if m != nil {
+		return m.BuyRequirements
+	}
+	return nil
+}
+
+func (m *Weapons_Weapon) GetCategory() string {
+	if m != nil {
+		return m.Category
+	}
+	return ""
+}
+
+func (m *Weapons_Weapon) GetCost() *Weapons_Weapon_Cost {
+	if m != nil {
+		return m.Cost
+	}
+	return nil
+}
+
+func (m *Weapons_Weapon) GetId() string {
+	if m != nil {
+		return m.Id
+	}
+	return ""
+}
+
+func (m *Weapons_Weapon) GetIsExclusive() bool {
+	if m != nil {
+		return m.IsExclusive
+	}
+	return false
+}
+
+func (m *Weapons_Weapon) GetIsSpecial() bool {
+	if m != nil {
+		return m.IsSpecial
+	}
+	return false
+}
+
+func (m *Weapons_Weapon) GetTier() int32 {
+	if m != nil {
+		return m.Tier
+	}
+	return 0
+}
+
+func (m *Weapons_Weapon) GetTitle() string {
+	if m != nil {
+		return m.Title
+	}
+	return ""
+}
+
+func (m *Weapons_Weapon) GetUpgradesPerPart() *Weapons_Weapon_UpgradesPerPart {
+	if m != nil {
+		return m.UpgradesPerPart
+	}
+	return nil
+}
+
+type Weapons_Weapon_BaseAttributes struct {
+	ClipSize                 int32    `protobuf:"varint,1,opt,name=clipSize,proto3" json:"clipSize,omitempty"`
+	Damage                   int32    `protobuf:"varint,2,opt,name=damage,proto3" json:"damage,omitempty"`
+	DamageMultiplier         float32  `protobuf:"fixed32,3,opt,name=damageMultiplier,proto3" json:"damageMultiplier,omitempty"`
+	FireRate                 float32  `protobuf:"fixed32,4,opt,name=fireRate,proto3" json:"fireRate,omitempty"`
+	HeadshotDamageBonus      int32    `protobuf:"varint,5,opt,name=headshotDamageBonus,proto3" json:"headshotDamageBonus,omitempty"`
+	Level                    int32    `protobuf:"varint,6,opt,name=level,proto3" json:"level,omitempty"`
+	MaxZoom                  int32    `protobuf:"varint,7,opt,name=maxZoom,proto3" json:"maxZoom,omitempty"`
+	Range                    int32    `protobuf:"varint,8,opt,name=range,proto3" json:"range,omitempty"`
+	ReloadTime               float32  `protobuf:"fixed32,9,opt,name=reloadTime,proto3" json:"reloadTime,omitempty"`
+	ShotCount                int32    `protobuf:"varint,10,opt,name=shotCount,proto3" json:"shotCount,omitempty"`
+	Silenced                 bool     `protobuf:"varint,11,opt,name=silenced,proto3" json:"silenced,omitempty"`
+	Spread                   float32  `protobuf:"fixed32,12,opt,name=spread,proto3" json:"spread,omitempty"`
+	Stability                float32  `protobuf:"fixed32,13,opt,name=stability,proto3" json:"stability,omitempty"`
+	WorldOpsDamageMultiplier float32  `protobuf:"fixed32,14,opt,name=worldOpsDamageMultiplier,proto3" json:"worldOpsDamageMultiplier,omitempty"`
+	ZoomLevels               int32    `protobuf:"varint,15,opt,name=zoomLevels,proto3" json:"zoomLevels,omitempty"`
+	XXX_NoUnkeyedLiteral     struct{} `json:"-"`
+	XXX_unrecognized         []byte   `json:"-"`
+	XXX_sizecache            int32    `json:"-"`
+}
+
+func (m *Weapons_Weapon_BaseAttributes) Reset()         { *m = Weapons_Weapon_BaseAttributes{} }
+func (m *Weapons_Weapon_BaseAttributes) String() string { return proto.CompactTextString(m) }
+func (*Weapons_Weapon_BaseAttributes) ProtoMessage()    {}
+func (*Weapons_Weapon_BaseAttributes) Descriptor() ([]byte, []int) {
+	return fileDescriptor_17088f88d67e5b2d, []int{3, 1, 0}
+}
+
+func (m *Weapons_Weapon_BaseAttributes) XXX_Unmarshal(b []byte) error {
+	return xxx_messageInfo_Weapons_Weapon_BaseAttributes.Unmarshal(m, b)
+}
+func (m *Weapons_Weapon_BaseAttributes) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
+	return xxx_messageInfo_Weapons_Weapon_BaseAttributes.Marshal(b, m, deterministic)
+}
+func (m *Weapons_Weapon_BaseAttributes) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Weapons_Weapon_BaseAttributes.Merge(m, src)
+}
+func (m *Weapons_Weapon_BaseAttributes) XXX_Size() int {
+	return xxx_messageInfo_Weapons_Weapon_BaseAttributes.Size(m)
+}
+func (m *Weapons_Weapon_BaseAttributes) XXX_DiscardUnknown() {
+	xxx_messageInfo_Weapons_Weapon_BaseAttributes.DiscardUnknown(m)
+}
+
+var xxx_messageInfo_Weapons_Weapon_BaseAttributes proto.InternalMessageInfo
+
+func (m *Weapons_Weapon_BaseAttributes) GetClipSize() int32 {
+	if m != nil {
+		return m.ClipSize
+	}
+	return 0
+}
+
+func (m *Weapons_Weapon_BaseAttributes) GetDamage() int32 {
+	if m != nil {
+		return m.Damage
+	}
+	return 0
+}
+
+func (m *Weapons_Weapon_BaseAttributes) GetDamageMultiplier() float32 {
+	if m != nil {
+		return m.DamageMultiplier
+	}
+	return 0
+}
+
+func (m *Weapons_Weapon_BaseAttributes) GetFireRate() float32 {
+	if m != nil {
+		return m.FireRate
+	}
+	return 0
+}
+
+func (m *Weapons_Weapon_BaseAttributes) GetHeadshotDamageBonus() int32 {
+	if m != nil {
+		return m.HeadshotDamageBonus
+	}
+	return 0
+}
+
+func (m *Weapons_Weapon_BaseAttributes) GetLevel() int32 {
+	if m != nil {
+		return m.Level
+	}
+	return 0
+}
+
+func (m *Weapons_Weapon_BaseAttributes) GetMaxZoom() int32 {
+	if m != nil {
+		return m.MaxZoom
+	}
+	return 0
+}
+
+func (m *Weapons_Weapon_BaseAttributes) GetRange() int32 {
+	if m != nil {
+		return m.Range
+	}
+	return 0
+}
+
+func (m *Weapons_Weapon_BaseAttributes) GetReloadTime() float32 {
+	if m != nil {
+		return m.ReloadTime
+	}
+	return 0
+}
+
+func (m *Weapons_Weapon_BaseAttributes) GetShotCount() int32 {
+	if m != nil {
+		return m.ShotCount
+	}
+	return 0
+}
+
+func (m *Weapons_Weapon_BaseAttributes) GetSilenced() bool {
+	if m != nil {
+		return m.Silenced
+	}
+	return false
+}
+
+func (m *Weapons_Weapon_BaseAttributes) GetSpread() float32 {
+	if m != nil {
+		return m.Spread
+	}
+	return 0
+}
+
+func (m *Weapons_Weapon_BaseAttributes) GetStability() float32 {
+	if m != nil {
+		return m.Stability
+	}
+	return 0
+}
+
+func (m *Weapons_Weapon_BaseAttributes) GetWorldOpsDamageMultiplier() float32 {
+	if m != nil {
+		return m.WorldOpsDamageMultiplier
+	}
+	return 0
+}
+
+func (m *Weapons_Weapon_BaseAttributes) GetZoomLevels() int32 {
+	if m != nil {
+		return m.ZoomLevels
+	}
+	return 0
+}
+
+type Weapons_Weapon_BuyRequirements struct {
+	Premium              bool     `protobuf:"varint,1,opt,name=premium,proto3" json:"premium,omitempty"`
+	PremiumPlus          bool     `protobuf:"varint,2,opt,name=premiumPlus,proto3" json:"premiumPlus,omitempty"`
+	RequiredPatent       int32    `protobuf:"varint,3,opt,name=requiredPatent,proto3" json:"requiredPatent,omitempty"`
+	XXX_NoUnkeyedLiteral struct{} `json:"-"`
+	XXX_unrecognized     []byte   `json:"-"`
+	XXX_sizecache        int32    `json:"-"`
+}
+
+func (m *Weapons_Weapon_BuyRequirements) Reset()         { *m = Weapons_Weapon_BuyRequirements{} }
+func (m *Weapons_Weapon_BuyRequirements) String() string { return proto.CompactTextString(m) }
+func (*Weapons_Weapon_BuyRequirements) ProtoMessage()    {}
+func (*Weapons_Weapon_BuyRequirements) Descriptor() ([]byte, []int) {
+	return fileDescriptor_17088f88d67e5b2d, []int{3, 1, 1}
+}
+
+func (m *Weapons_Weapon_BuyRequirements) XXX_Unmarshal(b []byte) error {
+	return xxx_messageInfo_Weapons_Weapon_BuyRequirements.Unmarshal(m, b)
+}
+func (m *Weapons_Weapon_BuyRequirements) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
+	return xxx_messageInfo_Weapons_Weapon_BuyRequirements.Marshal(b, m, deterministic)
+}
+func (m *Weapons_Weapon_BuyRequirements) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Weapons_Weapon_BuyRequirements.Merge(m, src)
+}
+func (m *Weapons_Weapon_BuyRequirements) XXX_Size() int {
+	return xxx_messageInfo_Weapons_Weapon_BuyRequirements.Size(m)
+}
+func (m *Weapons_Weapon_BuyRequirements) XXX_DiscardUnknown() {
+	xxx_messageInfo_Weapons_Weapon_BuyRequirements.DiscardUnknown(m)
+}
+
+var xxx_messageInfo_Weapons_Weapon_BuyRequirements proto.InternalMessageInfo
+
+func (m *Weapons_Weapon_BuyRequirements) GetPremium() bool {
+	if m != nil {
+		return m.Premium
+	}
+	return false
+}
+
+func (m *Weapons_Weapon_BuyRequirements) GetPremiumPlus() bool {
+	if m != nil {
+		return m.PremiumPlus
+	}
+	return false
+}
+
+func (m *Weapons_Weapon_BuyRequirements) GetRequiredPatent() int32 {
+	if m != nil {
+		return m.RequiredPatent
+	}
+	return 0
+}
+
+type Weapons_Weapon_Cost struct {
+	Currency             *Weapons_Weapon_Cost_Currency `protobuf:"bytes,1,opt,name=currency,proto3" json:"currency,omitempty"`
+	Gems                 int64                         `protobuf:"varint,2,opt,name=gems,proto3" json:"gems,omitempty"`
+	Gold                 int64                         `protobuf:"varint,3,opt,name=gold,proto3" json:"gold,omitempty"`
+	Tokens               int64                         `protobuf:"varint,4,opt,name=tokens,proto3" json:"tokens,omitempty"`
+	XXX_NoUnkeyedLiteral struct{}                      `json:"-"`
+	XXX_unrecognized     []byte                        `json:"-"`
+	XXX_sizecache        int32                         `json:"-"`
+}
+
+func (m *Weapons_Weapon_Cost) Reset()         { *m = Weapons_Weapon_Cost{} }
+func (m *Weapons_Weapon_Cost) String() string { return proto.CompactTextString(m) }
+func (*Weapons_Weapon_Cost) ProtoMessage()    {}
+func (*Weapons_Weapon_Cost) Descriptor() ([]byte, []int) {
+	return fileDescriptor_17088f88d67e5b2d, []int{3, 1, 2}
+}
+
+func (m *Weapons_Weapon_Cost) XXX_Unmarshal(b []byte) error {
+	return xxx_messageInfo_Weapons_Weapon_Cost.Unmarshal(m, b)
+}
+func (m *Weapons_Weapon_Cost) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
+	return xxx_messageInfo_Weapons_Weapon_Cost.Marshal(b, m, deterministic)
+}
+func (m *Weapons_Weapon_Cost) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Weapons_Weapon_Cost.Merge(m, src)
+}
+func (m *Weapons_Weapon_Cost) XXX_Size() int {
+	return xxx_messageInfo_Weapons_Weapon_Cost.Size(m)
+}
+func (m *Weapons_Weapon_Cost) XXX_DiscardUnknown() {
+	xxx_messageInfo_Weapons_Weapon_Cost.DiscardUnknown(m)
+}
+
+var xxx_messageInfo_Weapons_Weapon_Cost proto.InternalMessageInfo
+
+func (m *Weapons_Weapon_Cost) GetCurrency() *Weapons_Weapon_Cost_Currency {
+	if m != nil {
+		return m.Currency
+	}
+	return nil
+}
+
+func (m *Weapons_Weapon_Cost) GetGems() int64 {
+	if m != nil {
+		return m.Gems
+	}
+	return 0
+}
+
+func (m *Weapons_Weapon_Cost) GetGold() int64 {
+	if m != nil {
+		return m.Gold
+	}
+	return 0
+}
+
+func (m *Weapons_Weapon_Cost) GetTokens() int64 {
+	if m != nil {
+		return m.Tokens
+	}
+	return 0
+}
+
+type Weapons_Weapon_Cost_Currency struct {
+	Name                 string   `protobuf:"bytes,1,opt,name=name,proto3" json:"name,omitempty"`
+	Cost                 int32    `protobuf:"varint,2,opt,name=cost,proto3" json:"cost,omitempty"`
+	XXX_NoUnkeyedLiteral struct{} `json:"-"`
+	XXX_unrecognized     []byte   `json:"-"`
+	XXX_sizecache        int32    `json:"-"`
+}
+
+func (m *Weapons_Weapon_Cost_Currency) Reset()         { *m = Weapons_Weapon_Cost_Currency{} }
+func (m *Weapons_Weapon_Cost_Currency) String() string { return proto.CompactTextString(m) }
+func (*Weapons_Weapon_Cost_Currency) ProtoMessage()    {}
+func (*Weapons_Weapon_Cost_Currency) Descriptor() ([]byte, []int) {
+	return fileDescriptor_17088f88d67e5b2d, []int{3, 1, 2, 0}
+}
+
+func (m *Weapons_Weapon_Cost_Currency) XXX_Unmarshal(b []byte) error {
+	return xxx_messageInfo_Weapons_Weapon_Cost_Currency.Unmarshal(m, b)
+}
+func (m *Weapons_Weapon_Cost_Currency) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
+	return xxx_messageInfo_Weapons_Weapon_Cost_Currency.Marshal(b, m, deterministic)
+}
+func (m *Weapons_Weapon_Cost_Currency) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Weapons_Weapon_Cost_Currency.Merge(m, src)
+}
+func (m *Weapons_Weapon_Cost_Currency) XXX_Size() int {
+	return xxx_messageInfo_Weapons_Weapon_Cost_Currency.Size(m)
+}
+func (m *Weapons_Weapon_Cost_Currency) XXX_DiscardUnknown() {
+	xxx_messageInfo_Weapons_Weapon_Cost_Currency.DiscardUnknown(m)
+}
+
+var xxx_messageInfo_Weapons_Weapon_Cost_Currency proto.InternalMessageInfo
+
+func (m *Weapons_Weapon_Cost_Currency) GetName() string {
+	if m != nil {
+		return m.Name
+	}
+	return ""
+}
+
+func (m *Weapons_Weapon_Cost_Currency) GetCost() int32 {
+	if m != nil {
+		return m.Cost
+	}
+	return 0
+}
+
+type Weapons_Weapon_PartUpgrade struct {
+	Cost                 *Weapons_Weapon_Cost                      `protobuf:"bytes,1,opt,name=cost,proto3" json:"cost,omitempty"`
+	DeliveryTime         int64                                     `protobuf:"varint,2,opt,name=deliveryTime,proto3" json:"deliveryTime,omitempty"`
+	RequiredPatent       int32                                     `protobuf:"varint,3,opt,name=requiredPatent,proto3" json:"requiredPatent,omitempty"`
+	SkipDeliveryCost     *Weapons_Weapon_Cost                      `protobuf:"bytes,4,opt,name=skipDeliveryCost,proto3" json:"skipDeliveryCost,omitempty"`
+	UpgradeParams        *Weapons_Weapon_PartUpgrade_UpgradeParams `protobuf:"bytes,5,opt,name=upgradeParams,proto3" json:"upgradeParams,omitempty"`
+	XXX_NoUnkeyedLiteral struct{}                                  `json:"-"`
+	XXX_unrecognized     []byte                                    `json:"-"`
+	XXX_sizecache        int32                                     `json:"-"`
+}
+
+func (m *Weapons_Weapon_PartUpgrade) Reset()         { *m = Weapons_Weapon_PartUpgrade{} }
+func (m *Weapons_Weapon_PartUpgrade) String() string { return proto.CompactTextString(m) }
+func (*Weapons_Weapon_PartUpgrade) ProtoMessage()    {}
+func (*Weapons_Weapon_PartUpgrade) Descriptor() ([]byte, []int) {
+	return fileDescriptor_17088f88d67e5b2d, []int{3, 1, 3}
+}
+
+func (m *Weapons_Weapon_PartUpgrade) XXX_Unmarshal(b []byte) error {
+	return xxx_messageInfo_Weapons_Weapon_PartUpgrade.Unmarshal(m, b)
+}
+func (m *Weapons_Weapon_PartUpgrade) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
+	return xxx_messageInfo_Weapons_Weapon_PartUpgrade.Marshal(b, m, deterministic)
+}
+func (m *Weapons_Weapon_PartUpgrade) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Weapons_Weapon_PartUpgrade.Merge(m, src)
+}
+func (m *Weapons_Weapon_PartUpgrade) XXX_Size() int {
+	return xxx_messageInfo_Weapons_Weapon_PartUpgrade.Size(m)
+}
+func (m *Weapons_Weapon_PartUpgrade) XXX_DiscardUnknown() {
+	xxx_messageInfo_Weapons_Weapon_PartUpgrade.DiscardUnknown(m)
+}
+
+var xxx_messageInfo_Weapons_Weapon_PartUpgrade proto.InternalMessageInfo
+
+func (m *Weapons_Weapon_PartUpgrade) GetCost() *Weapons_Weapon_Cost {
+	if m != nil {
+		return m.Cost
+	}
+	return nil
+}
+
+func (m *Weapons_Weapon_PartUpgrade) GetDeliveryTime() int64 {
+	if m != nil {
+		return m.DeliveryTime
+	}
+	return 0
+}
+
+func (m *Weapons_Weapon_PartUpgrade) GetRequiredPatent() int32 {
+	if m != nil {
+		return m.RequiredPatent
+	}
+	return 0
+}
+
+func (m *Weapons_Weapon_PartUpgrade) GetSkipDeliveryCost() *Weapons_Weapon_Cost {
+	if m != nil {
+		return m.SkipDeliveryCost
+	}
+	return nil
+}
+
+func (m *Weapons_Weapon_PartUpgrade) GetUpgradeParams() *Weapons_Weapon_PartUpgrade_UpgradeParams {
+	if m != nil {
+		return m.UpgradeParams
+	}
+	return nil
+}
+
+type Weapons_Weapon_PartUpgrade_UpgradeParams struct {
+	ClipSize             *Weapons_Weapon_PartUpgrade_UpgradeParams_ScaleAndIncrement `protobuf:"bytes,1,opt,name=clipSize,proto3" json:"clipSize,omitempty"`
+	Damage               *Weapons_Weapon_PartUpgrade_UpgradeParams_ScaleAndIncrement `protobuf:"bytes,2,opt,name=damage,proto3" json:"damage,omitempty"`
+	FireRate             *Weapons_Weapon_PartUpgrade_UpgradeParams_ScaleAndIncrement `protobuf:"bytes,3,opt,name=fireRate,proto3" json:"fireRate,omitempty"`
+	HeadshotDamageBonus  *Weapons_Weapon_PartUpgrade_UpgradeParams_ScaleAndIncrement `protobuf:"bytes,4,opt,name=headshotDamageBonus,proto3" json:"headshotDamageBonus,omitempty"`
+	MaxZoom              *Weapons_Weapon_PartUpgrade_UpgradeParams_ScaleAndIncrement `protobuf:"bytes,5,opt,name=maxZoom,proto3" json:"maxZoom,omitempty"`
+	Range                *Weapons_Weapon_PartUpgrade_UpgradeParams_ScaleAndIncrement `protobuf:"bytes,6,opt,name=range,proto3" json:"range,omitempty"`
+	ReloadTime           *Weapons_Weapon_PartUpgrade_UpgradeParams_ScaleAndIncrement `protobuf:"bytes,7,opt,name=reloadTime,proto3" json:"reloadTime,omitempty"`
+	ShotCount            *Weapons_Weapon_PartUpgrade_UpgradeParams_ScaleAndIncrement `protobuf:"bytes,8,opt,name=shotCount,proto3" json:"shotCount,omitempty"`
+	Silenced             bool                                                        `protobuf:"varint,9,opt,name=silenced,proto3" json:"silenced,omitempty"`
+	Spread               *Weapons_Weapon_PartUpgrade_UpgradeParams_ScaleAndIncrement `protobuf:"bytes,10,opt,name=spread,proto3" json:"spread,omitempty"`
+	Stability            *Weapons_Weapon_PartUpgrade_UpgradeParams_ScaleAndIncrement `protobuf:"bytes,11,opt,name=stability,proto3" json:"stability,omitempty"`
+	ZoomLevels           *Weapons_Weapon_PartUpgrade_UpgradeParams_ScaleAndIncrement `protobuf:"bytes,12,opt,name=zoomLevels,proto3" json:"zoomLevels,omitempty"`
+	XXX_NoUnkeyedLiteral struct{}                                                    `json:"-"`
+	XXX_unrecognized     []byte                                                      `json:"-"`
+	XXX_sizecache        int32                                                       `json:"-"`
+}
+
+func (m *Weapons_Weapon_PartUpgrade_UpgradeParams) Reset() {
+	*m = Weapons_Weapon_PartUpgrade_UpgradeParams{}
+}
+func (m *Weapons_Weapon_PartUpgrade_UpgradeParams) String() string { return proto.CompactTextString(m) }
+func (*Weapons_Weapon_PartUpgrade_UpgradeParams) ProtoMessage()    {}
+func (*Weapons_Weapon_PartUpgrade_UpgradeParams) Descriptor() ([]byte, []int) {
+	return fileDescriptor_17088f88d67e5b2d, []int{3, 1, 3, 0}
+}
+
+func (m *Weapons_Weapon_PartUpgrade_UpgradeParams) XXX_Unmarshal(b []byte) error {
+	return xxx_messageInfo_Weapons_Weapon_PartUpgrade_UpgradeParams.Unmarshal(m, b)
+}
+func (m *Weapons_Weapon_PartUpgrade_UpgradeParams) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
+	return xxx_messageInfo_Weapons_Weapon_PartUpgrade_UpgradeParams.Marshal(b, m, deterministic)
+}
+func (m *Weapons_Weapon_PartUpgrade_UpgradeParams) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Weapons_Weapon_PartUpgrade_UpgradeParams.Merge(m, src)
+}
+func (m *Weapons_Weapon_PartUpgrade_UpgradeParams) XXX_Size() int {
+	return xxx_messageInfo_Weapons_Weapon_PartUpgrade_UpgradeParams.Size(m)
+}
+func (m *Weapons_Weapon_PartUpgrade_UpgradeParams) XXX_DiscardUnknown() {
+	xxx_messageInfo_Weapons_Weapon_PartUpgrade_UpgradeParams.DiscardUnknown(m)
+}
+
+var xxx_messageInfo_Weapons_Weapon_PartUpgrade_UpgradeParams proto.InternalMessageInfo
+
+func (m *Weapons_Weapon_PartUpgrade_UpgradeParams) GetClipSize() *Weapons_Weapon_PartUpgrade_UpgradeParams_ScaleAndIncrement {
+	if m != nil {
+		return m.ClipSize
+	}
+	return nil
+}
+
+func (m *Weapons_Weapon_PartUpgrade_UpgradeParams) GetDamage() *Weapons_Weapon_PartUpgrade_UpgradeParams_ScaleAndIncrement {
+	if m != nil {
+		return m.Damage
+	}
+	return nil
+}
+
+func (m *Weapons_Weapon_PartUpgrade_UpgradeParams) GetFireRate() *Weapons_Weapon_PartUpgrade_UpgradeParams_ScaleAndIncrement {
+	if m != nil {
+		return m.FireRate
+	}
+	return nil
+}
+
+func (m *Weapons_Weapon_PartUpgrade_UpgradeParams) GetHeadshotDamageBonus() *Weapons_Weapon_PartUpgrade_UpgradeParams_ScaleAndIncrement {
+	if m != nil {
+		return m.HeadshotDamageBonus
+	}
+	return nil
+}
+
+func (m *Weapons_Weapon_PartUpgrade_UpgradeParams) GetMaxZoom() *Weapons_Weapon_PartUpgrade_UpgradeParams_ScaleAndIncrement {
+	if m != nil {
+		return m.MaxZoom
+	}
+	return nil
+}
+
+func (m *Weapons_Weapon_PartUpgrade_UpgradeParams) GetRange() *Weapons_Weapon_PartUpgrade_UpgradeParams_ScaleAndIncrement {
+	if m != nil {
+		return m.Range
+	}
+	return nil
+}
+
+func (m *Weapons_Weapon_PartUpgrade_UpgradeParams) GetReloadTime() *Weapons_Weapon_PartUpgrade_UpgradeParams_ScaleAndIncrement {
+	if m != nil {
+		return m.ReloadTime
+	}
+	return nil
+}
+
+func (m *Weapons_Weapon_PartUpgrade_UpgradeParams) GetShotCount() *Weapons_Weapon_PartUpgrade_UpgradeParams_ScaleAndIncrement {
+	if m != nil {
+		return m.ShotCount
+	}
+	return nil
+}
+
+func (m *Weapons_Weapon_PartUpgrade_UpgradeParams) GetSilenced() bool {
+	if m != nil {
+		return m.Silenced
+	}
+	return false
+}
+
+func (m *Weapons_Weapon_PartUpgrade_UpgradeParams) GetSpread() *Weapons_Weapon_PartUpgrade_UpgradeParams_ScaleAndIncrement {
+	if m != nil {
+		return m.Spread
+	}
+	return nil
+}
+
+func (m *Weapons_Weapon_PartUpgrade_UpgradeParams) GetStability() *Weapons_Weapon_PartUpgrade_UpgradeParams_ScaleAndIncrement {
+	if m != nil {
+		return m.Stability
+	}
+	return nil
+}
+
+func (m *Weapons_Weapon_PartUpgrade_UpgradeParams) GetZoomLevels() *Weapons_Weapon_PartUpgrade_UpgradeParams_ScaleAndIncrement {
+	if m != nil {
+		return m.ZoomLevels
+	}
+	return nil
+}
+
+type Weapons_Weapon_PartUpgrade_UpgradeParams_ScaleAndIncrement struct {
+	Increment            float32  `protobuf:"fixed32,1,opt,name=increment,proto3" json:"increment,omitempty"`
+	Scale                float32  `protobuf:"fixed32,2,opt,name=scale,proto3" json:"scale,omitempty"`
+	XXX_NoUnkeyedLiteral struct{} `json:"-"`
+	XXX_unrecognized     []byte   `json:"-"`
+	XXX_sizecache        int32    `json:"-"`
+}
+
+func (m *Weapons_Weapon_PartUpgrade_UpgradeParams_ScaleAndIncrement) Reset() {
+	*m = Weapons_Weapon_PartUpgrade_UpgradeParams_ScaleAndIncrement{}
+}
+func (m *Weapons_Weapon_PartUpgrade_UpgradeParams_ScaleAndIncrement) String() string {
+	return proto.CompactTextString(m)
+}
+func (*Weapons_Weapon_PartUpgrade_UpgradeParams_ScaleAndIncrement) ProtoMessage() {}
+func (*Weapons_Weapon_PartUpgrade_UpgradeParams_ScaleAndIncrement) Descriptor() ([]byte, []int) {
+	return fileDescriptor_17088f88d67e5b2d, []int{3, 1, 3, 0, 0}
+}
+
+func (m *Weapons_Weapon_PartUpgrade_UpgradeParams_ScaleAndIncrement) XXX_Unmarshal(b []byte) error {
+	return xxx_messageInfo_Weapons_Weapon_PartUpgrade_UpgradeParams_ScaleAndIncrement.Unmarshal(m, b)
+}
+func (m *Weapons_Weapon_PartUpgrade_UpgradeParams_ScaleAndIncrement) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
+	return xxx_messageInfo_Weapons_Weapon_PartUpgrade_UpgradeParams_ScaleAndIncrement.Marshal(b, m, deterministic)
+}
+func (m *Weapons_Weapon_PartUpgrade_UpgradeParams_ScaleAndIncrement) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Weapons_Weapon_PartUpgrade_UpgradeParams_ScaleAndIncrement.Merge(m, src)
+}
+func (m *Weapons_Weapon_PartUpgrade_UpgradeParams_ScaleAndIncrement) XXX_Size() int {
+	return xxx_messageInfo_Weapons_Weapon_PartUpgrade_UpgradeParams_ScaleAndIncrement.Size(m)
+}
+func (m *Weapons_Weapon_PartUpgrade_UpgradeParams_ScaleAndIncrement) XXX_DiscardUnknown() {
+	xxx_messageInfo_Weapons_Weapon_PartUpgrade_UpgradeParams_ScaleAndIncrement.DiscardUnknown(m)
+}
+
+var xxx_messageInfo_Weapons_Weapon_PartUpgrade_UpgradeParams_ScaleAndIncrement proto.InternalMessageInfo
+
+func (m *Weapons_Weapon_PartUpgrade_UpgradeParams_ScaleAndIncrement) GetIncrement() float32 {
+	if m != nil {
+		return m.Increment
+	}
+	return 0
+}
+
+func (m *Weapons_Weapon_PartUpgrade_UpgradeParams_ScaleAndIncrement) GetScale() float32 {
+	if m != nil {
+		return m.Scale
+	}
+	return 0
+}
+
+type Weapons_Weapon_UpgradesPerPart struct {
+	Ammo                 []*Weapons_Weapon_PartUpgrade `protobuf:"bytes,1,rep,name=Ammo,proto3" json:"Ammo,omitempty"`
+	Body                 []*Weapons_Weapon_PartUpgrade `protobuf:"bytes,2,rep,name=Body,proto3" json:"Body,omitempty"`
+	Clip                 []*Weapons_Weapon_PartUpgrade `protobuf:"bytes,3,rep,name=Clip,proto3" json:"Clip,omitempty"`
+	Muzzle               []*Weapons_Weapon_PartUpgrade `protobuf:"bytes,4,rep,name=Muzzle,proto3" json:"Muzzle,omitempty"`
+	Scope                []*Weapons_Weapon_PartUpgrade `protobuf:"bytes,5,rep,name=Scope,proto3" json:"Scope,omitempty"`
+	Silencer             []*Weapons_Weapon_PartUpgrade `protobuf:"bytes,6,rep,name=Silencer,proto3" json:"Silencer,omitempty"`
+	XXX_NoUnkeyedLiteral struct{}                      `json:"-"`
+	XXX_unrecognized     []byte                        `json:"-"`
+	XXX_sizecache        int32                         `json:"-"`
+}
+
+func (m *Weapons_Weapon_UpgradesPerPart) Reset()         { *m = Weapons_Weapon_UpgradesPerPart{} }
+func (m *Weapons_Weapon_UpgradesPerPart) String() string { return proto.CompactTextString(m) }
+func (*Weapons_Weapon_UpgradesPerPart) ProtoMessage()    {}
+func (*Weapons_Weapon_UpgradesPerPart) Descriptor() ([]byte, []int) {
+	return fileDescriptor_17088f88d67e5b2d, []int{3, 1, 4}
+}
+
+func (m *Weapons_Weapon_UpgradesPerPart) XXX_Unmarshal(b []byte) error {
+	return xxx_messageInfo_Weapons_Weapon_UpgradesPerPart.Unmarshal(m, b)
+}
+func (m *Weapons_Weapon_UpgradesPerPart) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
+	return xxx_messageInfo_Weapons_Weapon_UpgradesPerPart.Marshal(b, m, deterministic)
+}
+func (m *Weapons_Weapon_UpgradesPerPart) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_Weapons_Weapon_UpgradesPerPart.Merge(m, src)
+}
+func (m *Weapons_Weapon_UpgradesPerPart) XXX_Size() int {
+	return xxx_messageInfo_Weapons_Weapon_UpgradesPerPart.Size(m)
+}
+func (m *Weapons_Weapon_UpgradesPerPart) XXX_DiscardUnknown() {
+	xxx_messageInfo_Weapons_Weapon_UpgradesPerPart.DiscardUnknown(m)
+}
+
+var xxx_messageInfo_Weapons_Weapon_UpgradesPerPart proto.InternalMessageInfo
+
+func (m *Weapons_Weapon_UpgradesPerPart) GetAmmo() []*Weapons_Weapon_PartUpgrade {
+	if m != nil {
+		return m.Ammo
+	}
+	return nil
+}
+
+func (m *Weapons_Weapon_UpgradesPerPart) GetBody() []*Weapons_Weapon_PartUpgrade {
+	if m != nil {
+		return m.Body
+	}
+	return nil
+}
+
+func (m *Weapons_Weapon_UpgradesPerPart) GetClip() []*Weapons_Weapon_PartUpgrade {
+	if m != nil {
+		return m.Clip
+	}
+	return nil
+}
+
+func (m *Weapons_Weapon_UpgradesPerPart) GetMuzzle() []*Weapons_Weapon_PartUpgrade {
+	if m != nil {
+		return m.Muzzle
+	}
+	return nil
+}
+
+func (m *Weapons_Weapon_UpgradesPerPart) GetScope() []*Weapons_Weapon_PartUpgrade {
+	if m != nil {
+		return m.Scope
+	}
+	return nil
+}
+
+func (m *Weapons_Weapon_UpgradesPerPart) GetSilencer() []*Weapons_Weapon_PartUpgrade {
+	if m != nil {
+		return m.Silencer
+	}
+	return nil
+}
+
 func init() {
 	proto.RegisterType((*FetchProtoDataRequest)(nil), "protos.FetchProtoDataRequest")
 	proto.RegisterType((*FetchProtoDataResponse)(nil), "protos.FetchProtoDataResponse")
-	proto.RegisterMapType((map[string]*AStruct)(nil), "protos.FetchProtoDataResponse.AStructMapEntry")
 	proto.RegisterType((*AStruct)(nil), "protos.AStruct")
+	proto.RegisterType((*Weapons)(nil), "protos.Weapons")
+	proto.RegisterMapType((map[string]*Weapons_Weapon)(nil), "protos.Weapons.WeaponsEntry")
+	proto.RegisterType((*Weapons_Weapon)(nil), "protos.Weapons.Weapon")
+	proto.RegisterType((*Weapons_Weapon_BaseAttributes)(nil), "protos.Weapons.Weapon.BaseAttributes")
+	proto.RegisterType((*Weapons_Weapon_BuyRequirements)(nil), "protos.Weapons.Weapon.BuyRequirements")
+	proto.RegisterType((*Weapons_Weapon_Cost)(nil), "protos.Weapons.Weapon.Cost")
+	proto.RegisterType((*Weapons_Weapon_Cost_Currency)(nil), "protos.Weapons.Weapon.Cost.Currency")
+	proto.RegisterType((*Weapons_Weapon_PartUpgrade)(nil), "protos.Weapons.Weapon.PartUpgrade")
+	proto.RegisterType((*Weapons_Weapon_PartUpgrade_UpgradeParams)(nil), "protos.Weapons.Weapon.PartUpgrade.UpgradeParams")
+	proto.RegisterType((*Weapons_Weapon_PartUpgrade_UpgradeParams_ScaleAndIncrement)(nil), "protos.Weapons.Weapon.PartUpgrade.UpgradeParams.ScaleAndIncrement")
+	proto.RegisterType((*Weapons_Weapon_UpgradesPerPart)(nil), "protos.Weapons.Weapon.UpgradesPerPart")
 }
 
 func init() {
@@ -365,33 +1059,84 @@ func init() {
 }
 
 var fileDescriptor_17088f88d67e5b2d = []byte{
-	// 435 bytes of a gzipped FileDescriptorProto
-	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xec, 0x94, 0xdf, 0x8a, 0x13, 0x31,
-	0x14, 0xc6, 0xc9, 0x64, 0xe7, 0xdf, 0x69, 0xb5, 0x4b, 0x60, 0x35, 0x2a, 0x62, 0x28, 0x08, 0x41,
-	0xa1, 0x48, 0xb7, 0x14, 0xf1, 0xce, 0x65, 0x5d, 0xf0, 0x42, 0x59, 0xb2, 0x0f, 0x50, 0xce, 0x8c,
-	0xd1, 0x2d, 0x3b, 0x9d, 0xd4, 0x26, 0x23, 0xd4, 0x57, 0xf0, 0x95, 0xbd, 0x90, 0x24, 0x33, 0x55,
-	0xd6, 0xbd, 0xf6, 0xca, 0xab, 0xa6, 0xdf, 0x77, 0xbe, 0xc3, 0x2f, 0x27, 0x87, 0x81, 0x49, 0xa5,
-	0xdb, 0xfa, 0x7a, 0x83, 0xbb, 0x9b, 0xd9, 0x76, 0x67, 0x9c, 0x61, 0x59, 0xf8, 0xb1, 0xd3, 0x97,
-	0x70, 0x72, 0xa1, 0x5d, 0x7d, 0x7d, 0xe9, 0xff, 0x9e, 0xa3, 0x43, 0xa5, 0xbf, 0x76, 0xda, 0x3a,
-	0xc6, 0xe0, 0xc8, 0xae, 0xbf, 0x6b, 0x4e, 0x04, 0x91, 0xa9, 0x0a, 0xe7, 0xe9, 0x8f, 0x14, 0x1e,
-	0xdc, 0xae, 0xb6, 0x5b, 0xd3, 0x5a, 0xcd, 0x9e, 0x02, 0x58, 0xb3, 0xd1, 0xab, 0x75, 0xeb, 0x4e,
-	0xe7, 0x9c, 0x08, 0x2a, 0x53, 0x55, 0x7a, 0xe5, 0xbd, 0x17, 0xfe, 0xb4, 0x97, 0x0b, 0x9e, 0x08,
-	0x2a, 0xe9, 0xc1, 0x5e, 0x2e, 0x0e, 0xf6, 0xe7, 0xc6, 0xa0, 0xe3, 0x54, 0x50, 0x99, 0x44, 0xfb,
-	0xc2, 0x0b, 0xec, 0x19, 0x8c, 0x82, 0xfd, 0xc9, 0x74, 0x55, 0xa3, 0xf9, 0x91, 0xa0, 0x92, 0xa8,
-	0x90, 0x38, 0x0f, 0x0a, 0x7b, 0x02, 0xa1, 0x7a, 0x55, 0x19, 0xd3, 0xf0, 0x54, 0x50, 0x59, 0xa8,
-	0xc2, 0x0b, 0x67, 0xc6, 0x34, 0x87, 0xb4, 0x75, 0xbb, 0x75, 0xfb, 0x85, 0x67, 0x82, 0xca, 0x32,
-	0xa6, 0xaf, 0x82, 0xc2, 0x1e, 0x42, 0x8e, 0x3d, 0x78, 0x1e, 0x6e, 0x9b, 0x61, 0xa4, 0x1e, 0x8c,
-	0xe5, 0x82, 0x17, 0x82, 0x48, 0x1a, 0x8d, 0xe5, 0x22, 0x1a, 0x11, 0xb6, 0x14, 0x44, 0x26, 0x2a,
-	0xc3, 0x48, 0xfa, 0x08, 0x0a, 0x1c, 0x30, 0x41, 0x10, 0x49, 0x54, 0x8e, 0x3d, 0xe3, 0x09, 0x64,
-	0x18, 0x01, 0x47, 0x82, 0xc8, 0x42, 0xa5, 0x18, 0xe8, 0x42, 0xa2, 0x47, 0x1b, 0x0b, 0x22, 0x4b,
-	0x95, 0x63, 0xcf, 0x35, 0x4c, 0xa5, 0xda, 0x3b, 0x6d, 0xf9, 0x3d, 0x41, 0xe4, 0x38, 0x4e, 0xe5,
-	0xcc, 0x0b, 0xec, 0x45, 0x9f, 0xec, 0x6a, 0xc7, 0xef, 0x0b, 0x22, 0x47, 0xf3, 0x49, 0x7c, 0x5c,
-	0x3b, 0x7b, 0x7b, 0x15, 0xe4, 0xd8, 0xaa, 0xab, 0x1d, 0xbb, 0x84, 0xf1, 0x50, 0xbb, 0xda, 0xe0,
-	0x96, 0x4f, 0x04, 0x95, 0xa3, 0xf9, 0x6c, 0xa8, 0xbf, 0xfb, 0x51, 0x87, 0x36, 0x1f, 0x70, 0xfb,
-	0xae, 0x75, 0xbb, 0xbd, 0x02, 0x3c, 0x08, 0xec, 0xd5, 0xef, 0xa9, 0x7a, 0x80, 0xe3, 0xd0, 0xf0,
-	0x2f, 0x80, 0x61, 0xcc, 0x5d, 0xed, 0x1e, 0x7f, 0x84, 0xc9, 0xad, 0x86, 0xec, 0x18, 0xe8, 0x8d,
-	0xde, 0x87, 0x1d, 0x2b, 0x95, 0x3f, 0xb2, 0xe7, 0x90, 0x7e, 0xc3, 0xa6, 0xd3, 0x3c, 0xb9, 0xfb,
-	0x46, 0xd1, 0x7d, 0x93, 0xbc, 0x26, 0xd3, 0x9f, 0x09, 0xe4, 0xbd, 0xfc, 0x7f, 0xfd, 0xfe, 0xf9,
-	0xfa, 0x55, 0xf1, 0x0b, 0x72, 0xfa, 0x2b, 0x00, 0x00, 0xff, 0xff, 0x8b, 0x3b, 0x8c, 0xcf, 0x5b,
-	0x04, 0x00, 0x00,
+	// 1261 bytes of a gzipped FileDescriptorProto
+	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xac, 0x57, 0xdb, 0x6e, 0xdb, 0x46,
+	0x13, 0x06, 0x49, 0x51, 0xa2, 0x46, 0x8e, 0x9d, 0x7f, 0xff, 0x26, 0x65, 0x94, 0xb4, 0x25, 0x8c,
+	0x36, 0x60, 0x0f, 0x70, 0x03, 0xc5, 0x30, 0x82, 0x5c, 0x14, 0xf5, 0x21, 0x09, 0x02, 0x34, 0xa8,
+	0xb0, 0xea, 0x09, 0x41, 0x91, 0x64, 0x45, 0x6e, 0x6c, 0xc2, 0x24, 0x57, 0xe5, 0x2e, 0x9d, 0xc8,
+	0x0f, 0xd4, 0x27, 0xe8, 0x65, 0x1f, 0xa1, 0x97, 0x7d, 0x8f, 0xf6, 0x01, 0x7a, 0x51, 0xec, 0x2c,
+	0x45, 0x53, 0xb2, 0xd5, 0xaa, 0x80, 0xae, 0xb4, 0x73, 0xf8, 0x66, 0x67, 0x67, 0x67, 0xbe, 0x15,
+	0x61, 0x6b, 0xcc, 0xf3, 0xe8, 0x24, 0x63, 0xc5, 0xe9, 0xce, 0xa4, 0x10, 0x4a, 0x90, 0x36, 0xfe,
+	0xc8, 0xed, 0x4f, 0xe1, 0xc6, 0x63, 0xae, 0xa2, 0x93, 0xa1, 0x16, 0x8f, 0x98, 0x62, 0x94, 0xff,
+	0x54, 0x72, 0xa9, 0x08, 0x81, 0x96, 0x4c, 0xce, 0xb9, 0x6f, 0x05, 0x56, 0xe8, 0x52, 0x5c, 0x6f,
+	0xbf, 0x80, 0x9b, 0x8b, 0xce, 0x72, 0x22, 0x72, 0xc9, 0xc9, 0xc7, 0xd0, 0x79, 0xc3, 0x99, 0x5e,
+	0x23, 0xa0, 0x37, 0xd8, 0x32, 0xfb, 0xc8, 0x9d, 0xef, 0x8d, 0x9a, 0xce, 0xec, 0xe4, 0x16, 0x78,
+	0xec, 0xa5, 0x54, 0x45, 0x92, 0x1f, 0xfb, 0x76, 0x60, 0x85, 0x5d, 0xda, 0x61, 0x23, 0x14, 0xb7,
+	0xff, 0xb2, 0xa1, 0xb3, 0x3f, 0x52, 0x45, 0x19, 0x29, 0xf2, 0x1e, 0x80, 0x14, 0x19, 0x7f, 0x99,
+	0xe4, 0xea, 0xfe, 0xc0, 0xb7, 0x02, 0x27, 0x74, 0x69, 0x57, 0x6b, 0x9e, 0x6a, 0x45, 0xd3, 0xbc,
+	0xb7, 0xeb, 0xdb, 0x81, 0x13, 0x3a, 0xb5, 0x79, 0x6f, 0xb7, 0x36, 0xbf, 0x4e, 0x05, 0x53, 0xbe,
+	0x13, 0x38, 0xa1, 0x6d, 0xcc, 0x8f, 0xb5, 0x82, 0x7c, 0x00, 0x3d, 0x34, 0xc7, 0xa2, 0x1c, 0xa7,
+	0xdc, 0x6f, 0x05, 0x4e, 0x68, 0x51, 0x44, 0x1c, 0xa1, 0x86, 0xdc, 0x06, 0xf4, 0x7e, 0x39, 0x16,
+	0x22, 0xf5, 0xdd, 0xc0, 0x09, 0x3d, 0xea, 0x69, 0xc5, 0x81, 0x10, 0x69, 0x8d, 0xae, 0x0e, 0xd1,
+	0x0e, 0x9c, 0xb0, 0x6b, 0xd0, 0xe6, 0x1c, 0xe4, 0x5d, 0xe8, 0xb0, 0x2a, 0xf1, 0x0e, 0x96, 0xaf,
+	0xcd, 0x4c, 0xd6, 0x33, 0xc3, 0xde, 0xae, 0xef, 0x05, 0x56, 0xe8, 0x18, 0xc3, 0xde, 0xae, 0x31,
+	0x98, 0x64, 0xbb, 0x81, 0x15, 0xda, 0xb4, 0xcd, 0x4c, 0xa6, 0x58, 0xad, 0x2a, 0x4d, 0x08, 0xac,
+	0xd0, 0xa2, 0x1d, 0x56, 0xe5, 0x78, 0x03, 0xda, 0xcc, 0x24, 0xd8, 0x0b, 0xac, 0xd0, 0xa3, 0x2e,
+	0xc3, 0xec, 0x9a, 0xf5, 0xdd, 0x98, 0xab, 0x6f, 0x5d, 0x95, 0xf1, 0x54, 0x71, 0xe9, 0x5f, 0x0b,
+	0xac, 0x70, 0xc3, 0x54, 0xe5, 0x40, 0x2b, 0xb6, 0x7f, 0xbb, 0x05, 0x9d, 0xea, 0xba, 0xc8, 0x5e,
+	0xf3, 0x42, 0x9d, 0xb0, 0x37, 0xb8, 0xb3, 0x70, 0xa1, 0xb3, 0xdf, 0x47, 0xb9, 0x2a, 0xa6, 0xf5,
+	0xed, 0xf6, 0x29, 0x6c, 0x34, 0x0d, 0xe4, 0x3a, 0x38, 0xa7, 0x7c, 0x8a, 0x4d, 0xd1, 0xa5, 0x7a,
+	0x49, 0x3e, 0x03, 0xf7, 0x8c, 0xa5, 0x25, 0xc7, 0xcb, 0xef, 0x0d, 0x6e, 0x5e, 0x1d, 0x97, 0x1a,
+	0xa7, 0x87, 0xf6, 0x03, 0xab, 0xff, 0x8b, 0x0f, 0x6d, 0xa3, 0x25, 0xcf, 0x60, 0x73, 0xcc, 0x24,
+	0xdf, 0x57, 0xaa, 0x48, 0xc6, 0xa5, 0x3e, 0x85, 0x69, 0xb7, 0x8f, 0xae, 0x8e, 0xb2, 0x73, 0x30,
+	0xe7, 0x4c, 0x17, 0xc0, 0x64, 0x08, 0x5b, 0xe3, 0x72, 0xaa, 0x5b, 0x3e, 0x29, 0x78, 0xc6, 0x73,
+	0x25, 0xab, 0xac, 0xee, 0x2e, 0x8b, 0x37, 0xef, 0x4d, 0x17, 0xe1, 0xa4, 0x0f, 0x5e, 0xc4, 0x14,
+	0x3f, 0x16, 0xc5, 0xd4, 0x77, 0xf0, 0xd0, 0xb5, 0x4c, 0x3e, 0x87, 0x56, 0x24, 0xa4, 0xf2, 0x5b,
+	0xb8, 0xc5, 0xed, 0x25, 0x5b, 0x1c, 0x0a, 0xa9, 0x28, 0x3a, 0x92, 0x4d, 0xb0, 0x93, 0xd8, 0x77,
+	0x31, 0x8c, 0x9d, 0xc4, 0x24, 0x80, 0x5e, 0x22, 0x1f, 0xbd, 0x8d, 0xd2, 0x52, 0x26, 0x67, 0xdc,
+	0x6f, 0xe3, 0xb5, 0x37, 0x55, 0xe4, 0x0e, 0x74, 0x13, 0x39, 0x9a, 0xf0, 0x28, 0x61, 0x29, 0xf6,
+	0x9e, 0x47, 0x2f, 0x14, 0x7a, 0xa6, 0x55, 0xc2, 0x0b, 0xec, 0x3d, 0x97, 0xe2, 0x9a, 0xbc, 0x03,
+	0xae, 0x4a, 0x54, 0xca, 0xb1, 0xef, 0xba, 0xd4, 0x08, 0xba, 0x30, 0xe5, 0xe4, 0xb8, 0x60, 0x31,
+	0x97, 0x43, 0x5e, 0x0c, 0x59, 0xa1, 0xb0, 0xfb, 0x96, 0x17, 0xe6, 0xdb, 0x79, 0x6f, 0xba, 0x08,
+	0xef, 0xff, 0xe9, 0xc0, 0xe6, 0xfc, 0x6d, 0x60, 0xad, 0xd2, 0x64, 0x32, 0xba, 0xa0, 0x99, 0x5a,
+	0x26, 0x37, 0xa1, 0x1d, 0xb3, 0x8c, 0x1d, 0x9b, 0x36, 0x71, 0x69, 0x25, 0x91, 0x4f, 0xe0, 0xba,
+	0x59, 0x3d, 0x2b, 0x53, 0x95, 0x4c, 0x52, 0x7d, 0x1c, 0x07, 0x27, 0xe6, 0x92, 0x5e, 0xc7, 0x7f,
+	0x9d, 0x14, 0x9c, 0x32, 0xc5, 0xb1, 0xe6, 0x36, 0xad, 0x65, 0x72, 0x0f, 0xfe, 0x7f, 0xc2, 0x59,
+	0x2c, 0x4f, 0x84, 0x3a, 0x42, 0xdc, 0x81, 0xc8, 0x4b, 0x89, 0xb5, 0x76, 0xe9, 0x55, 0x26, 0x5d,
+	0xa8, 0x94, 0x9f, 0xf1, 0x14, 0xcb, 0xee, 0x52, 0x23, 0x10, 0x1f, 0x3a, 0x19, 0x7b, 0xfb, 0x5c,
+	0x88, 0xac, 0x1a, 0xf5, 0x99, 0xa8, 0xfd, 0x0b, 0x96, 0x1f, 0xf3, 0xaa, 0xda, 0x46, 0x20, 0xef,
+	0x03, 0x14, 0x3c, 0x15, 0x2c, 0xfe, 0x26, 0xc9, 0x78, 0x35, 0xeb, 0x0d, 0x8d, 0xbe, 0x40, 0xbd,
+	0xf1, 0xa1, 0x28, 0x73, 0x53, 0x72, 0xcd, 0x7a, 0x33, 0x85, 0x3e, 0x91, 0x4c, 0x52, 0x9e, 0x47,
+	0x3c, 0xae, 0x86, 0xbe, 0x96, 0x75, 0xc5, 0xe4, 0xa4, 0xe0, 0x2c, 0xc6, 0xa9, 0xb7, 0x69, 0x25,
+	0x61, 0x44, 0xc5, 0xc6, 0x49, 0x9a, 0xa8, 0x29, 0xce, 0xbc, 0x66, 0xc2, 0x99, 0x82, 0x3c, 0x04,
+	0xff, 0x8d, 0x28, 0xd2, 0xf8, 0xeb, 0x89, 0x3c, 0x5a, 0xac, 0xeb, 0x26, 0x3a, 0x2f, 0xb5, 0xeb,
+	0xb3, 0x9c, 0x0b, 0x91, 0x7d, 0xa5, 0x0b, 0x21, 0xfd, 0x2d, 0x4c, 0xb6, 0xa1, 0xe9, 0x97, 0xb0,
+	0xb5, 0x30, 0x2f, 0xba, 0x5c, 0x93, 0x82, 0x67, 0x49, 0x99, 0xe1, 0x8d, 0x7b, 0x74, 0x26, 0xea,
+	0xde, 0xae, 0x96, 0xc3, 0xb4, 0x34, 0x63, 0xe8, 0xd1, 0xa6, 0x8a, 0xdc, 0x85, 0xcd, 0xc2, 0xc4,
+	0x8a, 0x87, 0x4c, 0xf1, 0x5c, 0xe1, 0xc5, 0xbb, 0x74, 0x41, 0xdb, 0xff, 0xd5, 0x82, 0x96, 0x1e,
+	0x22, 0xf2, 0x25, 0x78, 0x51, 0x59, 0x14, 0x3c, 0x8f, 0xa6, 0x15, 0x4d, 0x7c, 0xf8, 0x0f, 0x33,
+	0xb7, 0x73, 0x58, 0xf9, 0xd2, 0x1a, 0xa5, 0x07, 0xe6, 0x98, 0x67, 0x26, 0x1b, 0x87, 0xe2, 0x1a,
+	0x75, 0x22, 0x8d, 0x71, 0x73, 0xad, 0x13, 0x29, 0xd6, 0x5e, 0x89, 0x53, 0x9e, 0x4b, 0xec, 0x33,
+	0x87, 0x56, 0x52, 0x7f, 0x00, 0xde, 0x61, 0x23, 0x56, 0xce, 0x32, 0x5e, 0x51, 0x21, 0xae, 0xb5,
+	0x0e, 0x19, 0xc1, 0xf4, 0x38, 0xae, 0xfb, 0xbf, 0xf7, 0xa0, 0xa7, 0x27, 0xa6, 0x9a, 0xa8, 0x9a,
+	0x35, 0xac, 0x55, 0x59, 0x63, 0x1b, 0x36, 0x62, 0x9e, 0x26, 0x67, 0xbc, 0x98, 0x62, 0x93, 0x99,
+	0xe4, 0xe7, 0x74, 0xab, 0xd6, 0x92, 0x3c, 0x81, 0xeb, 0xf2, 0x34, 0x99, 0x1c, 0x55, 0xd8, 0xc3,
+	0x15, 0xe9, 0xeb, 0x12, 0x88, 0x7c, 0x07, 0xd7, 0x2a, 0x46, 0x18, 0xb2, 0x82, 0x65, 0x66, 0xd2,
+	0x7a, 0x83, 0x7b, 0x4b, 0xa2, 0x34, 0x0a, 0x30, 0xa3, 0x16, 0x83, 0xa3, 0xf3, 0x61, 0xfa, 0x3f,
+	0x77, 0xe1, 0xda, 0x9c, 0x03, 0x79, 0xb1, 0xc0, 0x2a, 0xbd, 0xc1, 0xc1, 0x7f, 0xdd, 0x64, 0x67,
+	0x14, 0xb1, 0x94, 0xef, 0xe7, 0xf1, 0xd3, 0x3c, 0x32, 0x9d, 0xdb, 0x60, 0xa6, 0xe7, 0x73, 0xcc,
+	0xb4, 0x9e, 0xe8, 0x33, 0x76, 0x7b, 0xd1, 0x60, 0x2c, 0x67, 0x7d, 0xb9, 0xd7, 0xac, 0xa7, 0xae,
+	0x66, 0xbd, 0xd6, 0xda, 0xb6, 0xba, 0x92, 0x39, 0x7f, 0xbc, 0xe0, 0x48, 0x77, 0x6d, 0x3b, 0xd5,
+	0x3c, 0xfb, 0xc3, 0x8c, 0x67, 0xdb, 0x6b, 0x8b, 0x5d, 0x71, 0xf5, 0x78, 0x8e, 0xab, 0x3b, 0x6b,
+	0x0b, 0xdf, 0xe4, 0xfb, 0x57, 0x4d, 0xbe, 0xf7, 0xd6, 0xb6, 0xc5, 0x92, 0x37, 0xa3, 0xbb, 0xf0,
+	0x66, 0x3c, 0xaf, 0xdf, 0x0c, 0x58, 0x5f, 0x2f, 0x57, 0xef, 0xce, 0xab, 0xe6, 0xbb, 0xd3, 0x5b,
+	0xe3, 0xc9, 0xea, 0xb7, 0x6b, 0x3c, 0xf7, 0xfe, 0x6c, 0xac, 0xef, 0x7e, 0x1a, 0x6f, 0xd8, 0x13,
+	0xf8, 0xdf, 0x25, 0x07, 0xfc, 0x97, 0x35, 0x13, 0x90, 0x63, 0x6c, 0x7a, 0xa1, 0xd0, 0x0f, 0xbf,
+	0xd4, 0x10, 0xe4, 0x07, 0x9b, 0x1a, 0xa1, 0xff, 0x87, 0x0d, 0x5b, 0x0b, 0x7f, 0x92, 0xc8, 0x1e,
+	0xb4, 0xf6, 0xb3, 0x4c, 0x54, 0xff, 0xb0, 0xb7, 0xff, 0x3d, 0x75, 0x8a, 0xfe, 0x1a, 0x77, 0x20,
+	0xe2, 0x29, 0x7e, 0xf6, 0xac, 0x88, 0xd3, 0xfe, 0x1a, 0x77, 0x98, 0x26, 0x13, 0xfc, 0x1e, 0x5a,
+	0x11, 0xa7, 0xfd, 0xc9, 0x43, 0x68, 0x3f, 0x2b, 0xcf, 0xcf, 0xab, 0x2f, 0xa5, 0xd5, 0x90, 0x15,
+	0x82, 0x3c, 0x00, 0x77, 0x14, 0x89, 0x09, 0xc7, 0xaf, 0xa8, 0xd5, 0xa0, 0x06, 0x40, 0xbe, 0x00,
+	0x6f, 0x64, 0x1a, 0xb5, 0xc0, 0x6f, 0xac, 0xd5, 0xc0, 0x35, 0x66, 0x6c, 0x3e, 0x71, 0xef, 0xff,
+	0x1d, 0x00, 0x00, 0xff, 0xff, 0xf7, 0x22, 0xc7, 0x1a, 0xfc, 0x0e, 0x00, 0x00,
 }

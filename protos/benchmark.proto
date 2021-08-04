@@ -7,22 +7,8 @@ message FetchProtoDataRequest {
 }
 
 message FetchProtoDataResponse {
-  repeated int32 some_int32 = 1;
-  repeated int64 some_int64 = 2;
-  repeated float some_float = 3;
-  repeated double some_double = 4;
-  repeated bool some_bool = 5;
-  repeated string some_string = 6;
-  int32 a_int32 = 7;
-  int64 a_int64 = 8;
-  float a_float = 9;
-  double a_double = 10;
-  bool a_bool = 11;
-  string a_string = 12;
-  bytes some_bytes = 13;
-  AStruct a_struct = 14;
-  map<string,AStruct> a_struct_map = 15;
-  repeated AStruct some_struct = 16;
+	Weapons weapons = 1;
+  string a_string = 2;
 }
 
 message AStruct {
@@ -39,4 +25,85 @@ message AStruct {
   bool a_bool = 11;
   string a_string = 12;
   bytes some_bytes = 13;
+}
+
+message Weapons {
+  map<string, Weapon> weapons = 1;
+  message Weapon {
+    message BaseAttributes {
+      int32 clipSize = 1;
+      int32 damage = 2;
+      float damageMultiplier = 3;
+      float fireRate = 4;
+      int32 headshotDamageBonus = 5;
+      int32 level = 6;
+      int32 maxZoom = 7;
+      int32 range = 8;
+      float reloadTime = 9;
+      int32 shotCount = 10;
+      bool silenced = 11;
+      float spread = 12;
+      float stability = 13;
+      float worldOpsDamageMultiplier = 14;
+      int32 zoomLevels = 15;
+    }
+    message BuyRequirements {
+      bool premium = 1;
+      bool premiumPlus = 2;
+      int32 requiredPatent = 3;
+    }
+    message Cost {
+      message Currency {
+        string name = 1;
+        int32 cost = 2;
+      }
+      Currency currency = 1;
+      int64 gems = 2;
+      int64 gold = 3;
+      int64 tokens = 4;
+    }
+    message PartUpgrade {
+      message UpgradeParams {
+        message ScaleAndIncrement {
+          float increment = 1;
+          float scale = 2;
+        }
+        ScaleAndIncrement clipSize = 1;
+        ScaleAndIncrement damage = 2;
+        ScaleAndIncrement fireRate = 3;
+        ScaleAndIncrement headshotDamageBonus = 4;
+        ScaleAndIncrement maxZoom = 5;
+        ScaleAndIncrement range = 6;
+        ScaleAndIncrement reloadTime = 7;
+        ScaleAndIncrement shotCount = 8;
+        bool silenced = 9;
+        ScaleAndIncrement spread = 10;
+        ScaleAndIncrement stability = 11;
+        ScaleAndIncrement zoomLevels = 12;
+      }
+      Cost cost = 1;
+      int64 deliveryTime = 2;
+      int32 requiredPatent = 3;
+      Cost skipDeliveryCost = 4;
+      UpgradeParams upgradeParams = 5;
+    }
+    BaseAttributes baseAttributes = 1;
+    BuyRequirements buyRequirements = 2;
+    string category = 3;
+    Cost cost = 4;
+    string id = 5;
+    bool isExclusive = 6;
+    bool isSpecial = 7;
+    int32 tier = 8;
+    string title = 9;
+    message UpgradesPerPart {
+      repeated PartUpgrade Ammo = 1;
+      repeated PartUpgrade Body = 2;
+      repeated PartUpgrade Clip = 3;
+      repeated PartUpgrade Muzzle = 4;
+      repeated PartUpgrade Scope = 5;
+      repeated PartUpgrade Silencer = 6;
+    }
+    UpgradesPerPart upgradesPerPart = 10;
+  }
 }

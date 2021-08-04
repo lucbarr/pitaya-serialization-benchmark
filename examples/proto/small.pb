@@ -1,1 +1,1 @@
-bsmall
+small

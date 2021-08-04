@@ -1,1 +1,1 @@
-bmedium
+medium
