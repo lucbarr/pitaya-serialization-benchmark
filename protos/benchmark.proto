@@ -7,8 +7,9 @@ message FetchProtoDataRequest {
 }
 
 message FetchProtoDataResponse {
-	Weapons weapons = 1;
-  string a_string = 2;
+  string a_string = 1;
+	Weapons weapons = 2;
+	Gears gears = 3;
 }
 
 message AStruct {
@@ -25,6 +26,23 @@ message AStruct {
   bool a_bool = 11;
   string a_string = 12;
   bytes some_bytes = 13;
+}
+
+message BuyRequirements {
+  bool premium = 1;
+  bool premiumPlus = 2;
+  int32 requiredPatent = 3;
+}
+
+message Cost {
+  message Currency {
+    string name = 1;
+    int32 cost = 2;
+  }
+  Currency currency = 1;
+  int64 gems = 2;
+  int64 gold = 3;
+  int64 tokens = 4;
 }
 
 message Weapons {
@@ -46,21 +64,6 @@ message Weapons {
       float stability = 13;
       float worldOpsDamageMultiplier = 14;
       int32 zoomLevels = 15;
-    }
-    message BuyRequirements {
-      bool premium = 1;
-      bool premiumPlus = 2;
-      int32 requiredPatent = 3;
-    }
-    message Cost {
-      message Currency {
-        string name = 1;
-        int32 cost = 2;
-      }
-      Currency currency = 1;
-      int64 gems = 2;
-      int64 gold = 3;
-      int64 tokens = 4;
     }
     message PartUpgrade {
       message UpgradeParams {
@@ -106,4 +109,58 @@ message Weapons {
     }
     UpgradesPerPart upgradesPerPart = 10;
   }
+}
+
+message OldGearInfo {
+  string id = 1;
+  string mergeToId = 2;
+  string newId = 3;
+  int32 slot = 4;
+  int32 tier = 5;
+  string title = 6;
+}
+
+message GearMergeConfig {
+  repeated OldGearInfo oldGearInfos = 1;
+  //map<string, Slots> slotTranslation = 2;
+}
+
+message Slots {
+  repeated int32 slots = 1;
+}
+
+message Upgrade {
+  int32 maxLevel = 1;
+}
+
+message Gear {
+  int32 baseRating = 1;
+  BuyRequirements buyRequirements = 2;
+  Cost cost = 3;
+  int32 dropRate = 4;
+  string id = 5;
+  bool isSpecial = 6;
+  int32 slot = 7;
+  int32 tier = 8;
+  string title = 9;
+  Upgrade upgrade = 10;
+  float upgradeMult = 11;
+  float upgradeMultiplier = 12;
+}
+
+message GearsConfig {
+  repeated int64 costMultByUpgradeLevel = 1;
+  repeated int64 deliveryTimeMultByUpgradeLevel = 2;
+  repeated int64 globalBaseRawUpgrade = 3;
+  repeated float globalDeliveryMult = 4;
+  repeated float globalLevelFactor = 5;
+  repeated float globalTierCostMult = 6;
+  float referenceToSniperRatio = 7;
+}
+
+
+message Gears {
+  GearMergeConfig gearMergeConfig = 1;
+  map<string, Gear> gears = 2;
+  GearsConfig gearsConfig = 3;
 }

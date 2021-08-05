@@ -25,41 +25,40 @@ namespace Protos {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Cg9iZW5jaG1hcmsucHJvdG8SBnByb3RvcyIlChVGZXRjaFByb3RvRGF0YVJl",
-            "cXVlc3QSDAoEc2l6ZRgBIAEoBSJMChZGZXRjaFByb3RvRGF0YVJlc3BvbnNl",
-            "EiAKB3dlYXBvbnMYASABKAsyDy5wcm90b3MuV2VhcG9ucxIQCghhX3N0cmlu",
-            "ZxgCIAEoCSL9AQoHQVN0cnVjdBISCgpzb21lX2ludDMyGAEgAygFEhIKCnNv",
-            "bWVfaW50NjQYAiADKAMSEgoKc29tZV9mbG9hdBgDIAMoAhITCgtzb21lX2Rv",
-            "dWJsZRgEIAMoARIRCglzb21lX2Jvb2wYBSADKAgSEwoLc29tZV9zdHJpbmcY",
-            "BiADKAkSDwoHYV9pbnQzMhgHIAEoBRIPCgdhX2ludDY0GAggASgDEg8KB2Ff",
-            "ZmxvYXQYCSABKAISEAoIYV9kb3VibGUYCiABKAESDgoGYV9ib29sGAsgASgI",
-            "EhAKCGFfc3RyaW5nGAwgASgJEhIKCnNvbWVfYnl0ZXMYDSABKAwixRQKB1dl",
-            "YXBvbnMSLQoHd2VhcG9ucxgBIAMoCzIcLnByb3Rvcy5XZWFwb25zLldlYXBv",
-            "bnNFbnRyeRpGCgxXZWFwb25zRW50cnkSCwoDa2V5GAEgASgJEiUKBXZhbHVl",
-            "GAIgASgLMhYucHJvdG9zLldlYXBvbnMuV2VhcG9uOgI4ARrCEwoGV2VhcG9u",
-            "Ej0KDmJhc2VBdHRyaWJ1dGVzGAEgASgLMiUucHJvdG9zLldlYXBvbnMuV2Vh",
-            "cG9uLkJhc2VBdHRyaWJ1dGVzEj8KD2J1eVJlcXVpcmVtZW50cxgCIAEoCzIm",
-            "LnByb3Rvcy5XZWFwb25zLldlYXBvbi5CdXlSZXF1aXJlbWVudHMSEAoIY2F0",
-            "ZWdvcnkYAyABKAkSKQoEY29zdBgEIAEoCzIbLnByb3Rvcy5XZWFwb25zLldl",
-            "YXBvbi5Db3N0EgoKAmlkGAUgASgJEhMKC2lzRXhjbHVzaXZlGAYgASgIEhEK",
-            "CWlzU3BlY2lhbBgHIAEoCBIMCgR0aWVyGAggASgFEg0KBXRpdGxlGAkgASgJ",
-            "Ej8KD3VwZ3JhZGVzUGVyUGFydBgKIAEoCzImLnByb3Rvcy5XZWFwb25zLldl",
-            "YXBvbi5VcGdyYWRlc1BlclBhcnQavAIKDkJhc2VBdHRyaWJ1dGVzEhAKCGNs",
-            "aXBTaXplGAEgASgFEg4KBmRhbWFnZRgCIAEoBRIYChBkYW1hZ2VNdWx0aXBs",
-            "aWVyGAMgASgCEhAKCGZpcmVSYXRlGAQgASgCEhsKE2hlYWRzaG90RGFtYWdl",
-            "Qm9udXMYBSABKAUSDQoFbGV2ZWwYBiABKAUSDwoHbWF4Wm9vbRgHIAEoBRIN",
-            "CgVyYW5nZRgIIAEoBRISCgpyZWxvYWRUaW1lGAkgASgCEhEKCXNob3RDb3Vu",
-            "dBgKIAEoBRIQCghzaWxlbmNlZBgLIAEoCBIOCgZzcHJlYWQYDCABKAISEQoJ",
-            "c3RhYmlsaXR5GA0gASgCEiAKGHdvcmxkT3BzRGFtYWdlTXVsdGlwbGllchgO",
-            "IAEoAhISCgp6b29tTGV2ZWxzGA8gASgFGk8KD0J1eVJlcXVpcmVtZW50cxIP",
-            "CgdwcmVtaXVtGAEgASgIEhMKC3ByZW1pdW1QbHVzGAIgASgIEhYKDnJlcXVp",
-            "cmVkUGF0ZW50GAMgASgFGpIBCgRDb3N0EjYKCGN1cnJlbmN5GAEgASgLMiQu",
-            "cHJvdG9zLldlYXBvbnMuV2VhcG9uLkNvc3QuQ3VycmVuY3kSDAoEZ2VtcxgC",
-            "IAEoAxIMCgRnb2xkGAMgASgDEg4KBnRva2VucxgEIAEoAxomCghDdXJyZW5j",
-            "eRIMCgRuYW1lGAEgASgJEgwKBGNvc3QYAiABKAUa/AkKC1BhcnRVcGdyYWRl",
-            "EikKBGNvc3QYASABKAsyGy5wcm90b3MuV2VhcG9ucy5XZWFwb24uQ29zdBIU",
-            "CgxkZWxpdmVyeVRpbWUYAiABKAMSFgoOcmVxdWlyZWRQYXRlbnQYAyABKAUS",
-            "NQoQc2tpcERlbGl2ZXJ5Q29zdBgEIAEoCzIbLnByb3Rvcy5XZWFwb25zLldl",
-            "YXBvbi5Db3N0EkcKDXVwZ3JhZGVQYXJhbXMYBSABKAsyMC5wcm90b3MuV2Vh",
+            "cXVlc3QSDAoEc2l6ZRgBIAEoBSJqChZGZXRjaFByb3RvRGF0YVJlc3BvbnNl",
+            "EhAKCGFfc3RyaW5nGAEgASgJEiAKB3dlYXBvbnMYAiABKAsyDy5wcm90b3Mu",
+            "V2VhcG9ucxIcCgVnZWFycxgDIAEoCzINLnByb3Rvcy5HZWFycyL9AQoHQVN0",
+            "cnVjdBISCgpzb21lX2ludDMyGAEgAygFEhIKCnNvbWVfaW50NjQYAiADKAMS",
+            "EgoKc29tZV9mbG9hdBgDIAMoAhITCgtzb21lX2RvdWJsZRgEIAMoARIRCglz",
+            "b21lX2Jvb2wYBSADKAgSEwoLc29tZV9zdHJpbmcYBiADKAkSDwoHYV9pbnQz",
+            "MhgHIAEoBRIPCgdhX2ludDY0GAggASgDEg8KB2FfZmxvYXQYCSABKAISEAoI",
+            "YV9kb3VibGUYCiABKAESDgoGYV9ib29sGAsgASgIEhAKCGFfc3RyaW5nGAwg",
+            "ASgJEhIKCnNvbWVfYnl0ZXMYDSABKAwiTwoPQnV5UmVxdWlyZW1lbnRzEg8K",
+            "B3ByZW1pdW0YASABKAgSEwoLcHJlbWl1bVBsdXMYAiABKAgSFgoOcmVxdWly",
+            "ZWRQYXRlbnQYAyABKAUigwEKBENvc3QSJwoIY3VycmVuY3kYASABKAsyFS5w",
+            "cm90b3MuQ29zdC5DdXJyZW5jeRIMCgRnZW1zGAIgASgDEgwKBGdvbGQYAyAB",
+            "KAMSDgoGdG9rZW5zGAQgASgDGiYKCEN1cnJlbmN5EgwKBG5hbWUYASABKAkS",
+            "DAoEY29zdBgCIAEoBSKjEgoHV2VhcG9ucxItCgd3ZWFwb25zGAEgAygLMhwu",
+            "cHJvdG9zLldlYXBvbnMuV2VhcG9uc0VudHJ5GkYKDFdlYXBvbnNFbnRyeRIL",
+            "CgNrZXkYASABKAkSJQoFdmFsdWUYAiABKAsyFi5wcm90b3MuV2VhcG9ucy5X",
+            "ZWFwb246AjgBGqARCgZXZWFwb24SPQoOYmFzZUF0dHJpYnV0ZXMYASABKAsy",
+            "JS5wcm90b3MuV2VhcG9ucy5XZWFwb24uQmFzZUF0dHJpYnV0ZXMSMAoPYnV5",
+            "UmVxdWlyZW1lbnRzGAIgASgLMhcucHJvdG9zLkJ1eVJlcXVpcmVtZW50cxIQ",
+            "CghjYXRlZ29yeRgDIAEoCRIaCgRjb3N0GAQgASgLMgwucHJvdG9zLkNvc3QS",
+            "CgoCaWQYBSABKAkSEwoLaXNFeGNsdXNpdmUYBiABKAgSEQoJaXNTcGVjaWFs",
+            "GAcgASgIEgwKBHRpZXIYCCABKAUSDQoFdGl0bGUYCSABKAkSPwoPdXBncmFk",
+            "ZXNQZXJQYXJ0GAogASgLMiYucHJvdG9zLldlYXBvbnMuV2VhcG9uLlVwZ3Jh",
+            "ZGVzUGVyUGFydBq8AgoOQmFzZUF0dHJpYnV0ZXMSEAoIY2xpcFNpemUYASAB",
+            "KAUSDgoGZGFtYWdlGAIgASgFEhgKEGRhbWFnZU11bHRpcGxpZXIYAyABKAIS",
+            "EAoIZmlyZVJhdGUYBCABKAISGwoTaGVhZHNob3REYW1hZ2VCb251cxgFIAEo",
+            "BRINCgVsZXZlbBgGIAEoBRIPCgdtYXhab29tGAcgASgFEg0KBXJhbmdlGAgg",
+            "ASgFEhIKCnJlbG9hZFRpbWUYCSABKAISEQoJc2hvdENvdW50GAogASgFEhAK",
+            "CHNpbGVuY2VkGAsgASgIEg4KBnNwcmVhZBgMIAEoAhIRCglzdGFiaWxpdHkY",
+            "DSABKAISIAoYd29ybGRPcHNEYW1hZ2VNdWx0aXBsaWVyGA4gASgCEhIKCnpv",
+            "b21MZXZlbHMYDyABKAUa3gkKC1BhcnRVcGdyYWRlEhoKBGNvc3QYASABKAsy",
+            "DC5wcm90b3MuQ29zdBIUCgxkZWxpdmVyeVRpbWUYAiABKAMSFgoOcmVxdWly",
+            "ZWRQYXRlbnQYAyABKAUSJgoQc2tpcERlbGl2ZXJ5Q29zdBgEIAEoCzIMLnBy",
+            "b3Rvcy5Db3N0EkcKDXVwZ3JhZGVQYXJhbXMYBSABKAsyMC5wcm90b3MuV2Vh",
             "cG9ucy5XZWFwb24uUGFydFVwZ3JhZGUuVXBncmFkZVBhcmFtcxqTCAoNVXBn",
             "cmFkZVBhcmFtcxJUCghjbGlwU2l6ZRgBIAEoCzJCLnByb3Rvcy5XZWFwb25z",
             "LldlYXBvbi5QYXJ0VXBncmFkZS5VcGdyYWRlUGFyYW1zLlNjYWxlQW5kSW5j",
@@ -91,18 +90,46 @@ namespace Protos {
             "emxlGAQgAygLMiIucHJvdG9zLldlYXBvbnMuV2VhcG9uLlBhcnRVcGdyYWRl",
             "EjEKBVNjb3BlGAUgAygLMiIucHJvdG9zLldlYXBvbnMuV2VhcG9uLlBhcnRV",
             "cGdyYWRlEjQKCFNpbGVuY2VyGAYgAygLMiIucHJvdG9zLldlYXBvbnMuV2Vh",
-            "cG9uLlBhcnRVcGdyYWRlYgZwcm90bzM="));
+            "cG9uLlBhcnRVcGdyYWRlImYKC09sZEdlYXJJbmZvEgoKAmlkGAEgASgJEhEK",
+            "CW1lcmdlVG9JZBgCIAEoCRINCgVuZXdJZBgDIAEoCRIMCgRzbG90GAQgASgF",
+            "EgwKBHRpZXIYBSABKAUSDQoFdGl0bGUYBiABKAkiPAoPR2Vhck1lcmdlQ29u",
+            "ZmlnEikKDG9sZEdlYXJJbmZvcxgBIAMoCzITLnByb3Rvcy5PbGRHZWFySW5m",
+            "byIWCgVTbG90cxINCgVzbG90cxgBIAMoBSIbCgdVcGdyYWRlEhAKCG1heExl",
+            "dmVsGAEgASgFIpYCCgRHZWFyEhIKCmJhc2VSYXRpbmcYASABKAUSMAoPYnV5",
+            "UmVxdWlyZW1lbnRzGAIgASgLMhcucHJvdG9zLkJ1eVJlcXVpcmVtZW50cxIa",
+            "CgRjb3N0GAMgASgLMgwucHJvdG9zLkNvc3QSEAoIZHJvcFJhdGUYBCABKAUS",
+            "CgoCaWQYBSABKAkSEQoJaXNTcGVjaWFsGAYgASgIEgwKBHNsb3QYByABKAUS",
+            "DAoEdGllchgIIAEoBRINCgV0aXRsZRgJIAEoCRIgCgd1cGdyYWRlGAogASgL",
+            "Mg8ucHJvdG9zLlVwZ3JhZGUSEwoLdXBncmFkZU11bHQYCyABKAISGQoRdXBn",
+            "cmFkZU11bHRpcGxpZXIYDCABKAIi5gEKC0dlYXJzQ29uZmlnEh4KFmNvc3RN",
+            "dWx0QnlVcGdyYWRlTGV2ZWwYASADKAMSJgoeZGVsaXZlcnlUaW1lTXVsdEJ5",
+            "VXBncmFkZUxldmVsGAIgAygDEhwKFGdsb2JhbEJhc2VSYXdVcGdyYWRlGAMg",
+            "AygDEhoKEmdsb2JhbERlbGl2ZXJ5TXVsdBgEIAMoAhIZChFnbG9iYWxMZXZl",
+            "bEZhY3RvchgFIAMoAhIaChJnbG9iYWxUaWVyQ29zdE11bHQYBiADKAISHgoW",
+            "cmVmZXJlbmNlVG9TbmlwZXJSYXRpbxgHIAEoAiLIAQoFR2VhcnMSMAoPZ2Vh",
+            "ck1lcmdlQ29uZmlnGAEgASgLMhcucHJvdG9zLkdlYXJNZXJnZUNvbmZpZxIn",
+            "CgVnZWFycxgCIAMoCzIYLnByb3Rvcy5HZWFycy5HZWFyc0VudHJ5EigKC2dl",
+            "YXJzQ29uZmlnGAMgASgLMhMucHJvdG9zLkdlYXJzQ29uZmlnGjoKCkdlYXJz",
+            "RW50cnkSCwoDa2V5GAEgASgJEhsKBXZhbHVlGAIgASgLMgwucHJvdG9zLkdl",
+            "YXI6AjgBYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Protos.FetchProtoDataRequest), global::Protos.FetchProtoDataRequest.Parser, new[]{ "Size" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Protos.FetchProtoDataResponse), global::Protos.FetchProtoDataResponse.Parser, new[]{ "Weapons", "AString" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Protos.FetchProtoDataResponse), global::Protos.FetchProtoDataResponse.Parser, new[]{ "AString", "Weapons", "Gears" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Protos.AStruct), global::Protos.AStruct.Parser, new[]{ "SomeInt32", "SomeInt64", "SomeFloat", "SomeDouble", "SomeBool", "SomeString", "AInt32", "AInt64", "AFloat", "ADouble", "ABool", "AString", "SomeBytes" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Protos.BuyRequirements), global::Protos.BuyRequirements.Parser, new[]{ "Premium", "PremiumPlus", "RequiredPatent" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Protos.Cost), global::Protos.Cost.Parser, new[]{ "Currency", "Gems", "Gold", "Tokens" }, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Protos.Cost.Types.Currency), global::Protos.Cost.Types.Currency.Parser, new[]{ "Name", "Cost" }, null, null, null)}),
             new pbr::GeneratedClrTypeInfo(typeof(global::Protos.Weapons), global::Protos.Weapons.Parser, new[]{ "Weapons_" }, null, null, new pbr::GeneratedClrTypeInfo[] { null, new pbr::GeneratedClrTypeInfo(typeof(global::Protos.Weapons.Types.Weapon), global::Protos.Weapons.Types.Weapon.Parser, new[]{ "BaseAttributes", "BuyRequirements", "Category", "Cost", "Id", "IsExclusive", "IsSpecial", "Tier", "Title", "UpgradesPerPart" }, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Protos.Weapons.Types.Weapon.Types.BaseAttributes), global::Protos.Weapons.Types.Weapon.Types.BaseAttributes.Parser, new[]{ "ClipSize", "Damage", "DamageMultiplier", "FireRate", "HeadshotDamageBonus", "Level", "MaxZoom", "Range", "ReloadTime", "ShotCount", "Silenced", "Spread", "Stability", "WorldOpsDamageMultiplier", "ZoomLevels" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Protos.Weapons.Types.Weapon.Types.BuyRequirements), global::Protos.Weapons.Types.Weapon.Types.BuyRequirements.Parser, new[]{ "Premium", "PremiumPlus", "RequiredPatent" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Protos.Weapons.Types.Weapon.Types.Cost), global::Protos.Weapons.Types.Weapon.Types.Cost.Parser, new[]{ "Currency", "Gems", "Gold", "Tokens" }, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Protos.Weapons.Types.Weapon.Types.Cost.Types.Currency), global::Protos.Weapons.Types.Weapon.Types.Cost.Types.Currency.Parser, new[]{ "Name", "Cost" }, null, null, null)}),
             new pbr::GeneratedClrTypeInfo(typeof(global::Protos.Weapons.Types.Weapon.Types.PartUpgrade), global::Protos.Weapons.Types.Weapon.Types.PartUpgrade.Parser, new[]{ "Cost", "DeliveryTime", "RequiredPatent", "SkipDeliveryCost", "UpgradeParams" }, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Protos.Weapons.Types.Weapon.Types.PartUpgrade.Types.UpgradeParams), global::Protos.Weapons.Types.Weapon.Types.PartUpgrade.Types.UpgradeParams.Parser, new[]{ "ClipSize", "Damage", "FireRate", "HeadshotDamageBonus", "MaxZoom", "Range", "ReloadTime", "ShotCount", "Silenced", "Spread", "Stability", "ZoomLevels" }, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Protos.Weapons.Types.Weapon.Types.PartUpgrade.Types.UpgradeParams.Types.ScaleAndIncrement), global::Protos.Weapons.Types.Weapon.Types.PartUpgrade.Types.UpgradeParams.Types.ScaleAndIncrement.Parser, new[]{ "Increment", "Scale" }, null, null, null)})}),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Protos.Weapons.Types.Weapon.Types.UpgradesPerPart), global::Protos.Weapons.Types.Weapon.Types.UpgradesPerPart.Parser, new[]{ "Ammo", "Body", "Clip", "Muzzle", "Scope", "Silencer" }, null, null, null)})})
+            new pbr::GeneratedClrTypeInfo(typeof(global::Protos.Weapons.Types.Weapon.Types.UpgradesPerPart), global::Protos.Weapons.Types.Weapon.Types.UpgradesPerPart.Parser, new[]{ "Ammo", "Body", "Clip", "Muzzle", "Scope", "Silencer" }, null, null, null)})}),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Protos.OldGearInfo), global::Protos.OldGearInfo.Parser, new[]{ "Id", "MergeToId", "NewId", "Slot", "Tier", "Title" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Protos.GearMergeConfig), global::Protos.GearMergeConfig.Parser, new[]{ "OldGearInfos" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Protos.Slots), global::Protos.Slots.Parser, new[]{ "Slots_" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Protos.Upgrade), global::Protos.Upgrade.Parser, new[]{ "MaxLevel" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Protos.Gear), global::Protos.Gear.Parser, new[]{ "BaseRating", "BuyRequirements", "Cost", "DropRate", "Id", "IsSpecial", "Slot", "Tier", "Title", "Upgrade", "UpgradeMult", "UpgradeMultiplier" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Protos.GearsConfig), global::Protos.GearsConfig.Parser, new[]{ "CostMultByUpgradeLevel", "DeliveryTimeMultByUpgradeLevel", "GlobalBaseRawUpgrade", "GlobalDeliveryMult", "GlobalLevelFactor", "GlobalTierCostMult", "ReferenceToSniperRatio" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Protos.Gears), global::Protos.Gears.Parser, new[]{ "GearMergeConfig", "Gears_", "GearsConfig" }, null, null, new pbr::GeneratedClrTypeInfo[] { null, })
           }));
     }
     #endregion
@@ -263,8 +290,9 @@ namespace Protos {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public FetchProtoDataResponse(FetchProtoDataResponse other) : this() {
-      weapons_ = other.weapons_ != null ? other.weapons_.Clone() : null;
       aString_ = other.aString_;
+      weapons_ = other.weapons_ != null ? other.weapons_.Clone() : null;
+      gears_ = other.gears_ != null ? other.gears_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -273,8 +301,19 @@ namespace Protos {
       return new FetchProtoDataResponse(this);
     }
 
+    /// <summary>Field number for the "a_string" field.</summary>
+    public const int AStringFieldNumber = 1;
+    private string aString_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string AString {
+      get { return aString_; }
+      set {
+        aString_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     /// <summary>Field number for the "weapons" field.</summary>
-    public const int WeaponsFieldNumber = 1;
+    public const int WeaponsFieldNumber = 2;
     private global::Protos.Weapons weapons_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Protos.Weapons Weapons {
@@ -284,14 +323,14 @@ namespace Protos {
       }
     }
 
-    /// <summary>Field number for the "a_string" field.</summary>
-    public const int AStringFieldNumber = 2;
-    private string aString_ = "";
+    /// <summary>Field number for the "gears" field.</summary>
+    public const int GearsFieldNumber = 3;
+    private global::Protos.Gears gears_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string AString {
-      get { return aString_; }
+    public global::Protos.Gears Gears {
+      get { return gears_; }
       set {
-        aString_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        gears_ = value;
       }
     }
 
@@ -308,16 +347,18 @@ namespace Protos {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (!object.Equals(Weapons, other.Weapons)) return false;
       if (AString != other.AString) return false;
+      if (!object.Equals(Weapons, other.Weapons)) return false;
+      if (!object.Equals(Gears, other.Gears)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (weapons_ != null) hash ^= Weapons.GetHashCode();
       if (AString.Length != 0) hash ^= AString.GetHashCode();
+      if (weapons_ != null) hash ^= Weapons.GetHashCode();
+      if (gears_ != null) hash ^= Gears.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -331,13 +372,17 @@ namespace Protos {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (weapons_ != null) {
+      if (AString.Length != 0) {
         output.WriteRawTag(10);
+        output.WriteString(AString);
+      }
+      if (weapons_ != null) {
+        output.WriteRawTag(18);
         output.WriteMessage(Weapons);
       }
-      if (AString.Length != 0) {
-        output.WriteRawTag(18);
-        output.WriteString(AString);
+      if (gears_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(Gears);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -347,11 +392,14 @@ namespace Protos {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
+      if (AString.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(AString);
+      }
       if (weapons_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Weapons);
       }
-      if (AString.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(AString);
+      if (gears_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Gears);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -364,14 +412,20 @@ namespace Protos {
       if (other == null) {
         return;
       }
+      if (other.AString.Length != 0) {
+        AString = other.AString;
+      }
       if (other.weapons_ != null) {
         if (weapons_ == null) {
           Weapons = new global::Protos.Weapons();
         }
         Weapons.MergeFrom(other.Weapons);
       }
-      if (other.AString.Length != 0) {
-        AString = other.AString;
+      if (other.gears_ != null) {
+        if (gears_ == null) {
+          Gears = new global::Protos.Gears();
+        }
+        Gears.MergeFrom(other.Gears);
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -385,14 +439,21 @@ namespace Protos {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 10: {
+            AString = input.ReadString();
+            break;
+          }
+          case 18: {
             if (weapons_ == null) {
               Weapons = new global::Protos.Weapons();
             }
             input.ReadMessage(Weapons);
             break;
           }
-          case 18: {
-            AString = input.ReadString();
+          case 26: {
+            if (gears_ == null) {
+              Gears = new global::Protos.Gears();
+            }
+            input.ReadMessage(Gears);
             break;
           }
         }
@@ -823,6 +884,574 @@ namespace Protos {
 
   }
 
+  public sealed partial class BuyRequirements : pb::IMessage<BuyRequirements> {
+    private static readonly pb::MessageParser<BuyRequirements> _parser = new pb::MessageParser<BuyRequirements>(() => new BuyRequirements());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<BuyRequirements> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Protos.BenchmarkReflection.Descriptor.MessageTypes[3]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public BuyRequirements() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public BuyRequirements(BuyRequirements other) : this() {
+      premium_ = other.premium_;
+      premiumPlus_ = other.premiumPlus_;
+      requiredPatent_ = other.requiredPatent_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public BuyRequirements Clone() {
+      return new BuyRequirements(this);
+    }
+
+    /// <summary>Field number for the "premium" field.</summary>
+    public const int PremiumFieldNumber = 1;
+    private bool premium_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Premium {
+      get { return premium_; }
+      set {
+        premium_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "premiumPlus" field.</summary>
+    public const int PremiumPlusFieldNumber = 2;
+    private bool premiumPlus_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool PremiumPlus {
+      get { return premiumPlus_; }
+      set {
+        premiumPlus_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "requiredPatent" field.</summary>
+    public const int RequiredPatentFieldNumber = 3;
+    private int requiredPatent_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int RequiredPatent {
+      get { return requiredPatent_; }
+      set {
+        requiredPatent_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as BuyRequirements);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(BuyRequirements other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Premium != other.Premium) return false;
+      if (PremiumPlus != other.PremiumPlus) return false;
+      if (RequiredPatent != other.RequiredPatent) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Premium != false) hash ^= Premium.GetHashCode();
+      if (PremiumPlus != false) hash ^= PremiumPlus.GetHashCode();
+      if (RequiredPatent != 0) hash ^= RequiredPatent.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (Premium != false) {
+        output.WriteRawTag(8);
+        output.WriteBool(Premium);
+      }
+      if (PremiumPlus != false) {
+        output.WriteRawTag(16);
+        output.WriteBool(PremiumPlus);
+      }
+      if (RequiredPatent != 0) {
+        output.WriteRawTag(24);
+        output.WriteInt32(RequiredPatent);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (Premium != false) {
+        size += 1 + 1;
+      }
+      if (PremiumPlus != false) {
+        size += 1 + 1;
+      }
+      if (RequiredPatent != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(RequiredPatent);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(BuyRequirements other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Premium != false) {
+        Premium = other.Premium;
+      }
+      if (other.PremiumPlus != false) {
+        PremiumPlus = other.PremiumPlus;
+      }
+      if (other.RequiredPatent != 0) {
+        RequiredPatent = other.RequiredPatent;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            Premium = input.ReadBool();
+            break;
+          }
+          case 16: {
+            PremiumPlus = input.ReadBool();
+            break;
+          }
+          case 24: {
+            RequiredPatent = input.ReadInt32();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class Cost : pb::IMessage<Cost> {
+    private static readonly pb::MessageParser<Cost> _parser = new pb::MessageParser<Cost>(() => new Cost());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<Cost> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Protos.BenchmarkReflection.Descriptor.MessageTypes[4]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public Cost() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public Cost(Cost other) : this() {
+      currency_ = other.currency_ != null ? other.currency_.Clone() : null;
+      gems_ = other.gems_;
+      gold_ = other.gold_;
+      tokens_ = other.tokens_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public Cost Clone() {
+      return new Cost(this);
+    }
+
+    /// <summary>Field number for the "currency" field.</summary>
+    public const int CurrencyFieldNumber = 1;
+    private global::Protos.Cost.Types.Currency currency_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Protos.Cost.Types.Currency Currency {
+      get { return currency_; }
+      set {
+        currency_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "gems" field.</summary>
+    public const int GemsFieldNumber = 2;
+    private long gems_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public long Gems {
+      get { return gems_; }
+      set {
+        gems_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "gold" field.</summary>
+    public const int GoldFieldNumber = 3;
+    private long gold_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public long Gold {
+      get { return gold_; }
+      set {
+        gold_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "tokens" field.</summary>
+    public const int TokensFieldNumber = 4;
+    private long tokens_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public long Tokens {
+      get { return tokens_; }
+      set {
+        tokens_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as Cost);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(Cost other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(Currency, other.Currency)) return false;
+      if (Gems != other.Gems) return false;
+      if (Gold != other.Gold) return false;
+      if (Tokens != other.Tokens) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (currency_ != null) hash ^= Currency.GetHashCode();
+      if (Gems != 0L) hash ^= Gems.GetHashCode();
+      if (Gold != 0L) hash ^= Gold.GetHashCode();
+      if (Tokens != 0L) hash ^= Tokens.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (currency_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Currency);
+      }
+      if (Gems != 0L) {
+        output.WriteRawTag(16);
+        output.WriteInt64(Gems);
+      }
+      if (Gold != 0L) {
+        output.WriteRawTag(24);
+        output.WriteInt64(Gold);
+      }
+      if (Tokens != 0L) {
+        output.WriteRawTag(32);
+        output.WriteInt64(Tokens);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (currency_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Currency);
+      }
+      if (Gems != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(Gems);
+      }
+      if (Gold != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(Gold);
+      }
+      if (Tokens != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(Tokens);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(Cost other) {
+      if (other == null) {
+        return;
+      }
+      if (other.currency_ != null) {
+        if (currency_ == null) {
+          Currency = new global::Protos.Cost.Types.Currency();
+        }
+        Currency.MergeFrom(other.Currency);
+      }
+      if (other.Gems != 0L) {
+        Gems = other.Gems;
+      }
+      if (other.Gold != 0L) {
+        Gold = other.Gold;
+      }
+      if (other.Tokens != 0L) {
+        Tokens = other.Tokens;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            if (currency_ == null) {
+              Currency = new global::Protos.Cost.Types.Currency();
+            }
+            input.ReadMessage(Currency);
+            break;
+          }
+          case 16: {
+            Gems = input.ReadInt64();
+            break;
+          }
+          case 24: {
+            Gold = input.ReadInt64();
+            break;
+          }
+          case 32: {
+            Tokens = input.ReadInt64();
+            break;
+          }
+        }
+      }
+    }
+
+    #region Nested types
+    /// <summary>Container for nested types declared in the Cost message type.</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static partial class Types {
+      public sealed partial class Currency : pb::IMessage<Currency> {
+        private static readonly pb::MessageParser<Currency> _parser = new pb::MessageParser<Currency>(() => new Currency());
+        private pb::UnknownFieldSet _unknownFields;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public static pb::MessageParser<Currency> Parser { get { return _parser; } }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public static pbr::MessageDescriptor Descriptor {
+          get { return global::Protos.Cost.Descriptor.NestedTypes[0]; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        pbr::MessageDescriptor pb::IMessage.Descriptor {
+          get { return Descriptor; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public Currency() {
+          OnConstruction();
+        }
+
+        partial void OnConstruction();
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public Currency(Currency other) : this() {
+          name_ = other.name_;
+          cost_ = other.cost_;
+          _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public Currency Clone() {
+          return new Currency(this);
+        }
+
+        /// <summary>Field number for the "name" field.</summary>
+        public const int NameFieldNumber = 1;
+        private string name_ = "";
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public string Name {
+          get { return name_; }
+          set {
+            name_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+          }
+        }
+
+        /// <summary>Field number for the "cost" field.</summary>
+        public const int CostFieldNumber = 2;
+        private int cost_;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public int Cost {
+          get { return cost_; }
+          set {
+            cost_ = value;
+          }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override bool Equals(object other) {
+          return Equals(other as Currency);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public bool Equals(Currency other) {
+          if (ReferenceEquals(other, null)) {
+            return false;
+          }
+          if (ReferenceEquals(other, this)) {
+            return true;
+          }
+          if (Name != other.Name) return false;
+          if (Cost != other.Cost) return false;
+          return Equals(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override int GetHashCode() {
+          int hash = 1;
+          if (Name.Length != 0) hash ^= Name.GetHashCode();
+          if (Cost != 0) hash ^= Cost.GetHashCode();
+          if (_unknownFields != null) {
+            hash ^= _unknownFields.GetHashCode();
+          }
+          return hash;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override string ToString() {
+          return pb::JsonFormatter.ToDiagnosticString(this);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void WriteTo(pb::CodedOutputStream output) {
+          if (Name.Length != 0) {
+            output.WriteRawTag(10);
+            output.WriteString(Name);
+          }
+          if (Cost != 0) {
+            output.WriteRawTag(16);
+            output.WriteInt32(Cost);
+          }
+          if (_unknownFields != null) {
+            _unknownFields.WriteTo(output);
+          }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public int CalculateSize() {
+          int size = 0;
+          if (Name.Length != 0) {
+            size += 1 + pb::CodedOutputStream.ComputeStringSize(Name);
+          }
+          if (Cost != 0) {
+            size += 1 + pb::CodedOutputStream.ComputeInt32Size(Cost);
+          }
+          if (_unknownFields != null) {
+            size += _unknownFields.CalculateSize();
+          }
+          return size;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void MergeFrom(Currency other) {
+          if (other == null) {
+            return;
+          }
+          if (other.Name.Length != 0) {
+            Name = other.Name;
+          }
+          if (other.Cost != 0) {
+            Cost = other.Cost;
+          }
+          _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void MergeFrom(pb::CodedInputStream input) {
+          uint tag;
+          while ((tag = input.ReadTag()) != 0) {
+            switch(tag) {
+              default:
+                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+                break;
+              case 10: {
+                Name = input.ReadString();
+                break;
+              }
+              case 16: {
+                Cost = input.ReadInt32();
+                break;
+              }
+            }
+          }
+        }
+
+      }
+
+    }
+    #endregion
+
+  }
+
   public sealed partial class Weapons : pb::IMessage<Weapons> {
     private static readonly pb::MessageParser<Weapons> _parser = new pb::MessageParser<Weapons>(() => new Weapons());
     private pb::UnknownFieldSet _unknownFields;
@@ -831,7 +1460,7 @@ namespace Protos {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Protos.BenchmarkReflection.Descriptor.MessageTypes[3]; }
+      get { return global::Protos.BenchmarkReflection.Descriptor.MessageTypes[5]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1002,9 +1631,9 @@ namespace Protos {
 
         /// <summary>Field number for the "buyRequirements" field.</summary>
         public const int BuyRequirementsFieldNumber = 2;
-        private global::Protos.Weapons.Types.Weapon.Types.BuyRequirements buyRequirements_;
+        private global::Protos.BuyRequirements buyRequirements_;
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public global::Protos.Weapons.Types.Weapon.Types.BuyRequirements BuyRequirements {
+        public global::Protos.BuyRequirements BuyRequirements {
           get { return buyRequirements_; }
           set {
             buyRequirements_ = value;
@@ -1024,9 +1653,9 @@ namespace Protos {
 
         /// <summary>Field number for the "cost" field.</summary>
         public const int CostFieldNumber = 4;
-        private global::Protos.Weapons.Types.Weapon.Types.Cost cost_;
+        private global::Protos.Cost cost_;
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public global::Protos.Weapons.Types.Weapon.Types.Cost Cost {
+        public global::Protos.Cost Cost {
           get { return cost_; }
           set {
             cost_ = value;
@@ -1248,7 +1877,7 @@ namespace Protos {
           }
           if (other.buyRequirements_ != null) {
             if (buyRequirements_ == null) {
-              BuyRequirements = new global::Protos.Weapons.Types.Weapon.Types.BuyRequirements();
+              BuyRequirements = new global::Protos.BuyRequirements();
             }
             BuyRequirements.MergeFrom(other.BuyRequirements);
           }
@@ -1257,7 +1886,7 @@ namespace Protos {
           }
           if (other.cost_ != null) {
             if (cost_ == null) {
-              Cost = new global::Protos.Weapons.Types.Weapon.Types.Cost();
+              Cost = new global::Protos.Cost();
             }
             Cost.MergeFrom(other.Cost);
           }
@@ -1302,7 +1931,7 @@ namespace Protos {
               }
               case 18: {
                 if (buyRequirements_ == null) {
-                  BuyRequirements = new global::Protos.Weapons.Types.Weapon.Types.BuyRequirements();
+                  BuyRequirements = new global::Protos.BuyRequirements();
                 }
                 input.ReadMessage(BuyRequirements);
                 break;
@@ -1313,7 +1942,7 @@ namespace Protos {
               }
               case 34: {
                 if (cost_ == null) {
-                  Cost = new global::Protos.Weapons.Types.Weapon.Types.Cost();
+                  Cost = new global::Protos.Cost();
                 }
                 input.ReadMessage(Cost);
                 break;
@@ -1874,574 +2503,6 @@ namespace Protos {
 
           }
 
-          public sealed partial class BuyRequirements : pb::IMessage<BuyRequirements> {
-            private static readonly pb::MessageParser<BuyRequirements> _parser = new pb::MessageParser<BuyRequirements>(() => new BuyRequirements());
-            private pb::UnknownFieldSet _unknownFields;
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-            public static pb::MessageParser<BuyRequirements> Parser { get { return _parser; } }
-
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-            public static pbr::MessageDescriptor Descriptor {
-              get { return global::Protos.Weapons.Types.Weapon.Descriptor.NestedTypes[1]; }
-            }
-
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-            pbr::MessageDescriptor pb::IMessage.Descriptor {
-              get { return Descriptor; }
-            }
-
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-            public BuyRequirements() {
-              OnConstruction();
-            }
-
-            partial void OnConstruction();
-
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-            public BuyRequirements(BuyRequirements other) : this() {
-              premium_ = other.premium_;
-              premiumPlus_ = other.premiumPlus_;
-              requiredPatent_ = other.requiredPatent_;
-              _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-            }
-
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-            public BuyRequirements Clone() {
-              return new BuyRequirements(this);
-            }
-
-            /// <summary>Field number for the "premium" field.</summary>
-            public const int PremiumFieldNumber = 1;
-            private bool premium_;
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-            public bool Premium {
-              get { return premium_; }
-              set {
-                premium_ = value;
-              }
-            }
-
-            /// <summary>Field number for the "premiumPlus" field.</summary>
-            public const int PremiumPlusFieldNumber = 2;
-            private bool premiumPlus_;
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-            public bool PremiumPlus {
-              get { return premiumPlus_; }
-              set {
-                premiumPlus_ = value;
-              }
-            }
-
-            /// <summary>Field number for the "requiredPatent" field.</summary>
-            public const int RequiredPatentFieldNumber = 3;
-            private int requiredPatent_;
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-            public int RequiredPatent {
-              get { return requiredPatent_; }
-              set {
-                requiredPatent_ = value;
-              }
-            }
-
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-            public override bool Equals(object other) {
-              return Equals(other as BuyRequirements);
-            }
-
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-            public bool Equals(BuyRequirements other) {
-              if (ReferenceEquals(other, null)) {
-                return false;
-              }
-              if (ReferenceEquals(other, this)) {
-                return true;
-              }
-              if (Premium != other.Premium) return false;
-              if (PremiumPlus != other.PremiumPlus) return false;
-              if (RequiredPatent != other.RequiredPatent) return false;
-              return Equals(_unknownFields, other._unknownFields);
-            }
-
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-            public override int GetHashCode() {
-              int hash = 1;
-              if (Premium != false) hash ^= Premium.GetHashCode();
-              if (PremiumPlus != false) hash ^= PremiumPlus.GetHashCode();
-              if (RequiredPatent != 0) hash ^= RequiredPatent.GetHashCode();
-              if (_unknownFields != null) {
-                hash ^= _unknownFields.GetHashCode();
-              }
-              return hash;
-            }
-
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-            public override string ToString() {
-              return pb::JsonFormatter.ToDiagnosticString(this);
-            }
-
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-            public void WriteTo(pb::CodedOutputStream output) {
-              if (Premium != false) {
-                output.WriteRawTag(8);
-                output.WriteBool(Premium);
-              }
-              if (PremiumPlus != false) {
-                output.WriteRawTag(16);
-                output.WriteBool(PremiumPlus);
-              }
-              if (RequiredPatent != 0) {
-                output.WriteRawTag(24);
-                output.WriteInt32(RequiredPatent);
-              }
-              if (_unknownFields != null) {
-                _unknownFields.WriteTo(output);
-              }
-            }
-
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-            public int CalculateSize() {
-              int size = 0;
-              if (Premium != false) {
-                size += 1 + 1;
-              }
-              if (PremiumPlus != false) {
-                size += 1 + 1;
-              }
-              if (RequiredPatent != 0) {
-                size += 1 + pb::CodedOutputStream.ComputeInt32Size(RequiredPatent);
-              }
-              if (_unknownFields != null) {
-                size += _unknownFields.CalculateSize();
-              }
-              return size;
-            }
-
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-            public void MergeFrom(BuyRequirements other) {
-              if (other == null) {
-                return;
-              }
-              if (other.Premium != false) {
-                Premium = other.Premium;
-              }
-              if (other.PremiumPlus != false) {
-                PremiumPlus = other.PremiumPlus;
-              }
-              if (other.RequiredPatent != 0) {
-                RequiredPatent = other.RequiredPatent;
-              }
-              _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-            }
-
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-            public void MergeFrom(pb::CodedInputStream input) {
-              uint tag;
-              while ((tag = input.ReadTag()) != 0) {
-                switch(tag) {
-                  default:
-                    _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-                    break;
-                  case 8: {
-                    Premium = input.ReadBool();
-                    break;
-                  }
-                  case 16: {
-                    PremiumPlus = input.ReadBool();
-                    break;
-                  }
-                  case 24: {
-                    RequiredPatent = input.ReadInt32();
-                    break;
-                  }
-                }
-              }
-            }
-
-          }
-
-          public sealed partial class Cost : pb::IMessage<Cost> {
-            private static readonly pb::MessageParser<Cost> _parser = new pb::MessageParser<Cost>(() => new Cost());
-            private pb::UnknownFieldSet _unknownFields;
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-            public static pb::MessageParser<Cost> Parser { get { return _parser; } }
-
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-            public static pbr::MessageDescriptor Descriptor {
-              get { return global::Protos.Weapons.Types.Weapon.Descriptor.NestedTypes[2]; }
-            }
-
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-            pbr::MessageDescriptor pb::IMessage.Descriptor {
-              get { return Descriptor; }
-            }
-
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-            public Cost() {
-              OnConstruction();
-            }
-
-            partial void OnConstruction();
-
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-            public Cost(Cost other) : this() {
-              currency_ = other.currency_ != null ? other.currency_.Clone() : null;
-              gems_ = other.gems_;
-              gold_ = other.gold_;
-              tokens_ = other.tokens_;
-              _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-            }
-
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-            public Cost Clone() {
-              return new Cost(this);
-            }
-
-            /// <summary>Field number for the "currency" field.</summary>
-            public const int CurrencyFieldNumber = 1;
-            private global::Protos.Weapons.Types.Weapon.Types.Cost.Types.Currency currency_;
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-            public global::Protos.Weapons.Types.Weapon.Types.Cost.Types.Currency Currency {
-              get { return currency_; }
-              set {
-                currency_ = value;
-              }
-            }
-
-            /// <summary>Field number for the "gems" field.</summary>
-            public const int GemsFieldNumber = 2;
-            private long gems_;
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-            public long Gems {
-              get { return gems_; }
-              set {
-                gems_ = value;
-              }
-            }
-
-            /// <summary>Field number for the "gold" field.</summary>
-            public const int GoldFieldNumber = 3;
-            private long gold_;
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-            public long Gold {
-              get { return gold_; }
-              set {
-                gold_ = value;
-              }
-            }
-
-            /// <summary>Field number for the "tokens" field.</summary>
-            public const int TokensFieldNumber = 4;
-            private long tokens_;
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-            public long Tokens {
-              get { return tokens_; }
-              set {
-                tokens_ = value;
-              }
-            }
-
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-            public override bool Equals(object other) {
-              return Equals(other as Cost);
-            }
-
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-            public bool Equals(Cost other) {
-              if (ReferenceEquals(other, null)) {
-                return false;
-              }
-              if (ReferenceEquals(other, this)) {
-                return true;
-              }
-              if (!object.Equals(Currency, other.Currency)) return false;
-              if (Gems != other.Gems) return false;
-              if (Gold != other.Gold) return false;
-              if (Tokens != other.Tokens) return false;
-              return Equals(_unknownFields, other._unknownFields);
-            }
-
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-            public override int GetHashCode() {
-              int hash = 1;
-              if (currency_ != null) hash ^= Currency.GetHashCode();
-              if (Gems != 0L) hash ^= Gems.GetHashCode();
-              if (Gold != 0L) hash ^= Gold.GetHashCode();
-              if (Tokens != 0L) hash ^= Tokens.GetHashCode();
-              if (_unknownFields != null) {
-                hash ^= _unknownFields.GetHashCode();
-              }
-              return hash;
-            }
-
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-            public override string ToString() {
-              return pb::JsonFormatter.ToDiagnosticString(this);
-            }
-
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-            public void WriteTo(pb::CodedOutputStream output) {
-              if (currency_ != null) {
-                output.WriteRawTag(10);
-                output.WriteMessage(Currency);
-              }
-              if (Gems != 0L) {
-                output.WriteRawTag(16);
-                output.WriteInt64(Gems);
-              }
-              if (Gold != 0L) {
-                output.WriteRawTag(24);
-                output.WriteInt64(Gold);
-              }
-              if (Tokens != 0L) {
-                output.WriteRawTag(32);
-                output.WriteInt64(Tokens);
-              }
-              if (_unknownFields != null) {
-                _unknownFields.WriteTo(output);
-              }
-            }
-
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-            public int CalculateSize() {
-              int size = 0;
-              if (currency_ != null) {
-                size += 1 + pb::CodedOutputStream.ComputeMessageSize(Currency);
-              }
-              if (Gems != 0L) {
-                size += 1 + pb::CodedOutputStream.ComputeInt64Size(Gems);
-              }
-              if (Gold != 0L) {
-                size += 1 + pb::CodedOutputStream.ComputeInt64Size(Gold);
-              }
-              if (Tokens != 0L) {
-                size += 1 + pb::CodedOutputStream.ComputeInt64Size(Tokens);
-              }
-              if (_unknownFields != null) {
-                size += _unknownFields.CalculateSize();
-              }
-              return size;
-            }
-
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-            public void MergeFrom(Cost other) {
-              if (other == null) {
-                return;
-              }
-              if (other.currency_ != null) {
-                if (currency_ == null) {
-                  Currency = new global::Protos.Weapons.Types.Weapon.Types.Cost.Types.Currency();
-                }
-                Currency.MergeFrom(other.Currency);
-              }
-              if (other.Gems != 0L) {
-                Gems = other.Gems;
-              }
-              if (other.Gold != 0L) {
-                Gold = other.Gold;
-              }
-              if (other.Tokens != 0L) {
-                Tokens = other.Tokens;
-              }
-              _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-            }
-
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-            public void MergeFrom(pb::CodedInputStream input) {
-              uint tag;
-              while ((tag = input.ReadTag()) != 0) {
-                switch(tag) {
-                  default:
-                    _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-                    break;
-                  case 10: {
-                    if (currency_ == null) {
-                      Currency = new global::Protos.Weapons.Types.Weapon.Types.Cost.Types.Currency();
-                    }
-                    input.ReadMessage(Currency);
-                    break;
-                  }
-                  case 16: {
-                    Gems = input.ReadInt64();
-                    break;
-                  }
-                  case 24: {
-                    Gold = input.ReadInt64();
-                    break;
-                  }
-                  case 32: {
-                    Tokens = input.ReadInt64();
-                    break;
-                  }
-                }
-              }
-            }
-
-            #region Nested types
-            /// <summary>Container for nested types declared in the Cost message type.</summary>
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-            public static partial class Types {
-              public sealed partial class Currency : pb::IMessage<Currency> {
-                private static readonly pb::MessageParser<Currency> _parser = new pb::MessageParser<Currency>(() => new Currency());
-                private pb::UnknownFieldSet _unknownFields;
-                [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-                public static pb::MessageParser<Currency> Parser { get { return _parser; } }
-
-                [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-                public static pbr::MessageDescriptor Descriptor {
-                  get { return global::Protos.Weapons.Types.Weapon.Types.Cost.Descriptor.NestedTypes[0]; }
-                }
-
-                [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-                pbr::MessageDescriptor pb::IMessage.Descriptor {
-                  get { return Descriptor; }
-                }
-
-                [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-                public Currency() {
-                  OnConstruction();
-                }
-
-                partial void OnConstruction();
-
-                [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-                public Currency(Currency other) : this() {
-                  name_ = other.name_;
-                  cost_ = other.cost_;
-                  _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-                }
-
-                [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-                public Currency Clone() {
-                  return new Currency(this);
-                }
-
-                /// <summary>Field number for the "name" field.</summary>
-                public const int NameFieldNumber = 1;
-                private string name_ = "";
-                [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-                public string Name {
-                  get { return name_; }
-                  set {
-                    name_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-                  }
-                }
-
-                /// <summary>Field number for the "cost" field.</summary>
-                public const int CostFieldNumber = 2;
-                private int cost_;
-                [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-                public int Cost {
-                  get { return cost_; }
-                  set {
-                    cost_ = value;
-                  }
-                }
-
-                [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-                public override bool Equals(object other) {
-                  return Equals(other as Currency);
-                }
-
-                [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-                public bool Equals(Currency other) {
-                  if (ReferenceEquals(other, null)) {
-                    return false;
-                  }
-                  if (ReferenceEquals(other, this)) {
-                    return true;
-                  }
-                  if (Name != other.Name) return false;
-                  if (Cost != other.Cost) return false;
-                  return Equals(_unknownFields, other._unknownFields);
-                }
-
-                [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-                public override int GetHashCode() {
-                  int hash = 1;
-                  if (Name.Length != 0) hash ^= Name.GetHashCode();
-                  if (Cost != 0) hash ^= Cost.GetHashCode();
-                  if (_unknownFields != null) {
-                    hash ^= _unknownFields.GetHashCode();
-                  }
-                  return hash;
-                }
-
-                [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-                public override string ToString() {
-                  return pb::JsonFormatter.ToDiagnosticString(this);
-                }
-
-                [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-                public void WriteTo(pb::CodedOutputStream output) {
-                  if (Name.Length != 0) {
-                    output.WriteRawTag(10);
-                    output.WriteString(Name);
-                  }
-                  if (Cost != 0) {
-                    output.WriteRawTag(16);
-                    output.WriteInt32(Cost);
-                  }
-                  if (_unknownFields != null) {
-                    _unknownFields.WriteTo(output);
-                  }
-                }
-
-                [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-                public int CalculateSize() {
-                  int size = 0;
-                  if (Name.Length != 0) {
-                    size += 1 + pb::CodedOutputStream.ComputeStringSize(Name);
-                  }
-                  if (Cost != 0) {
-                    size += 1 + pb::CodedOutputStream.ComputeInt32Size(Cost);
-                  }
-                  if (_unknownFields != null) {
-                    size += _unknownFields.CalculateSize();
-                  }
-                  return size;
-                }
-
-                [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-                public void MergeFrom(Currency other) {
-                  if (other == null) {
-                    return;
-                  }
-                  if (other.Name.Length != 0) {
-                    Name = other.Name;
-                  }
-                  if (other.Cost != 0) {
-                    Cost = other.Cost;
-                  }
-                  _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-                }
-
-                [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-                public void MergeFrom(pb::CodedInputStream input) {
-                  uint tag;
-                  while ((tag = input.ReadTag()) != 0) {
-                    switch(tag) {
-                      default:
-                        _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-                        break;
-                      case 10: {
-                        Name = input.ReadString();
-                        break;
-                      }
-                      case 16: {
-                        Cost = input.ReadInt32();
-                        break;
-                      }
-                    }
-                  }
-                }
-
-              }
-
-            }
-            #endregion
-
-          }
-
           public sealed partial class PartUpgrade : pb::IMessage<PartUpgrade> {
             private static readonly pb::MessageParser<PartUpgrade> _parser = new pb::MessageParser<PartUpgrade>(() => new PartUpgrade());
             private pb::UnknownFieldSet _unknownFields;
@@ -2450,7 +2511,7 @@ namespace Protos {
 
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
             public static pbr::MessageDescriptor Descriptor {
-              get { return global::Protos.Weapons.Types.Weapon.Descriptor.NestedTypes[3]; }
+              get { return global::Protos.Weapons.Types.Weapon.Descriptor.NestedTypes[1]; }
             }
 
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2482,9 +2543,9 @@ namespace Protos {
 
             /// <summary>Field number for the "cost" field.</summary>
             public const int CostFieldNumber = 1;
-            private global::Protos.Weapons.Types.Weapon.Types.Cost cost_;
+            private global::Protos.Cost cost_;
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-            public global::Protos.Weapons.Types.Weapon.Types.Cost Cost {
+            public global::Protos.Cost Cost {
               get { return cost_; }
               set {
                 cost_ = value;
@@ -2515,9 +2576,9 @@ namespace Protos {
 
             /// <summary>Field number for the "skipDeliveryCost" field.</summary>
             public const int SkipDeliveryCostFieldNumber = 4;
-            private global::Protos.Weapons.Types.Weapon.Types.Cost skipDeliveryCost_;
+            private global::Protos.Cost skipDeliveryCost_;
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-            public global::Protos.Weapons.Types.Weapon.Types.Cost SkipDeliveryCost {
+            public global::Protos.Cost SkipDeliveryCost {
               get { return skipDeliveryCost_; }
               set {
                 skipDeliveryCost_ = value;
@@ -2633,7 +2694,7 @@ namespace Protos {
               }
               if (other.cost_ != null) {
                 if (cost_ == null) {
-                  Cost = new global::Protos.Weapons.Types.Weapon.Types.Cost();
+                  Cost = new global::Protos.Cost();
                 }
                 Cost.MergeFrom(other.Cost);
               }
@@ -2645,7 +2706,7 @@ namespace Protos {
               }
               if (other.skipDeliveryCost_ != null) {
                 if (skipDeliveryCost_ == null) {
-                  SkipDeliveryCost = new global::Protos.Weapons.Types.Weapon.Types.Cost();
+                  SkipDeliveryCost = new global::Protos.Cost();
                 }
                 SkipDeliveryCost.MergeFrom(other.SkipDeliveryCost);
               }
@@ -2668,7 +2729,7 @@ namespace Protos {
                     break;
                   case 10: {
                     if (cost_ == null) {
-                      Cost = new global::Protos.Weapons.Types.Weapon.Types.Cost();
+                      Cost = new global::Protos.Cost();
                     }
                     input.ReadMessage(Cost);
                     break;
@@ -2683,7 +2744,7 @@ namespace Protos {
                   }
                   case 34: {
                     if (skipDeliveryCost_ == null) {
-                      SkipDeliveryCost = new global::Protos.Weapons.Types.Weapon.Types.Cost();
+                      SkipDeliveryCost = new global::Protos.Cost();
                     }
                     input.ReadMessage(SkipDeliveryCost);
                     break;
@@ -3383,7 +3444,7 @@ namespace Protos {
 
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
             public static pbr::MessageDescriptor Descriptor {
-              get { return global::Protos.Weapons.Types.Weapon.Descriptor.NestedTypes[4]; }
+              get { return global::Protos.Weapons.Types.Weapon.Descriptor.NestedTypes[2]; }
             }
 
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3603,6 +3664,1549 @@ namespace Protos {
 
     }
     #endregion
+
+  }
+
+  public sealed partial class OldGearInfo : pb::IMessage<OldGearInfo> {
+    private static readonly pb::MessageParser<OldGearInfo> _parser = new pb::MessageParser<OldGearInfo>(() => new OldGearInfo());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<OldGearInfo> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Protos.BenchmarkReflection.Descriptor.MessageTypes[6]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public OldGearInfo() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public OldGearInfo(OldGearInfo other) : this() {
+      id_ = other.id_;
+      mergeToId_ = other.mergeToId_;
+      newId_ = other.newId_;
+      slot_ = other.slot_;
+      tier_ = other.tier_;
+      title_ = other.title_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public OldGearInfo Clone() {
+      return new OldGearInfo(this);
+    }
+
+    /// <summary>Field number for the "id" field.</summary>
+    public const int IdFieldNumber = 1;
+    private string id_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Id {
+      get { return id_; }
+      set {
+        id_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "mergeToId" field.</summary>
+    public const int MergeToIdFieldNumber = 2;
+    private string mergeToId_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string MergeToId {
+      get { return mergeToId_; }
+      set {
+        mergeToId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "newId" field.</summary>
+    public const int NewIdFieldNumber = 3;
+    private string newId_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string NewId {
+      get { return newId_; }
+      set {
+        newId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "slot" field.</summary>
+    public const int SlotFieldNumber = 4;
+    private int slot_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int Slot {
+      get { return slot_; }
+      set {
+        slot_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "tier" field.</summary>
+    public const int TierFieldNumber = 5;
+    private int tier_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int Tier {
+      get { return tier_; }
+      set {
+        tier_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "title" field.</summary>
+    public const int TitleFieldNumber = 6;
+    private string title_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Title {
+      get { return title_; }
+      set {
+        title_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as OldGearInfo);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(OldGearInfo other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Id != other.Id) return false;
+      if (MergeToId != other.MergeToId) return false;
+      if (NewId != other.NewId) return false;
+      if (Slot != other.Slot) return false;
+      if (Tier != other.Tier) return false;
+      if (Title != other.Title) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Id.Length != 0) hash ^= Id.GetHashCode();
+      if (MergeToId.Length != 0) hash ^= MergeToId.GetHashCode();
+      if (NewId.Length != 0) hash ^= NewId.GetHashCode();
+      if (Slot != 0) hash ^= Slot.GetHashCode();
+      if (Tier != 0) hash ^= Tier.GetHashCode();
+      if (Title.Length != 0) hash ^= Title.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (Id.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Id);
+      }
+      if (MergeToId.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(MergeToId);
+      }
+      if (NewId.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(NewId);
+      }
+      if (Slot != 0) {
+        output.WriteRawTag(32);
+        output.WriteInt32(Slot);
+      }
+      if (Tier != 0) {
+        output.WriteRawTag(40);
+        output.WriteInt32(Tier);
+      }
+      if (Title.Length != 0) {
+        output.WriteRawTag(50);
+        output.WriteString(Title);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (Id.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Id);
+      }
+      if (MergeToId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(MergeToId);
+      }
+      if (NewId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(NewId);
+      }
+      if (Slot != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Slot);
+      }
+      if (Tier != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Tier);
+      }
+      if (Title.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Title);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(OldGearInfo other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Id.Length != 0) {
+        Id = other.Id;
+      }
+      if (other.MergeToId.Length != 0) {
+        MergeToId = other.MergeToId;
+      }
+      if (other.NewId.Length != 0) {
+        NewId = other.NewId;
+      }
+      if (other.Slot != 0) {
+        Slot = other.Slot;
+      }
+      if (other.Tier != 0) {
+        Tier = other.Tier;
+      }
+      if (other.Title.Length != 0) {
+        Title = other.Title;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            Id = input.ReadString();
+            break;
+          }
+          case 18: {
+            MergeToId = input.ReadString();
+            break;
+          }
+          case 26: {
+            NewId = input.ReadString();
+            break;
+          }
+          case 32: {
+            Slot = input.ReadInt32();
+            break;
+          }
+          case 40: {
+            Tier = input.ReadInt32();
+            break;
+          }
+          case 50: {
+            Title = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class GearMergeConfig : pb::IMessage<GearMergeConfig> {
+    private static readonly pb::MessageParser<GearMergeConfig> _parser = new pb::MessageParser<GearMergeConfig>(() => new GearMergeConfig());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<GearMergeConfig> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Protos.BenchmarkReflection.Descriptor.MessageTypes[7]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public GearMergeConfig() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public GearMergeConfig(GearMergeConfig other) : this() {
+      oldGearInfos_ = other.oldGearInfos_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public GearMergeConfig Clone() {
+      return new GearMergeConfig(this);
+    }
+
+    /// <summary>Field number for the "oldGearInfos" field.</summary>
+    public const int OldGearInfosFieldNumber = 1;
+    private static readonly pb::FieldCodec<global::Protos.OldGearInfo> _repeated_oldGearInfos_codec
+        = pb::FieldCodec.ForMessage(10, global::Protos.OldGearInfo.Parser);
+    private readonly pbc::RepeatedField<global::Protos.OldGearInfo> oldGearInfos_ = new pbc::RepeatedField<global::Protos.OldGearInfo>();
+    /// <summary>
+    ///map&lt;string, Slots> slotTranslation = 2;
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::Protos.OldGearInfo> OldGearInfos {
+      get { return oldGearInfos_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as GearMergeConfig);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(GearMergeConfig other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if(!oldGearInfos_.Equals(other.oldGearInfos_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      hash ^= oldGearInfos_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      oldGearInfos_.WriteTo(output, _repeated_oldGearInfos_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      size += oldGearInfos_.CalculateSize(_repeated_oldGearInfos_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(GearMergeConfig other) {
+      if (other == null) {
+        return;
+      }
+      oldGearInfos_.Add(other.oldGearInfos_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            oldGearInfos_.AddEntriesFrom(input, _repeated_oldGearInfos_codec);
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class Slots : pb::IMessage<Slots> {
+    private static readonly pb::MessageParser<Slots> _parser = new pb::MessageParser<Slots>(() => new Slots());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<Slots> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Protos.BenchmarkReflection.Descriptor.MessageTypes[8]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public Slots() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public Slots(Slots other) : this() {
+      slots_ = other.slots_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public Slots Clone() {
+      return new Slots(this);
+    }
+
+    /// <summary>Field number for the "slots" field.</summary>
+    public const int Slots_FieldNumber = 1;
+    private static readonly pb::FieldCodec<int> _repeated_slots_codec
+        = pb::FieldCodec.ForInt32(10);
+    private readonly pbc::RepeatedField<int> slots_ = new pbc::RepeatedField<int>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<int> Slots_ {
+      get { return slots_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as Slots);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(Slots other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if(!slots_.Equals(other.slots_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      hash ^= slots_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      slots_.WriteTo(output, _repeated_slots_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      size += slots_.CalculateSize(_repeated_slots_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(Slots other) {
+      if (other == null) {
+        return;
+      }
+      slots_.Add(other.slots_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10:
+          case 8: {
+            slots_.AddEntriesFrom(input, _repeated_slots_codec);
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class Upgrade : pb::IMessage<Upgrade> {
+    private static readonly pb::MessageParser<Upgrade> _parser = new pb::MessageParser<Upgrade>(() => new Upgrade());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<Upgrade> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Protos.BenchmarkReflection.Descriptor.MessageTypes[9]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public Upgrade() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public Upgrade(Upgrade other) : this() {
+      maxLevel_ = other.maxLevel_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public Upgrade Clone() {
+      return new Upgrade(this);
+    }
+
+    /// <summary>Field number for the "maxLevel" field.</summary>
+    public const int MaxLevelFieldNumber = 1;
+    private int maxLevel_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int MaxLevel {
+      get { return maxLevel_; }
+      set {
+        maxLevel_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as Upgrade);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(Upgrade other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (MaxLevel != other.MaxLevel) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (MaxLevel != 0) hash ^= MaxLevel.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (MaxLevel != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(MaxLevel);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (MaxLevel != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(MaxLevel);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(Upgrade other) {
+      if (other == null) {
+        return;
+      }
+      if (other.MaxLevel != 0) {
+        MaxLevel = other.MaxLevel;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            MaxLevel = input.ReadInt32();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class Gear : pb::IMessage<Gear> {
+    private static readonly pb::MessageParser<Gear> _parser = new pb::MessageParser<Gear>(() => new Gear());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<Gear> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Protos.BenchmarkReflection.Descriptor.MessageTypes[10]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public Gear() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public Gear(Gear other) : this() {
+      baseRating_ = other.baseRating_;
+      buyRequirements_ = other.buyRequirements_ != null ? other.buyRequirements_.Clone() : null;
+      cost_ = other.cost_ != null ? other.cost_.Clone() : null;
+      dropRate_ = other.dropRate_;
+      id_ = other.id_;
+      isSpecial_ = other.isSpecial_;
+      slot_ = other.slot_;
+      tier_ = other.tier_;
+      title_ = other.title_;
+      upgrade_ = other.upgrade_ != null ? other.upgrade_.Clone() : null;
+      upgradeMult_ = other.upgradeMult_;
+      upgradeMultiplier_ = other.upgradeMultiplier_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public Gear Clone() {
+      return new Gear(this);
+    }
+
+    /// <summary>Field number for the "baseRating" field.</summary>
+    public const int BaseRatingFieldNumber = 1;
+    private int baseRating_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int BaseRating {
+      get { return baseRating_; }
+      set {
+        baseRating_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "buyRequirements" field.</summary>
+    public const int BuyRequirementsFieldNumber = 2;
+    private global::Protos.BuyRequirements buyRequirements_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Protos.BuyRequirements BuyRequirements {
+      get { return buyRequirements_; }
+      set {
+        buyRequirements_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "cost" field.</summary>
+    public const int CostFieldNumber = 3;
+    private global::Protos.Cost cost_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Protos.Cost Cost {
+      get { return cost_; }
+      set {
+        cost_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "dropRate" field.</summary>
+    public const int DropRateFieldNumber = 4;
+    private int dropRate_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int DropRate {
+      get { return dropRate_; }
+      set {
+        dropRate_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "id" field.</summary>
+    public const int IdFieldNumber = 5;
+    private string id_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Id {
+      get { return id_; }
+      set {
+        id_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "isSpecial" field.</summary>
+    public const int IsSpecialFieldNumber = 6;
+    private bool isSpecial_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool IsSpecial {
+      get { return isSpecial_; }
+      set {
+        isSpecial_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "slot" field.</summary>
+    public const int SlotFieldNumber = 7;
+    private int slot_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int Slot {
+      get { return slot_; }
+      set {
+        slot_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "tier" field.</summary>
+    public const int TierFieldNumber = 8;
+    private int tier_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int Tier {
+      get { return tier_; }
+      set {
+        tier_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "title" field.</summary>
+    public const int TitleFieldNumber = 9;
+    private string title_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Title {
+      get { return title_; }
+      set {
+        title_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "upgrade" field.</summary>
+    public const int UpgradeFieldNumber = 10;
+    private global::Protos.Upgrade upgrade_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Protos.Upgrade Upgrade {
+      get { return upgrade_; }
+      set {
+        upgrade_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "upgradeMult" field.</summary>
+    public const int UpgradeMultFieldNumber = 11;
+    private float upgradeMult_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public float UpgradeMult {
+      get { return upgradeMult_; }
+      set {
+        upgradeMult_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "upgradeMultiplier" field.</summary>
+    public const int UpgradeMultiplierFieldNumber = 12;
+    private float upgradeMultiplier_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public float UpgradeMultiplier {
+      get { return upgradeMultiplier_; }
+      set {
+        upgradeMultiplier_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as Gear);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(Gear other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (BaseRating != other.BaseRating) return false;
+      if (!object.Equals(BuyRequirements, other.BuyRequirements)) return false;
+      if (!object.Equals(Cost, other.Cost)) return false;
+      if (DropRate != other.DropRate) return false;
+      if (Id != other.Id) return false;
+      if (IsSpecial != other.IsSpecial) return false;
+      if (Slot != other.Slot) return false;
+      if (Tier != other.Tier) return false;
+      if (Title != other.Title) return false;
+      if (!object.Equals(Upgrade, other.Upgrade)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(UpgradeMult, other.UpgradeMult)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(UpgradeMultiplier, other.UpgradeMultiplier)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (BaseRating != 0) hash ^= BaseRating.GetHashCode();
+      if (buyRequirements_ != null) hash ^= BuyRequirements.GetHashCode();
+      if (cost_ != null) hash ^= Cost.GetHashCode();
+      if (DropRate != 0) hash ^= DropRate.GetHashCode();
+      if (Id.Length != 0) hash ^= Id.GetHashCode();
+      if (IsSpecial != false) hash ^= IsSpecial.GetHashCode();
+      if (Slot != 0) hash ^= Slot.GetHashCode();
+      if (Tier != 0) hash ^= Tier.GetHashCode();
+      if (Title.Length != 0) hash ^= Title.GetHashCode();
+      if (upgrade_ != null) hash ^= Upgrade.GetHashCode();
+      if (UpgradeMult != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(UpgradeMult);
+      if (UpgradeMultiplier != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(UpgradeMultiplier);
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (BaseRating != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(BaseRating);
+      }
+      if (buyRequirements_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(BuyRequirements);
+      }
+      if (cost_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(Cost);
+      }
+      if (DropRate != 0) {
+        output.WriteRawTag(32);
+        output.WriteInt32(DropRate);
+      }
+      if (Id.Length != 0) {
+        output.WriteRawTag(42);
+        output.WriteString(Id);
+      }
+      if (IsSpecial != false) {
+        output.WriteRawTag(48);
+        output.WriteBool(IsSpecial);
+      }
+      if (Slot != 0) {
+        output.WriteRawTag(56);
+        output.WriteInt32(Slot);
+      }
+      if (Tier != 0) {
+        output.WriteRawTag(64);
+        output.WriteInt32(Tier);
+      }
+      if (Title.Length != 0) {
+        output.WriteRawTag(74);
+        output.WriteString(Title);
+      }
+      if (upgrade_ != null) {
+        output.WriteRawTag(82);
+        output.WriteMessage(Upgrade);
+      }
+      if (UpgradeMult != 0F) {
+        output.WriteRawTag(93);
+        output.WriteFloat(UpgradeMult);
+      }
+      if (UpgradeMultiplier != 0F) {
+        output.WriteRawTag(101);
+        output.WriteFloat(UpgradeMultiplier);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (BaseRating != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(BaseRating);
+      }
+      if (buyRequirements_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(BuyRequirements);
+      }
+      if (cost_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Cost);
+      }
+      if (DropRate != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(DropRate);
+      }
+      if (Id.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Id);
+      }
+      if (IsSpecial != false) {
+        size += 1 + 1;
+      }
+      if (Slot != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Slot);
+      }
+      if (Tier != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Tier);
+      }
+      if (Title.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Title);
+      }
+      if (upgrade_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Upgrade);
+      }
+      if (UpgradeMult != 0F) {
+        size += 1 + 4;
+      }
+      if (UpgradeMultiplier != 0F) {
+        size += 1 + 4;
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(Gear other) {
+      if (other == null) {
+        return;
+      }
+      if (other.BaseRating != 0) {
+        BaseRating = other.BaseRating;
+      }
+      if (other.buyRequirements_ != null) {
+        if (buyRequirements_ == null) {
+          BuyRequirements = new global::Protos.BuyRequirements();
+        }
+        BuyRequirements.MergeFrom(other.BuyRequirements);
+      }
+      if (other.cost_ != null) {
+        if (cost_ == null) {
+          Cost = new global::Protos.Cost();
+        }
+        Cost.MergeFrom(other.Cost);
+      }
+      if (other.DropRate != 0) {
+        DropRate = other.DropRate;
+      }
+      if (other.Id.Length != 0) {
+        Id = other.Id;
+      }
+      if (other.IsSpecial != false) {
+        IsSpecial = other.IsSpecial;
+      }
+      if (other.Slot != 0) {
+        Slot = other.Slot;
+      }
+      if (other.Tier != 0) {
+        Tier = other.Tier;
+      }
+      if (other.Title.Length != 0) {
+        Title = other.Title;
+      }
+      if (other.upgrade_ != null) {
+        if (upgrade_ == null) {
+          Upgrade = new global::Protos.Upgrade();
+        }
+        Upgrade.MergeFrom(other.Upgrade);
+      }
+      if (other.UpgradeMult != 0F) {
+        UpgradeMult = other.UpgradeMult;
+      }
+      if (other.UpgradeMultiplier != 0F) {
+        UpgradeMultiplier = other.UpgradeMultiplier;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            BaseRating = input.ReadInt32();
+            break;
+          }
+          case 18: {
+            if (buyRequirements_ == null) {
+              BuyRequirements = new global::Protos.BuyRequirements();
+            }
+            input.ReadMessage(BuyRequirements);
+            break;
+          }
+          case 26: {
+            if (cost_ == null) {
+              Cost = new global::Protos.Cost();
+            }
+            input.ReadMessage(Cost);
+            break;
+          }
+          case 32: {
+            DropRate = input.ReadInt32();
+            break;
+          }
+          case 42: {
+            Id = input.ReadString();
+            break;
+          }
+          case 48: {
+            IsSpecial = input.ReadBool();
+            break;
+          }
+          case 56: {
+            Slot = input.ReadInt32();
+            break;
+          }
+          case 64: {
+            Tier = input.ReadInt32();
+            break;
+          }
+          case 74: {
+            Title = input.ReadString();
+            break;
+          }
+          case 82: {
+            if (upgrade_ == null) {
+              Upgrade = new global::Protos.Upgrade();
+            }
+            input.ReadMessage(Upgrade);
+            break;
+          }
+          case 93: {
+            UpgradeMult = input.ReadFloat();
+            break;
+          }
+          case 101: {
+            UpgradeMultiplier = input.ReadFloat();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class GearsConfig : pb::IMessage<GearsConfig> {
+    private static readonly pb::MessageParser<GearsConfig> _parser = new pb::MessageParser<GearsConfig>(() => new GearsConfig());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<GearsConfig> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Protos.BenchmarkReflection.Descriptor.MessageTypes[11]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public GearsConfig() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public GearsConfig(GearsConfig other) : this() {
+      costMultByUpgradeLevel_ = other.costMultByUpgradeLevel_.Clone();
+      deliveryTimeMultByUpgradeLevel_ = other.deliveryTimeMultByUpgradeLevel_.Clone();
+      globalBaseRawUpgrade_ = other.globalBaseRawUpgrade_.Clone();
+      globalDeliveryMult_ = other.globalDeliveryMult_.Clone();
+      globalLevelFactor_ = other.globalLevelFactor_.Clone();
+      globalTierCostMult_ = other.globalTierCostMult_.Clone();
+      referenceToSniperRatio_ = other.referenceToSniperRatio_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public GearsConfig Clone() {
+      return new GearsConfig(this);
+    }
+
+    /// <summary>Field number for the "costMultByUpgradeLevel" field.</summary>
+    public const int CostMultByUpgradeLevelFieldNumber = 1;
+    private static readonly pb::FieldCodec<long> _repeated_costMultByUpgradeLevel_codec
+        = pb::FieldCodec.ForInt64(10);
+    private readonly pbc::RepeatedField<long> costMultByUpgradeLevel_ = new pbc::RepeatedField<long>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<long> CostMultByUpgradeLevel {
+      get { return costMultByUpgradeLevel_; }
+    }
+
+    /// <summary>Field number for the "deliveryTimeMultByUpgradeLevel" field.</summary>
+    public const int DeliveryTimeMultByUpgradeLevelFieldNumber = 2;
+    private static readonly pb::FieldCodec<long> _repeated_deliveryTimeMultByUpgradeLevel_codec
+        = pb::FieldCodec.ForInt64(18);
+    private readonly pbc::RepeatedField<long> deliveryTimeMultByUpgradeLevel_ = new pbc::RepeatedField<long>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<long> DeliveryTimeMultByUpgradeLevel {
+      get { return deliveryTimeMultByUpgradeLevel_; }
+    }
+
+    /// <summary>Field number for the "globalBaseRawUpgrade" field.</summary>
+    public const int GlobalBaseRawUpgradeFieldNumber = 3;
+    private static readonly pb::FieldCodec<long> _repeated_globalBaseRawUpgrade_codec
+        = pb::FieldCodec.ForInt64(26);
+    private readonly pbc::RepeatedField<long> globalBaseRawUpgrade_ = new pbc::RepeatedField<long>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<long> GlobalBaseRawUpgrade {
+      get { return globalBaseRawUpgrade_; }
+    }
+
+    /// <summary>Field number for the "globalDeliveryMult" field.</summary>
+    public const int GlobalDeliveryMultFieldNumber = 4;
+    private static readonly pb::FieldCodec<float> _repeated_globalDeliveryMult_codec
+        = pb::FieldCodec.ForFloat(34);
+    private readonly pbc::RepeatedField<float> globalDeliveryMult_ = new pbc::RepeatedField<float>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<float> GlobalDeliveryMult {
+      get { return globalDeliveryMult_; }
+    }
+
+    /// <summary>Field number for the "globalLevelFactor" field.</summary>
+    public const int GlobalLevelFactorFieldNumber = 5;
+    private static readonly pb::FieldCodec<float> _repeated_globalLevelFactor_codec
+        = pb::FieldCodec.ForFloat(42);
+    private readonly pbc::RepeatedField<float> globalLevelFactor_ = new pbc::RepeatedField<float>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<float> GlobalLevelFactor {
+      get { return globalLevelFactor_; }
+    }
+
+    /// <summary>Field number for the "globalTierCostMult" field.</summary>
+    public const int GlobalTierCostMultFieldNumber = 6;
+    private static readonly pb::FieldCodec<float> _repeated_globalTierCostMult_codec
+        = pb::FieldCodec.ForFloat(50);
+    private readonly pbc::RepeatedField<float> globalTierCostMult_ = new pbc::RepeatedField<float>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<float> GlobalTierCostMult {
+      get { return globalTierCostMult_; }
+    }
+
+    /// <summary>Field number for the "referenceToSniperRatio" field.</summary>
+    public const int ReferenceToSniperRatioFieldNumber = 7;
+    private float referenceToSniperRatio_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public float ReferenceToSniperRatio {
+      get { return referenceToSniperRatio_; }
+      set {
+        referenceToSniperRatio_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as GearsConfig);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(GearsConfig other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if(!costMultByUpgradeLevel_.Equals(other.costMultByUpgradeLevel_)) return false;
+      if(!deliveryTimeMultByUpgradeLevel_.Equals(other.deliveryTimeMultByUpgradeLevel_)) return false;
+      if(!globalBaseRawUpgrade_.Equals(other.globalBaseRawUpgrade_)) return false;
+      if(!globalDeliveryMult_.Equals(other.globalDeliveryMult_)) return false;
+      if(!globalLevelFactor_.Equals(other.globalLevelFactor_)) return false;
+      if(!globalTierCostMult_.Equals(other.globalTierCostMult_)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(ReferenceToSniperRatio, other.ReferenceToSniperRatio)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      hash ^= costMultByUpgradeLevel_.GetHashCode();
+      hash ^= deliveryTimeMultByUpgradeLevel_.GetHashCode();
+      hash ^= globalBaseRawUpgrade_.GetHashCode();
+      hash ^= globalDeliveryMult_.GetHashCode();
+      hash ^= globalLevelFactor_.GetHashCode();
+      hash ^= globalTierCostMult_.GetHashCode();
+      if (ReferenceToSniperRatio != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(ReferenceToSniperRatio);
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      costMultByUpgradeLevel_.WriteTo(output, _repeated_costMultByUpgradeLevel_codec);
+      deliveryTimeMultByUpgradeLevel_.WriteTo(output, _repeated_deliveryTimeMultByUpgradeLevel_codec);
+      globalBaseRawUpgrade_.WriteTo(output, _repeated_globalBaseRawUpgrade_codec);
+      globalDeliveryMult_.WriteTo(output, _repeated_globalDeliveryMult_codec);
+      globalLevelFactor_.WriteTo(output, _repeated_globalLevelFactor_codec);
+      globalTierCostMult_.WriteTo(output, _repeated_globalTierCostMult_codec);
+      if (ReferenceToSniperRatio != 0F) {
+        output.WriteRawTag(61);
+        output.WriteFloat(ReferenceToSniperRatio);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      size += costMultByUpgradeLevel_.CalculateSize(_repeated_costMultByUpgradeLevel_codec);
+      size += deliveryTimeMultByUpgradeLevel_.CalculateSize(_repeated_deliveryTimeMultByUpgradeLevel_codec);
+      size += globalBaseRawUpgrade_.CalculateSize(_repeated_globalBaseRawUpgrade_codec);
+      size += globalDeliveryMult_.CalculateSize(_repeated_globalDeliveryMult_codec);
+      size += globalLevelFactor_.CalculateSize(_repeated_globalLevelFactor_codec);
+      size += globalTierCostMult_.CalculateSize(_repeated_globalTierCostMult_codec);
+      if (ReferenceToSniperRatio != 0F) {
+        size += 1 + 4;
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(GearsConfig other) {
+      if (other == null) {
+        return;
+      }
+      costMultByUpgradeLevel_.Add(other.costMultByUpgradeLevel_);
+      deliveryTimeMultByUpgradeLevel_.Add(other.deliveryTimeMultByUpgradeLevel_);
+      globalBaseRawUpgrade_.Add(other.globalBaseRawUpgrade_);
+      globalDeliveryMult_.Add(other.globalDeliveryMult_);
+      globalLevelFactor_.Add(other.globalLevelFactor_);
+      globalTierCostMult_.Add(other.globalTierCostMult_);
+      if (other.ReferenceToSniperRatio != 0F) {
+        ReferenceToSniperRatio = other.ReferenceToSniperRatio;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10:
+          case 8: {
+            costMultByUpgradeLevel_.AddEntriesFrom(input, _repeated_costMultByUpgradeLevel_codec);
+            break;
+          }
+          case 18:
+          case 16: {
+            deliveryTimeMultByUpgradeLevel_.AddEntriesFrom(input, _repeated_deliveryTimeMultByUpgradeLevel_codec);
+            break;
+          }
+          case 26:
+          case 24: {
+            globalBaseRawUpgrade_.AddEntriesFrom(input, _repeated_globalBaseRawUpgrade_codec);
+            break;
+          }
+          case 34:
+          case 37: {
+            globalDeliveryMult_.AddEntriesFrom(input, _repeated_globalDeliveryMult_codec);
+            break;
+          }
+          case 42:
+          case 45: {
+            globalLevelFactor_.AddEntriesFrom(input, _repeated_globalLevelFactor_codec);
+            break;
+          }
+          case 50:
+          case 53: {
+            globalTierCostMult_.AddEntriesFrom(input, _repeated_globalTierCostMult_codec);
+            break;
+          }
+          case 61: {
+            ReferenceToSniperRatio = input.ReadFloat();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class Gears : pb::IMessage<Gears> {
+    private static readonly pb::MessageParser<Gears> _parser = new pb::MessageParser<Gears>(() => new Gears());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<Gears> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Protos.BenchmarkReflection.Descriptor.MessageTypes[12]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public Gears() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public Gears(Gears other) : this() {
+      gearMergeConfig_ = other.gearMergeConfig_ != null ? other.gearMergeConfig_.Clone() : null;
+      gears_ = other.gears_.Clone();
+      gearsConfig_ = other.gearsConfig_ != null ? other.gearsConfig_.Clone() : null;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public Gears Clone() {
+      return new Gears(this);
+    }
+
+    /// <summary>Field number for the "gearMergeConfig" field.</summary>
+    public const int GearMergeConfigFieldNumber = 1;
+    private global::Protos.GearMergeConfig gearMergeConfig_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Protos.GearMergeConfig GearMergeConfig {
+      get { return gearMergeConfig_; }
+      set {
+        gearMergeConfig_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "gears" field.</summary>
+    public const int Gears_FieldNumber = 2;
+    private static readonly pbc::MapField<string, global::Protos.Gear>.Codec _map_gears_codec
+        = new pbc::MapField<string, global::Protos.Gear>.Codec(pb::FieldCodec.ForString(10), pb::FieldCodec.ForMessage(18, global::Protos.Gear.Parser), 18);
+    private readonly pbc::MapField<string, global::Protos.Gear> gears_ = new pbc::MapField<string, global::Protos.Gear>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::MapField<string, global::Protos.Gear> Gears_ {
+      get { return gears_; }
+    }
+
+    /// <summary>Field number for the "gearsConfig" field.</summary>
+    public const int GearsConfigFieldNumber = 3;
+    private global::Protos.GearsConfig gearsConfig_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Protos.GearsConfig GearsConfig {
+      get { return gearsConfig_; }
+      set {
+        gearsConfig_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as Gears);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(Gears other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(GearMergeConfig, other.GearMergeConfig)) return false;
+      if (!Gears_.Equals(other.Gears_)) return false;
+      if (!object.Equals(GearsConfig, other.GearsConfig)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (gearMergeConfig_ != null) hash ^= GearMergeConfig.GetHashCode();
+      hash ^= Gears_.GetHashCode();
+      if (gearsConfig_ != null) hash ^= GearsConfig.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (gearMergeConfig_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(GearMergeConfig);
+      }
+      gears_.WriteTo(output, _map_gears_codec);
+      if (gearsConfig_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(GearsConfig);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (gearMergeConfig_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(GearMergeConfig);
+      }
+      size += gears_.CalculateSize(_map_gears_codec);
+      if (gearsConfig_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(GearsConfig);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(Gears other) {
+      if (other == null) {
+        return;
+      }
+      if (other.gearMergeConfig_ != null) {
+        if (gearMergeConfig_ == null) {
+          GearMergeConfig = new global::Protos.GearMergeConfig();
+        }
+        GearMergeConfig.MergeFrom(other.GearMergeConfig);
+      }
+      gears_.Add(other.gears_);
+      if (other.gearsConfig_ != null) {
+        if (gearsConfig_ == null) {
+          GearsConfig = new global::Protos.GearsConfig();
+        }
+        GearsConfig.MergeFrom(other.GearsConfig);
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            if (gearMergeConfig_ == null) {
+              GearMergeConfig = new global::Protos.GearMergeConfig();
+            }
+            input.ReadMessage(GearMergeConfig);
+            break;
+          }
+          case 18: {
+            gears_.AddEntriesFrom(input, _map_gears_codec);
+            break;
+          }
+          case 26: {
+            if (gearsConfig_ == null) {
+              GearsConfig = new global::Protos.GearsConfig();
+            }
+            input.ReadMessage(GearsConfig);
+            break;
+          }
+        }
+      }
+    }
 
   }
 
