@@ -1,3 +1,2222 @@
 {
-  "type": "small"
+    "gearMergeConfig": {
+        "oldGearInfos": [
+            {
+                "id": "e03f986b",
+                "mergeToId": null,
+                "newId": "64a83ad7",
+                "slot": 0,
+                "tier": 0,
+                "title": "None"
+            },
+            {
+                "id": "f5dfa1f3",
+                "mergeToId": null,
+                "newId": "2bf0f4f4",
+                "slot": 1,
+                "tier": 0,
+                "title": "None"
+            },
+            {
+                "id": "a3e15685",
+                "mergeToId": null,
+                "newId": "bee6b8a6",
+                "slot": 2,
+                "tier": 0,
+                "title": "None"
+            },
+            {
+                "id": "bdec06f5",
+                "mergeToId": null,
+                "newId": "f681f529",
+                "slot": 3,
+                "tier": 0,
+                "title": "Caucasian"
+            },
+            {
+                "id": "ec430b1f",
+                "mergeToId": null,
+                "newId": "9a16a4d7",
+                "slot": 3,
+                "tier": 0,
+                "title": "Asian"
+            },
+            {
+                "id": "f849a80e",
+                "mergeToId": null,
+                "newId": "2d1fc059",
+                "slot": 3,
+                "tier": 0,
+                "title": "Black"
+            },
+            {
+                "id": "cd00562a",
+                "mergeToId": null,
+                "newId": "022ee871",
+                "slot": 4,
+                "tier": 0,
+                "title": "None"
+            },
+            {
+                "id": "f748e82d",
+                "mergeToId": "7441855f",
+                "newId": null,
+                "slot": 5,
+                "tier": 0,
+                "title": "None"
+            },
+            {
+                "id": "6aa2d1cc",
+                "mergeToId": null,
+                "newId": "3aabe198",
+                "slot": 6,
+                "tier": 0,
+                "title": "None"
+            },
+            {
+                "id": "4dfacd4f",
+                "mergeToId": null,
+                "newId": "7441855f",
+                "slot": 7,
+                "tier": 0,
+                "title": "Shirt"
+            },
+            {
+                "id": "aee2fd2d",
+                "mergeToId": "1755697d",
+                "newId": null,
+                "slot": 8,
+                "tier": 0,
+                "title": "None"
+            },
+            {
+                "id": "4cc7b39b",
+                "mergeToId": "1755697d",
+                "newId": null,
+                "slot": 9,
+                "tier": 0,
+                "title": "None"
+            },
+            {
+                "id": "98b12cd8",
+                "mergeToId": null,
+                "newId": "1755697d",
+                "slot": 10,
+                "tier": 0,
+                "title": "Pants"
+            },
+            {
+                "id": "6a683f03",
+                "mergeToId": null,
+                "newId": "18443716",
+                "slot": 11,
+                "tier": 0,
+                "title": "Shoes"
+            },
+            {
+                "id": "4510c625",
+                "mergeToId": null,
+                "newId": "7432cb82",
+                "slot": 0,
+                "tier": 1,
+                "title": "Cowboy Hat"
+            },
+            {
+                "id": "28b9ed31",
+                "mergeToId": null,
+                "newId": "d2592714",
+                "slot": 1,
+                "tier": 1,
+                "title": "Shades"
+            },
+            {
+                "id": "3481aad9",
+                "mergeToId": "7432cb82",
+                "newId": null,
+                "slot": 2,
+                "tier": 1,
+                "title": "Full Beard"
+            },
+            {
+                "id": "e34d8e7c",
+                "mergeToId": null,
+                "newId": "9d829ae2",
+                "slot": 4,
+                "tier": 1,
+                "title": "Desert Vest"
+            },
+            {
+                "id": "f06846ca",
+                "mergeToId": "cac72c55",
+                "newId": null,
+                "slot": 5,
+                "tier": 1,
+                "title": "Desert Elbowpads"
+            },
+            {
+                "id": "ec36998e",
+                "mergeToId": null,
+                "newId": "4cf793f6",
+                "slot": 6,
+                "tier": 1,
+                "title": "Desert Gloves"
+            },
+            {
+                "id": "7c32a604",
+                "mergeToId": null,
+                "newId": "cac72c55",
+                "slot": 7,
+                "tier": 1,
+                "title": "Desert Shirt"
+            },
+            {
+                "id": "311086f9",
+                "mergeToId": "96dba7eb",
+                "newId": null,
+                "slot": 8,
+                "tier": 1,
+                "title": "Desert Belt"
+            },
+            {
+                "id": "edd4f9b4",
+                "mergeToId": "96dba7eb",
+                "newId": null,
+                "slot": 9,
+                "tier": 1,
+                "title": "Desert Knee Pads"
+            },
+            {
+                "id": "68713db7",
+                "mergeToId": null,
+                "newId": "96dba7eb",
+                "slot": 10,
+                "tier": 1,
+                "title": "Desert Pants"
+            },
+            {
+                "id": "d187fc80",
+                "mergeToId": null,
+                "newId": "b9e96ac3",
+                "slot": 11,
+                "tier": 1,
+                "title": "Desert Shoes"
+            },
+            {
+                "id": "34302a37",
+                "mergeToId": null,
+                "newId": "d71585b5",
+                "slot": 0,
+                "tier": 2,
+                "title": "Beret"
+            },
+            {
+                "id": "c668baff",
+                "mergeToId": null,
+                "newId": "a9da2583",
+                "slot": 1,
+                "tier": 2,
+                "title": "Urban Shades"
+            },
+            {
+                "id": "d044904e",
+                "mergeToId": null,
+                "newId": "e93c37d0",
+                "slot": 2,
+                "tier": 2,
+                "title": "Urban Mask"
+            },
+            {
+                "id": "1e6edcd0",
+                "mergeToId": null,
+                "newId": "c8bddd1f",
+                "slot": 4,
+                "tier": 2,
+                "title": "Urban Vest"
+            },
+            {
+                "id": "ef9d9494",
+                "mergeToId": "288b37d2",
+                "newId": null,
+                "slot": 5,
+                "tier": 2,
+                "title": "Urban Pads"
+            },
+            {
+                "id": "6ceff87c",
+                "mergeToId": null,
+                "newId": "b10b47da",
+                "slot": 6,
+                "tier": 2,
+                "title": "Urban Gloves"
+            },
+            {
+                "id": "231593f8",
+                "mergeToId": null,
+                "newId": "288b37d2",
+                "slot": 7,
+                "tier": 2,
+                "title": "Urban Uniform"
+            },
+            {
+                "id": "c2f4f555",
+                "mergeToId": "78cf56cf",
+                "newId": null,
+                "slot": 8,
+                "tier": 2,
+                "title": "Urban Belt"
+            },
+            {
+                "id": "4011bb40",
+                "mergeToId": "78cf56cf",
+                "newId": null,
+                "slot": 9,
+                "tier": 2,
+                "title": "Urban Kneepads"
+            },
+            {
+                "id": "6ae7436f",
+                "mergeToId": null,
+                "newId": "78cf56cf",
+                "slot": 10,
+                "tier": 2,
+                "title": "Urban Trousers"
+            },
+            {
+                "id": "51a69c9f",
+                "mergeToId": null,
+                "newId": "5e3ebb91",
+                "slot": 11,
+                "tier": 2,
+                "title": "Urban Boots"
+            },
+            {
+                "id": "595c32fc",
+                "mergeToId": null,
+                "newId": "20a9d597",
+                "slot": 0,
+                "tier": 3,
+                "title": "Tactical Helmet"
+            },
+            {
+                "id": "c36842a2",
+                "mergeToId": null,
+                "newId": "7255ceed",
+                "slot": 1,
+                "tier": 3,
+                "title": "Goggles"
+            },
+            {
+                "id": "aa6dd752",
+                "mergeToId": null,
+                "newId": "5be0f5f2",
+                "slot": 2,
+                "tier": 3,
+                "title": "Tactical Mask"
+            },
+            {
+                "id": "a45588df",
+                "mergeToId": null,
+                "newId": "16a88cb3",
+                "slot": 4,
+                "tier": 3,
+                "title": "Tactical Armor"
+            },
+            {
+                "id": "551c5fba",
+                "mergeToId": "0780ec67",
+                "newId": null,
+                "slot": 5,
+                "tier": 3,
+                "title": "Tactical Elbowpads"
+            },
+            {
+                "id": "c387d754",
+                "mergeToId": null,
+                "newId": "828e8499",
+                "slot": 6,
+                "tier": 3,
+                "title": "Tactical Gloves"
+            },
+            {
+                "id": "879887e9",
+                "mergeToId": null,
+                "newId": "0780ec67",
+                "slot": 7,
+                "tier": 3,
+                "title": "Tactical Jacket"
+            },
+            {
+                "id": "c3a85e18",
+                "mergeToId": "76f79e81",
+                "newId": null,
+                "slot": 8,
+                "tier": 3,
+                "title": "Tactical Belt"
+            },
+            {
+                "id": "f2b48347",
+                "mergeToId": "76f79e81",
+                "newId": null,
+                "slot": 9,
+                "tier": 3,
+                "title": "Tactical Kneepads"
+            },
+            {
+                "id": "4a336bbc",
+                "mergeToId": null,
+                "newId": "76f79e81",
+                "slot": 10,
+                "tier": 3,
+                "title": "Tactical Trousers"
+            },
+            {
+                "id": "7b6373e1",
+                "mergeToId": null,
+                "newId": "32892924",
+                "slot": 11,
+                "tier": 3,
+                "title": "Tactical Boots"
+            },
+            {
+                "id": "1561d53c",
+                "mergeToId": null,
+                "newId": "c5c719f7",
+                "slot": 0,
+                "tier": 4,
+                "title": "Professional Cap"
+            },
+            {
+                "id": "ad052a02",
+                "mergeToId": null,
+                "newId": "78ccfd59",
+                "slot": 1,
+                "tier": 4,
+                "title": "Professional Shades"
+            },
+            {
+                "id": "3a1fb55a",
+                "mergeToId": "2341dd4d",
+                "newId": null,
+                "slot": 5,
+                "tier": 4,
+                "title": "Professional Elbowpads"
+            },
+            {
+                "id": "c0c62c4a",
+                "mergeToId": null,
+                "newId": "9abc5ae0",
+                "slot": 6,
+                "tier": 4,
+                "title": "Professional Gloves"
+            },
+            {
+                "id": "8c86b810",
+                "mergeToId": null,
+                "newId": "2341dd4d",
+                "slot": 7,
+                "tier": 4,
+                "title": "Professional Jacket"
+            },
+            {
+                "id": "fe2cb4fd",
+                "mergeToId": "6b5f303b",
+                "newId": null,
+                "slot": 8,
+                "tier": 4,
+                "title": "Professional Belt"
+            },
+            {
+                "id": "e1816489",
+                "mergeToId": "6b5f303b",
+                "newId": null,
+                "slot": 9,
+                "tier": 4,
+                "title": "Professional Kneepads"
+            },
+            {
+                "id": "89fc7a78",
+                "mergeToId": null,
+                "newId": "6b5f303b",
+                "slot": 10,
+                "tier": 4,
+                "title": "Professional Pants"
+            },
+            {
+                "id": "e3b77b3a",
+                "mergeToId": null,
+                "newId": "b7137496",
+                "slot": 11,
+                "tier": 4,
+                "title": "Professional Shoes"
+            },
+            {
+                "id": "494a9a83",
+                "mergeToId": "683642c7",
+                "newId": null,
+                "slot": 0,
+                "tier": 5,
+                "title": "Crow Cap"
+            },
+            {
+                "id": "e4d2e42b",
+                "mergeToId": null,
+                "newId": "ef70745d",
+                "slot": 1,
+                "tier": 5,
+                "title": "Crow Shades"
+            },
+            {
+                "id": "2068275a",
+                "mergeToId": null,
+                "newId": "238b7df8",
+                "slot": 2,
+                "tier": 5,
+                "title": "Crow Mask"
+            },
+            {
+                "id": "45254d1e",
+                "mergeToId": null,
+                "newId": "683642c7",
+                "slot": 4,
+                "tier": 5,
+                "title": "Crow Armor"
+            },
+            {
+                "id": "d1df1df2",
+                "mergeToId": "336c0905",
+                "newId": null,
+                "slot": 5,
+                "tier": 5,
+                "title": "Crow Elbowpads"
+            },
+            {
+                "id": "a25acd0c",
+                "mergeToId": null,
+                "newId": "604b5b2b",
+                "slot": 6,
+                "tier": 5,
+                "title": "Crow Gloves"
+            },
+            {
+                "id": "55529302",
+                "mergeToId": null,
+                "newId": "336c0905",
+                "slot": 7,
+                "tier": 5,
+                "title": "Crow Jacket"
+            },
+            {
+                "id": "d0523e99",
+                "mergeToId": "d2853912",
+                "newId": null,
+                "slot": 8,
+                "tier": 5,
+                "title": "Crow Belt"
+            },
+            {
+                "id": "3e44c877",
+                "mergeToId": "d2853912",
+                "newId": null,
+                "slot": 9,
+                "tier": 5,
+                "title": "Crow Kneepads"
+            },
+            {
+                "id": "e335dda1",
+                "mergeToId": null,
+                "newId": "d2853912",
+                "slot": 10,
+                "tier": 5,
+                "title": "Crow Pants"
+            },
+            {
+                "id": "91d5f5b1",
+                "mergeToId": null,
+                "newId": "32add079",
+                "slot": 11,
+                "tier": 5,
+                "title": "Crow Shoes"
+            }
+        ],
+        "slotTranslation": {
+            "0": [
+                0
+            ],
+            "1": [
+                1
+            ],
+            "10": [
+                10,
+                8,
+                9
+            ],
+            "11": [
+                11
+            ],
+            "2": [
+                2
+            ],
+            "3": [
+                3
+            ],
+            "4": [
+                4
+            ],
+            "6": [
+                6
+            ],
+            "7": [
+                7,
+                5
+            ]
+        }
+    },
+    "gearMetadata": null,
+    "gears": {
+        "022ee871": {
+            "baseRating": 0,
+            "buyRequirements": {
+                "premium": false,
+                "premiumPlus": false,
+                "requiredPatent": 0
+            },
+            "cost": {
+                "gems": 0,
+                "gold": 0,
+                "tokens": 0
+            },
+            "dropRate": 0,
+            "id": "022ee871",
+            "isSpecial": false,
+            "slot": 4,
+            "tier": 0,
+            "title": "None",
+            "upgrade": {
+                "maxLevel": -1
+            },
+            "upgradeMult": 1,
+            "upgradeMultiplier": 1
+        },
+        "0780ec67": {
+            "baseRating": 2154,
+            "buyRequirements": {
+                "premium": false,
+                "premiumPlus": false,
+                "requiredPatent": 9
+            },
+            "cost": {
+                "gems": 381,
+                "gold": 0,
+                "tokens": 156641
+            },
+            "dropRate": 1,
+            "id": "0780ec67",
+            "isSpecial": false,
+            "slot": 7,
+            "tier": 3,
+            "title": "Tactical Jacket",
+            "upgrade": {
+                "maxLevel": 35
+            },
+            "upgradeMult": 2,
+            "upgradeMultiplier": 2
+        },
+        "0b59ac7c": {
+            "baseRating": 1904,
+            "buyRequirements": {
+                "premium": false,
+                "premiumPlus": false,
+                "requiredPatent": 0
+            },
+            "cost": {
+                "gems": 0,
+                "gold": 0,
+                "tokens": 0
+            },
+            "dropRate": 0,
+            "id": "0b59ac7c",
+            "isSpecial": true,
+            "slot": 11,
+            "tier": 5,
+            "title": "Lunar Ox Shoes",
+            "upgrade": {
+                "maxLevel": 35
+            },
+            "upgradeMult": 1,
+            "upgradeMultiplier": 1
+        },
+        "16a88cb3": {
+            "baseRating": 2154,
+            "buyRequirements": {
+                "premium": true,
+                "premiumPlus": true,
+                "requiredPatent": 9
+            },
+            "cost": {
+                "gems": 381,
+                "gold": 0,
+                "tokens": 156641
+            },
+            "dropRate": 1,
+            "id": "16a88cb3",
+            "isSpecial": false,
+            "slot": 4,
+            "tier": 3,
+            "title": "Tactical Armor",
+            "upgrade": {
+                "maxLevel": 35
+            },
+            "upgradeMult": 2,
+            "upgradeMultiplier": 2
+        },
+        "1755697d": {
+            "baseRating": 93,
+            "buyRequirements": {
+                "premium": false,
+                "premiumPlus": false,
+                "requiredPatent": 0
+            },
+            "cost": {
+                "gems": 0,
+                "gold": 0,
+                "tokens": 0
+            },
+            "dropRate": 0,
+            "id": "1755697d",
+            "isSpecial": false,
+            "slot": 10,
+            "tier": 0,
+            "title": "Pants",
+            "upgrade": {
+                "maxLevel": -1
+            },
+            "upgradeMult": 1,
+            "upgradeMultiplier": 1
+        },
+        "18443716": {
+            "baseRating": 93,
+            "buyRequirements": {
+                "premium": false,
+                "premiumPlus": false,
+                "requiredPatent": 0
+            },
+            "cost": {
+                "gems": 0,
+                "gold": 0,
+                "tokens": 0
+            },
+            "dropRate": 0,
+            "id": "18443716",
+            "isSpecial": false,
+            "slot": 11,
+            "tier": 0,
+            "title": "Shoes",
+            "upgrade": {
+                "maxLevel": -1
+            },
+            "upgradeMult": 1,
+            "upgradeMultiplier": 1
+        },
+        "20a9d597": {
+            "baseRating": 1077,
+            "buyRequirements": {
+                "premium": false,
+                "premiumPlus": false,
+                "requiredPatent": 9
+            },
+            "cost": {
+                "gems": 190,
+                "gold": 0,
+                "tokens": 78321
+            },
+            "dropRate": 2,
+            "id": "20a9d597",
+            "isSpecial": false,
+            "slot": 0,
+            "tier": 3,
+            "title": "Tactical Helmet",
+            "upgrade": {
+                "maxLevel": 35
+            },
+            "upgradeMult": 1,
+            "upgradeMultiplier": 1
+        },
+        "2341dd4d": {
+            "baseRating": 2962,
+            "buyRequirements": {
+                "premium": true,
+                "premiumPlus": true,
+                "requiredPatent": 13
+            },
+            "cost": {
+                "gems": 670,
+                "gold": 0,
+                "tokens": 800000
+            },
+            "dropRate": 1,
+            "id": "2341dd4d",
+            "isSpecial": false,
+            "slot": 7,
+            "tier": 4,
+            "title": "Professional Jacket",
+            "upgrade": {
+                "maxLevel": 35
+            },
+            "upgradeMult": 2,
+            "upgradeMultiplier": 2
+        },
+        "238b7df8": {
+            "baseRating": 1904,
+            "buyRequirements": {
+                "premium": false,
+                "premiumPlus": false,
+                "requiredPatent": 0
+            },
+            "cost": {
+                "gems": 0,
+                "gold": 0,
+                "tokens": 0
+            },
+            "dropRate": 2,
+            "id": "238b7df8",
+            "isSpecial": true,
+            "slot": 2,
+            "tier": 5,
+            "title": "Crow Mask",
+            "upgrade": {
+                "maxLevel": 35
+            },
+            "upgradeMult": 1,
+            "upgradeMultiplier": 1
+        },
+        "288b37d2": {
+            "baseRating": 1698,
+            "buyRequirements": {
+                "premium": false,
+                "premiumPlus": false,
+                "requiredPatent": 4
+            },
+            "cost": {
+                "gems": 127,
+                "gold": 0,
+                "tokens": 16991
+            },
+            "dropRate": 5,
+            "id": "288b37d2",
+            "isSpecial": false,
+            "slot": 7,
+            "tier": 2,
+            "title": "Urban Uniform",
+            "upgrade": {
+                "maxLevel": 35
+            },
+            "upgradeMult": 2,
+            "upgradeMultiplier": 2
+        },
+        "2bf0f4f4": {
+            "baseRating": 0,
+            "buyRequirements": {
+                "premium": false,
+                "premiumPlus": false,
+                "requiredPatent": 0
+            },
+            "cost": {
+                "gems": 0,
+                "gold": 0,
+                "tokens": 0
+            },
+            "dropRate": 0,
+            "id": "2bf0f4f4",
+            "isSpecial": false,
+            "slot": 1,
+            "tier": 0,
+            "title": "None",
+            "upgrade": {
+                "maxLevel": -1
+            },
+            "upgradeMult": 1,
+            "upgradeMultiplier": 1
+        },
+        "2d1fc059": {
+            "baseRating": 0,
+            "buyRequirements": {
+                "premium": false,
+                "premiumPlus": false,
+                "requiredPatent": 0
+            },
+            "cost": {
+                "gems": 0,
+                "gold": 0,
+                "tokens": 0
+            },
+            "dropRate": 0,
+            "id": "2d1fc059",
+            "isSpecial": false,
+            "slot": 3,
+            "tier": 0,
+            "title": "Black",
+            "upgrade": {
+                "maxLevel": -1
+            },
+            "upgradeMult": 1,
+            "upgradeMultiplier": 1
+        },
+        "31473243": {
+            "baseRating": 1904,
+            "buyRequirements": {
+                "premium": false,
+                "premiumPlus": false,
+                "requiredPatent": 0
+            },
+            "cost": {
+                "gems": 0,
+                "gold": 0,
+                "tokens": 0
+            },
+            "dropRate": 0,
+            "id": "31473243",
+            "isSpecial": true,
+            "slot": 1,
+            "tier": 5,
+            "title": "Lunar Ox Shades",
+            "upgrade": {
+                "maxLevel": 35
+            },
+            "upgradeMult": 1,
+            "upgradeMultiplier": 1
+        },
+        "32892924": {
+            "baseRating": 1077,
+            "buyRequirements": {
+                "premium": false,
+                "premiumPlus": false,
+                "requiredPatent": 9
+            },
+            "cost": {
+                "gems": 190,
+                "gold": 0,
+                "tokens": 78321
+            },
+            "dropRate": 2,
+            "id": "32892924",
+            "isSpecial": false,
+            "slot": 11,
+            "tier": 3,
+            "title": "Tactical Boots",
+            "upgrade": {
+                "maxLevel": 35
+            },
+            "upgradeMult": 1,
+            "upgradeMultiplier": 1
+        },
+        "32add079": {
+            "baseRating": 1904,
+            "buyRequirements": {
+                "premium": false,
+                "premiumPlus": false,
+                "requiredPatent": 0
+            },
+            "cost": {
+                "gems": 0,
+                "gold": 0,
+                "tokens": 0
+            },
+            "dropRate": 2,
+            "id": "32add079",
+            "isSpecial": true,
+            "slot": 11,
+            "tier": 5,
+            "title": "Crow Shoes",
+            "upgrade": {
+                "maxLevel": 35
+            },
+            "upgradeMult": 1,
+            "upgradeMultiplier": 1
+        },
+        "336c0905": {
+            "baseRating": 3808,
+            "buyRequirements": {
+                "premium": false,
+                "premiumPlus": false,
+                "requiredPatent": 0
+            },
+            "cost": {
+                "gems": 0,
+                "gold": 0,
+                "tokens": 0
+            },
+            "dropRate": 1,
+            "id": "336c0905",
+            "isSpecial": true,
+            "slot": 7,
+            "tier": 5,
+            "title": "Crow Jacket",
+            "upgrade": {
+                "maxLevel": 35
+            },
+            "upgradeMult": 2,
+            "upgradeMultiplier": 2
+        },
+        "3aabe198": {
+            "baseRating": 0,
+            "buyRequirements": {
+                "premium": false,
+                "premiumPlus": false,
+                "requiredPatent": 0
+            },
+            "cost": {
+                "gems": 0,
+                "gold": 0,
+                "tokens": 0
+            },
+            "dropRate": 0,
+            "id": "3aabe198",
+            "isSpecial": false,
+            "slot": 6,
+            "tier": 0,
+            "title": "None",
+            "upgrade": {
+                "maxLevel": -1
+            },
+            "upgradeMult": 1,
+            "upgradeMultiplier": 1
+        },
+        "3b86c601": {
+            "baseRating": 1904,
+            "buyRequirements": {
+                "premium": false,
+                "premiumPlus": false,
+                "requiredPatent": 0
+            },
+            "cost": {
+                "gems": 0,
+                "gold": 0,
+                "tokens": 0
+            },
+            "dropRate": 0,
+            "id": "3b86c601",
+            "isSpecial": true,
+            "slot": 0,
+            "tier": 5,
+            "title": "Lunar Ox Helmet",
+            "upgrade": {
+                "maxLevel": 35
+            },
+            "upgradeMult": 1,
+            "upgradeMultiplier": 1
+        },
+        "4cf793f6": {
+            "baseRating": 740,
+            "buyRequirements": {
+                "premium": false,
+                "premiumPlus": false,
+                "requiredPatent": 0
+            },
+            "cost": {
+                "gems": 0,
+                "gold": 0,
+                "tokens": 346
+            },
+            "dropRate": 50,
+            "id": "4cf793f6",
+            "isSpecial": false,
+            "slot": 6,
+            "tier": 1,
+            "title": "Desert Gloves",
+            "upgrade": {
+                "maxLevel": 35
+            },
+            "upgradeMult": 1,
+            "upgradeMultiplier": 1
+        },
+        "591bd2f3": {
+            "baseRating": 1904,
+            "buyRequirements": {
+                "premium": false,
+                "premiumPlus": false,
+                "requiredPatent": 0
+            },
+            "cost": {
+                "gems": 0,
+                "gold": 0,
+                "tokens": 0
+            },
+            "dropRate": 0,
+            "id": "591bd2f3",
+            "isSpecial": true,
+            "slot": 2,
+            "tier": 5,
+            "title": "Lunar Ox Mask",
+            "upgrade": {
+                "maxLevel": 35
+            },
+            "upgradeMult": 1,
+            "upgradeMultiplier": 1
+        },
+        "5be0f5f2": {
+            "baseRating": 1077,
+            "buyRequirements": {
+                "premium": false,
+                "premiumPlus": false,
+                "requiredPatent": 9
+            },
+            "cost": {
+                "gems": 190,
+                "gold": 0,
+                "tokens": 78321
+            },
+            "dropRate": 2,
+            "id": "5be0f5f2",
+            "isSpecial": false,
+            "slot": 2,
+            "tier": 3,
+            "title": "Tactical Mask",
+            "upgrade": {
+                "maxLevel": 35
+            },
+            "upgradeMult": 1,
+            "upgradeMultiplier": 1
+        },
+        "5e3ebb91": {
+            "baseRating": 849,
+            "buyRequirements": {
+                "premium": false,
+                "premiumPlus": false,
+                "requiredPatent": 4
+            },
+            "cost": {
+                "gems": 63,
+                "gold": 0,
+                "tokens": 8464
+            },
+            "dropRate": 10,
+            "id": "5e3ebb91",
+            "isSpecial": false,
+            "slot": 11,
+            "tier": 2,
+            "title": "Urban Boots",
+            "upgrade": {
+                "maxLevel": 35
+            },
+            "upgradeMult": 1,
+            "upgradeMultiplier": 1
+        },
+        "604b5b2b": {
+            "baseRating": 1904,
+            "buyRequirements": {
+                "premium": false,
+                "premiumPlus": false,
+                "requiredPatent": 0
+            },
+            "cost": {
+                "gems": 0,
+                "gold": 0,
+                "tokens": 0
+            },
+            "dropRate": 2,
+            "id": "604b5b2b",
+            "isSpecial": true,
+            "slot": 6,
+            "tier": 5,
+            "title": "Crow Gloves",
+            "upgrade": {
+                "maxLevel": 35
+            },
+            "upgradeMult": 1,
+            "upgradeMultiplier": 1
+        },
+        "607b1d1d": {
+            "baseRating": 1904,
+            "buyRequirements": {
+                "premium": false,
+                "premiumPlus": false,
+                "requiredPatent": 0
+            },
+            "cost": {
+                "gems": 0,
+                "gold": 0,
+                "tokens": 0
+            },
+            "dropRate": 2,
+            "id": "607b1d1d",
+            "isSpecial": true,
+            "slot": 2,
+            "tier": 5,
+            "title": "Winter Mask",
+            "upgrade": {
+                "maxLevel": 35
+            },
+            "upgradeMult": 1,
+            "upgradeMultiplier": 1
+        },
+        "64a83ad7": {
+            "baseRating": 0,
+            "buyRequirements": {
+                "premium": false,
+                "premiumPlus": false,
+                "requiredPatent": 0
+            },
+            "cost": {
+                "gems": 0,
+                "gold": 0,
+                "tokens": 0
+            },
+            "dropRate": 0,
+            "id": "64a83ad7",
+            "isSpecial": false,
+            "slot": 0,
+            "tier": 0,
+            "title": "None",
+            "upgrade": {
+                "maxLevel": -1
+            },
+            "upgradeMult": 1,
+            "upgradeMultiplier": 1
+        },
+        "683642c7": {
+            "baseRating": 3808,
+            "buyRequirements": {
+                "premium": false,
+                "premiumPlus": false,
+                "requiredPatent": 0
+            },
+            "cost": {
+                "gems": 0,
+                "gold": 0,
+                "tokens": 0
+            },
+            "dropRate": 25,
+            "id": "683642c7",
+            "isSpecial": true,
+            "slot": 4,
+            "tier": 5,
+            "title": "Crow Armor",
+            "upgrade": {
+                "maxLevel": 35
+            },
+            "upgradeMult": 2,
+            "upgradeMultiplier": 2
+        },
+        "6ab3d22b": {
+            "baseRating": 0,
+            "buyRequirements": {
+                "premium": false,
+                "premiumPlus": false,
+                "requiredPatent": 0
+            },
+            "cost": {
+                "gems": 0,
+                "gold": 0,
+                "tokens": 0
+            },
+            "dropRate": 0,
+            "id": "6ab3d22b",
+            "isSpecial": false,
+            "slot": 12,
+            "tier": 0,
+            "title": "",
+            "upgrade": {
+                "maxLevel": -1
+            },
+            "upgradeMult": 1,
+            "upgradeMultiplier": 1
+        },
+        "6b5f303b": {
+            "baseRating": 2962,
+            "buyRequirements": {
+                "premium": true,
+                "premiumPlus": true,
+                "requiredPatent": 13
+            },
+            "cost": {
+                "gems": 670,
+                "gold": 0,
+                "tokens": 800000
+            },
+            "dropRate": 1,
+            "id": "6b5f303b",
+            "isSpecial": false,
+            "slot": 10,
+            "tier": 4,
+            "title": "Professional Pants",
+            "upgrade": {
+                "maxLevel": 35
+            },
+            "upgradeMult": 2,
+            "upgradeMultiplier": 2
+        },
+        "6b92dd30": {
+            "baseRating": 1904,
+            "buyRequirements": {
+                "premium": false,
+                "premiumPlus": false,
+                "requiredPatent": 0
+            },
+            "cost": {
+                "gems": 0,
+                "gold": 0,
+                "tokens": 0
+            },
+            "dropRate": 2,
+            "id": "6b92dd30",
+            "isSpecial": true,
+            "slot": 1,
+            "tier": 5,
+            "title": "Winter Shades",
+            "upgrade": {
+                "maxLevel": 35
+            },
+            "upgradeMult": 1,
+            "upgradeMultiplier": 1
+        },
+        "7255ceed": {
+            "baseRating": 1077,
+            "buyRequirements": {
+                "premium": false,
+                "premiumPlus": false,
+                "requiredPatent": 9
+            },
+            "cost": {
+                "gems": 190,
+                "gold": 0,
+                "tokens": 78321
+            },
+            "dropRate": 2,
+            "id": "7255ceed",
+            "isSpecial": false,
+            "slot": 1,
+            "tier": 3,
+            "title": "Goggles",
+            "upgrade": {
+                "maxLevel": 35
+            },
+            "upgradeMult": 1,
+            "upgradeMultiplier": 1
+        },
+        "738d2777": {
+            "baseRating": 1904,
+            "buyRequirements": {
+                "premium": false,
+                "premiumPlus": false,
+                "requiredPatent": 0
+            },
+            "cost": {
+                "gems": 0,
+                "gold": 0,
+                "tokens": 0
+            },
+            "dropRate": 2,
+            "id": "738d2777",
+            "isSpecial": true,
+            "slot": 0,
+            "tier": 5,
+            "title": "Winter Cap",
+            "upgrade": {
+                "maxLevel": 35
+            },
+            "upgradeMult": 1,
+            "upgradeMultiplier": 1
+        },
+        "7432cb82": {
+            "baseRating": 740,
+            "buyRequirements": {
+                "premium": false,
+                "premiumPlus": false,
+                "requiredPatent": 0
+            },
+            "cost": {
+                "gems": 0,
+                "gold": 0,
+                "tokens": 344
+            },
+            "dropRate": 50,
+            "id": "7432cb82",
+            "isSpecial": false,
+            "slot": 0,
+            "tier": 1,
+            "title": "Cowboy Hat",
+            "upgrade": {
+                "maxLevel": 35
+            },
+            "upgradeMult": 1,
+            "upgradeMultiplier": 1
+        },
+        "7441855f": {
+            "baseRating": 94,
+            "buyRequirements": {
+                "premium": false,
+                "premiumPlus": false,
+                "requiredPatent": 0
+            },
+            "cost": {
+                "gems": 0,
+                "gold": 0,
+                "tokens": 0
+            },
+            "dropRate": 0,
+            "id": "7441855f",
+            "isSpecial": false,
+            "slot": 7,
+            "tier": 0,
+            "title": "Shirt",
+            "upgrade": {
+                "maxLevel": -1
+            },
+            "upgradeMult": 1,
+            "upgradeMultiplier": 1
+        },
+        "76f79e81": {
+            "baseRating": 2154,
+            "buyRequirements": {
+                "premium": false,
+                "premiumPlus": false,
+                "requiredPatent": 9
+            },
+            "cost": {
+                "gems": 381,
+                "gold": 0,
+                "tokens": 156641
+            },
+            "dropRate": 1,
+            "id": "76f79e81",
+            "isSpecial": false,
+            "slot": 10,
+            "tier": 3,
+            "title": "Tactical Trousers",
+            "upgrade": {
+                "maxLevel": 35
+            },
+            "upgradeMult": 2,
+            "upgradeMultiplier": 2
+        },
+        "78ccfd59": {
+            "baseRating": 1481,
+            "buyRequirements": {
+                "premium": true,
+                "premiumPlus": true,
+                "requiredPatent": 13
+            },
+            "cost": {
+                "gems": 335,
+                "gold": 0,
+                "tokens": 400000
+            },
+            "dropRate": 2,
+            "id": "78ccfd59",
+            "isSpecial": false,
+            "slot": 1,
+            "tier": 4,
+            "title": "Professional Shades",
+            "upgrade": {
+                "maxLevel": 35
+            },
+            "upgradeMult": 1,
+            "upgradeMultiplier": 1
+        },
+        "78cf56cf": {
+            "baseRating": 1698,
+            "buyRequirements": {
+                "premium": false,
+                "premiumPlus": false,
+                "requiredPatent": 4
+            },
+            "cost": {
+                "gems": 127,
+                "gold": 0,
+                "tokens": 16991
+            },
+            "dropRate": 5,
+            "id": "78cf56cf",
+            "isSpecial": false,
+            "slot": 10,
+            "tier": 2,
+            "title": "Urban Trousers",
+            "upgrade": {
+                "maxLevel": 35
+            },
+            "upgradeMult": 2,
+            "upgradeMultiplier": 2
+        },
+        "7e85ca0e": {
+            "baseRating": 3808,
+            "buyRequirements": {
+                "premium": false,
+                "premiumPlus": false,
+                "requiredPatent": 0
+            },
+            "cost": {
+                "gems": 0,
+                "gold": 0,
+                "tokens": 0
+            },
+            "dropRate": 1,
+            "id": "7e85ca0e",
+            "isSpecial": true,
+            "slot": 10,
+            "tier": 5,
+            "title": "Winter Pants",
+            "upgrade": {
+                "maxLevel": 35
+            },
+            "upgradeMult": 2,
+            "upgradeMultiplier": 2
+        },
+        "828e8499": {
+            "baseRating": 1077,
+            "buyRequirements": {
+                "premium": false,
+                "premiumPlus": false,
+                "requiredPatent": 9
+            },
+            "cost": {
+                "gems": 190,
+                "gold": 0,
+                "tokens": 78321
+            },
+            "dropRate": 2,
+            "id": "828e8499",
+            "isSpecial": false,
+            "slot": 6,
+            "tier": 3,
+            "title": "Tactical Gloves",
+            "upgrade": {
+                "maxLevel": 35
+            },
+            "upgradeMult": 1,
+            "upgradeMultiplier": 1
+        },
+        "84ab4413": {
+            "baseRating": 3808,
+            "buyRequirements": {
+                "premium": false,
+                "premiumPlus": false,
+                "requiredPatent": 0
+            },
+            "cost": {
+                "gems": 0,
+                "gold": 0,
+                "tokens": 0
+            },
+            "dropRate": 0,
+            "id": "84ab4413",
+            "isSpecial": true,
+            "slot": 4,
+            "tier": 5,
+            "title": "Lunar Ox Armor",
+            "upgrade": {
+                "maxLevel": 35
+            },
+            "upgradeMult": 2,
+            "upgradeMultiplier": 2
+        },
+        "96dba7eb": {
+            "baseRating": 740,
+            "buyRequirements": {
+                "premium": false,
+                "premiumPlus": false,
+                "requiredPatent": 0
+            },
+            "cost": {
+                "gems": 0,
+                "gold": 0,
+                "tokens": 346
+            },
+            "dropRate": 5,
+            "id": "96dba7eb",
+            "isSpecial": false,
+            "slot": 10,
+            "tier": 1,
+            "title": "Desert Pants",
+            "upgrade": {
+                "maxLevel": 35
+            },
+            "upgradeMult": 1,
+            "upgradeMultiplier": 1
+        },
+        "99229aee": {
+            "baseRating": 1904,
+            "buyRequirements": {
+                "premium": false,
+                "premiumPlus": false,
+                "requiredPatent": 0
+            },
+            "cost": {
+                "gems": 0,
+                "gold": 0,
+                "tokens": 0
+            },
+            "dropRate": 2,
+            "id": "99229aee",
+            "isSpecial": true,
+            "slot": 6,
+            "tier": 5,
+            "title": "Winter Gloves",
+            "upgrade": {
+                "maxLevel": 35
+            },
+            "upgradeMult": 1,
+            "upgradeMultiplier": 1
+        },
+        "9a16a4d7": {
+            "baseRating": 0,
+            "buyRequirements": {
+                "premium": false,
+                "premiumPlus": false,
+                "requiredPatent": 0
+            },
+            "cost": {
+                "gems": 0,
+                "gold": 0,
+                "tokens": 0
+            },
+            "dropRate": 0,
+            "id": "9a16a4d7",
+            "isSpecial": false,
+            "slot": 3,
+            "tier": 0,
+            "title": "Asian",
+            "upgrade": {
+                "maxLevel": -1
+            },
+            "upgradeMult": 1,
+            "upgradeMultiplier": 1
+        },
+        "9abc5ae0": {
+            "baseRating": 1481,
+            "buyRequirements": {
+                "premium": true,
+                "premiumPlus": true,
+                "requiredPatent": 13
+            },
+            "cost": {
+                "gems": 335,
+                "gold": 0,
+                "tokens": 400000
+            },
+            "dropRate": 2,
+            "id": "9abc5ae0",
+            "isSpecial": false,
+            "slot": 6,
+            "tier": 4,
+            "title": "Professional Gloves",
+            "upgrade": {
+                "maxLevel": 35
+            },
+            "upgradeMult": 1,
+            "upgradeMultiplier": 1
+        },
+        "9d829ae2": {
+            "baseRating": 1480,
+            "buyRequirements": {
+                "premium": false,
+                "premiumPlus": false,
+                "requiredPatent": 0
+            },
+            "cost": {
+                "gems": 0,
+                "gold": 0,
+                "tokens": 690
+            },
+            "dropRate": 25,
+            "id": "9d829ae2",
+            "isSpecial": false,
+            "slot": 4,
+            "tier": 1,
+            "title": "Desert Vest",
+            "upgrade": {
+                "maxLevel": 35
+            },
+            "upgradeMult": 2,
+            "upgradeMultiplier": 2
+        },
+        "9e95cd4e": {
+            "baseRating": 1904,
+            "buyRequirements": {
+                "premium": false,
+                "premiumPlus": false,
+                "requiredPatent": 0
+            },
+            "cost": {
+                "gems": 0,
+                "gold": 0,
+                "tokens": 0
+            },
+            "dropRate": 2,
+            "id": "9e95cd4e",
+            "isSpecial": true,
+            "slot": 11,
+            "tier": 5,
+            "title": "Winter Shoes",
+            "upgrade": {
+                "maxLevel": 35
+            },
+            "upgradeMult": 1,
+            "upgradeMultiplier": 1
+        },
+        "9f18fa7c": {
+            "baseRating": 3808,
+            "buyRequirements": {
+                "premium": false,
+                "premiumPlus": false,
+                "requiredPatent": 0
+            },
+            "cost": {
+                "gems": 0,
+                "gold": 0,
+                "tokens": 0
+            },
+            "dropRate": 0,
+            "id": "9f18fa7c",
+            "isSpecial": true,
+            "slot": 7,
+            "tier": 5,
+            "title": "Lunar Ox Shirt",
+            "upgrade": {
+                "maxLevel": 35
+            },
+            "upgradeMult": 2,
+            "upgradeMultiplier": 2
+        },
+        "a9da2583": {
+            "baseRating": 849,
+            "buyRequirements": {
+                "premium": false,
+                "premiumPlus": false,
+                "requiredPatent": 4
+            },
+            "cost": {
+                "gems": 63,
+                "gold": 0,
+                "tokens": 8464
+            },
+            "dropRate": 10,
+            "id": "a9da2583",
+            "isSpecial": false,
+            "slot": 1,
+            "tier": 2,
+            "title": "Urban Shades",
+            "upgrade": {
+                "maxLevel": 35
+            },
+            "upgradeMult": 1,
+            "upgradeMultiplier": 1
+        },
+        "ad57f0e0": {
+            "baseRating": 3808,
+            "buyRequirements": {
+                "premium": false,
+                "premiumPlus": false,
+                "requiredPatent": 0
+            },
+            "cost": {
+                "gems": 0,
+                "gold": 0,
+                "tokens": 0
+            },
+            "dropRate": 25,
+            "id": "ad57f0e0",
+            "isSpecial": true,
+            "slot": 4,
+            "tier": 5,
+            "title": "Winter Armor",
+            "upgrade": {
+                "maxLevel": 35
+            },
+            "upgradeMult": 2,
+            "upgradeMultiplier": 2
+        },
+        "b10b47da": {
+            "baseRating": 849,
+            "buyRequirements": {
+                "premium": false,
+                "premiumPlus": false,
+                "requiredPatent": 4
+            },
+            "cost": {
+                "gems": 63,
+                "gold": 0,
+                "tokens": 8464
+            },
+            "dropRate": 10,
+            "id": "b10b47da",
+            "isSpecial": false,
+            "slot": 6,
+            "tier": 2,
+            "title": "Urban Gloves",
+            "upgrade": {
+                "maxLevel": 35
+            },
+            "upgradeMult": 1,
+            "upgradeMultiplier": 1
+        },
+        "b7137496": {
+            "baseRating": 1481,
+            "buyRequirements": {
+                "premium": true,
+                "premiumPlus": true,
+                "requiredPatent": 13
+            },
+            "cost": {
+                "gems": 335,
+                "gold": 0,
+                "tokens": 400000
+            },
+            "dropRate": 2,
+            "id": "b7137496",
+            "isSpecial": false,
+            "slot": 11,
+            "tier": 4,
+            "title": "Professional Shoes",
+            "upgrade": {
+                "maxLevel": 35
+            },
+            "upgradeMult": 1,
+            "upgradeMultiplier": 1
+        },
+        "b9e96ac3": {
+            "baseRating": 740,
+            "buyRequirements": {
+                "premium": false,
+                "premiumPlus": false,
+                "requiredPatent": 0
+            },
+            "cost": {
+                "gems": 0,
+                "gold": 0,
+                "tokens": 346
+            },
+            "dropRate": 5,
+            "id": "b9e96ac3",
+            "isSpecial": false,
+            "slot": 11,
+            "tier": 1,
+            "title": "Desert Shoes",
+            "upgrade": {
+                "maxLevel": 35
+            },
+            "upgradeMult": 1,
+            "upgradeMultiplier": 1
+        },
+        "bee6b8a6": {
+            "baseRating": 0,
+            "buyRequirements": {
+                "premium": false,
+                "premiumPlus": false,
+                "requiredPatent": 0
+            },
+            "cost": {
+                "gems": 0,
+                "gold": 0,
+                "tokens": 0
+            },
+            "dropRate": 0,
+            "id": "bee6b8a6",
+            "isSpecial": false,
+            "slot": 2,
+            "tier": 0,
+            "title": "None",
+            "upgrade": {
+                "maxLevel": -1
+            },
+            "upgradeMult": 1,
+            "upgradeMultiplier": 1
+        },
+        "c5c719f7": {
+            "baseRating": 1481,
+            "buyRequirements": {
+                "premium": true,
+                "premiumPlus": true,
+                "requiredPatent": 13
+            },
+            "cost": {
+                "gems": 335,
+                "gold": 0,
+                "tokens": 400000
+            },
+            "dropRate": 2,
+            "id": "c5c719f7",
+            "isSpecial": false,
+            "slot": 0,
+            "tier": 4,
+            "title": "Professional Cap",
+            "upgrade": {
+                "maxLevel": 35
+            },
+            "upgradeMult": 1,
+            "upgradeMultiplier": 1
+        },
+        "c8bddd1f": {
+            "baseRating": 1698,
+            "buyRequirements": {
+                "premium": false,
+                "premiumPlus": false,
+                "requiredPatent": 4
+            },
+            "cost": {
+                "gems": 127,
+                "gold": 0,
+                "tokens": 16991
+            },
+            "dropRate": 5,
+            "id": "c8bddd1f",
+            "isSpecial": false,
+            "slot": 4,
+            "tier": 2,
+            "title": "Urban Vest",
+            "upgrade": {
+                "maxLevel": 35
+            },
+            "upgradeMult": 2,
+            "upgradeMultiplier": 2
+        },
+        "cac72c55": {
+            "baseRating": 1480,
+            "buyRequirements": {
+                "premium": false,
+                "premiumPlus": false,
+                "requiredPatent": 0
+            },
+            "cost": {
+                "gems": 0,
+                "gold": 0,
+                "tokens": 346
+            },
+            "dropRate": 5,
+            "id": "cac72c55",
+            "isSpecial": false,
+            "slot": 7,
+            "tier": 1,
+            "title": "Desert Shirt",
+            "upgrade": {
+                "maxLevel": 35
+            },
+            "upgradeMult": 2,
+            "upgradeMultiplier": 2
+        },
+        "d00bdd22": {
+            "baseRating": 3808,
+            "buyRequirements": {
+                "premium": false,
+                "premiumPlus": false,
+                "requiredPatent": 0
+            },
+            "cost": {
+                "gems": 0,
+                "gold": 0,
+                "tokens": 0
+            },
+            "dropRate": 0,
+            "id": "d00bdd22",
+            "isSpecial": true,
+            "slot": 10,
+            "tier": 5,
+            "title": "Lunar Ox Pants",
+            "upgrade": {
+                "maxLevel": 35
+            },
+            "upgradeMult": 2,
+            "upgradeMultiplier": 2
+        },
+        "d2592714": {
+            "baseRating": 740,
+            "buyRequirements": {
+                "premium": false,
+                "premiumPlus": false,
+                "requiredPatent": 0
+            },
+            "cost": {
+                "gems": 0,
+                "gold": 0,
+                "tokens": 346
+            },
+            "dropRate": 50,
+            "id": "d2592714",
+            "isSpecial": false,
+            "slot": 1,
+            "tier": 1,
+            "title": "Shades",
+            "upgrade": {
+                "maxLevel": 35
+            },
+            "upgradeMult": 1,
+            "upgradeMultiplier": 1
+        },
+        "d2853912": {
+            "baseRating": 3808,
+            "buyRequirements": {
+                "premium": false,
+                "premiumPlus": false,
+                "requiredPatent": 0
+            },
+            "cost": {
+                "gems": 0,
+                "gold": 0,
+                "tokens": 0
+            },
+            "dropRate": 1,
+            "id": "d2853912",
+            "isSpecial": true,
+            "slot": 10,
+            "tier": 5,
+            "title": "Crow Pants",
+            "upgrade": {
+                "maxLevel": 35
+            },
+            "upgradeMult": 2,
+            "upgradeMultiplier": 2
+        },
+        "d71585b5": {
+            "baseRating": 849,
+            "buyRequirements": {
+                "premium": false,
+                "premiumPlus": false,
+                "requiredPatent": 4
+            },
+            "cost": {
+                "gems": 63,
+                "gold": 0,
+                "tokens": 8464
+            },
+            "dropRate": 10,
+            "id": "d71585b5",
+            "isSpecial": false,
+            "slot": 0,
+            "tier": 2,
+            "title": "Beret",
+            "upgrade": {
+                "maxLevel": 35
+            },
+            "upgradeMult": 1,
+            "upgradeMultiplier": 1
+        },
+        "e93c37d0": {
+            "baseRating": 849,
+            "buyRequirements": {
+                "premium": false,
+                "premiumPlus": false,
+                "requiredPatent": 4
+            },
+            "cost": {
+                "gems": 63,
+                "gold": 0,
+                "tokens": 8464
+            },
+            "dropRate": 10,
+            "id": "e93c37d0",
+            "isSpecial": false,
+            "slot": 2,
+            "tier": 2,
+            "title": "Urban Mask",
+            "upgrade": {
+                "maxLevel": 35
+            },
+            "upgradeMult": 1,
+            "upgradeMultiplier": 1
+        },
+        "ef70745d": {
+            "baseRating": 1904,
+            "buyRequirements": {
+                "premium": false,
+                "premiumPlus": false,
+                "requiredPatent": 0
+            },
+            "cost": {
+                "gems": 0,
+                "gold": 0,
+                "tokens": 0
+            },
+            "dropRate": 2,
+            "id": "ef70745d",
+            "isSpecial": true,
+            "slot": 1,
+            "tier": 5,
+            "title": "Crow Shades",
+            "upgrade": {
+                "maxLevel": 35
+            },
+            "upgradeMult": 1,
+            "upgradeMultiplier": 1
+        },
+        "f16c37f1": {
+            "baseRating": 3808,
+            "buyRequirements": {
+                "premium": false,
+                "premiumPlus": false,
+                "requiredPatent": 0
+            },
+            "cost": {
+                "gems": 0,
+                "gold": 0,
+                "tokens": 0
+            },
+            "dropRate": 1,
+            "id": "f16c37f1",
+            "isSpecial": true,
+            "slot": 7,
+            "tier": 5,
+            "title": "Winter Jacket",
+            "upgrade": {
+                "maxLevel": 35
+            },
+            "upgradeMult": 2,
+            "upgradeMultiplier": 2
+        },
+        "f681f529": {
+            "baseRating": 0,
+            "buyRequirements": {
+                "premium": false,
+                "premiumPlus": false,
+                "requiredPatent": 0
+            },
+            "cost": {
+                "gems": 0,
+                "gold": 0,
+                "tokens": 0
+            },
+            "dropRate": 0,
+            "id": "f681f529",
+            "isSpecial": false,
+            "slot": 3,
+            "tier": 0,
+            "title": "Caucasian",
+            "upgrade": {
+                "maxLevel": -1
+            },
+            "upgradeMult": 1,
+            "upgradeMultiplier": 1
+        },
+        "f91fc98f": {
+            "baseRating": 1904,
+            "buyRequirements": {
+                "premium": false,
+                "premiumPlus": false,
+                "requiredPatent": 0
+            },
+            "cost": {
+                "gems": 0,
+                "gold": 0,
+                "tokens": 0
+            },
+            "dropRate": 0,
+            "id": "f91fc98f",
+            "isSpecial": true,
+            "slot": 6,
+            "tier": 5,
+            "title": "Lunar Ox Gloves",
+            "upgrade": {
+                "maxLevel": 35
+            },
+            "upgradeMult": 1,
+            "upgradeMultiplier": 1
+        }
+    },
+    "gearsConfig": {
+        "costMultByUpgradeLevel": [
+            12420,
+            20070,
+            21660,
+            35040,
+            48060,
+            77000,
+            113475,
+            156300,
+            215625,
+            275500,
+            342900,
+            432525,
+            531295,
+            685010,
+            837000,
+            965325,
+            1159455,
+            1375950,
+            1645650,
+            1862925,
+            2112525,
+            2415700,
+            2767160,
+            3279210,
+            3849025,
+            4521900,
+            5447680,
+            6439815,
+            7268100,
+            7960400,
+            8639555,
+            9118140,
+            9612090,
+            10122230,
+            10342214
+        ],
+        "deliveryTimeMultByUpgradeLevel": [
+            600,
+            1200,
+            3600,
+            11400,
+            24900,
+            43200,
+            54600,
+            77700,
+            97200,
+            116700,
+            147000,
+            165300,
+            183600,
+            216000,
+            237600,
+            244800,
+            259500,
+            287700,
+            297600,
+            319800,
+            345600,
+            383100,
+            453600,
+            486000,
+            531000,
+            555300,
+            594000,
+            623100,
+            664200,
+            673800,
+            731700,
+            808800,
+            921000,
+            1149000,
+            1375626
+        ],
+        "globalBaseRawUpgrade": [
+            1,
+            1,
+            3,
+            3,
+            4,
+            5
+        ],
+        "globalDeliveryMult": [
+            0.3,
+            0.5,
+            0.6,
+            0.9,
+            1.2,
+            1.9
+        ],
+        "globalLevelFactor": [
+            0.37142,
+            0.6,
+            2.07,
+            1.91,
+            1.97,
+            2.41
+        ],
+        "globalTierCostMult": [
+            0.5,
+            0.79,
+            1.15,
+            1.74,
+            1.75,
+            2.41
+        ],
+        "referenceToSniperRatio": 0.04
+    }
 }

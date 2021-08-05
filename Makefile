@@ -34,3 +34,10 @@ build-json:
 generate-protos:
 	go generate ./...
 
+
+proto-run: build-proto
+	./pitaya-serialization-benchmark --type=proto --frontend=false --useProto=true
+
+json-run: build-json
+	./pitaya-serialization-benchmark --type=json --frontend=false --useProto=false
+
