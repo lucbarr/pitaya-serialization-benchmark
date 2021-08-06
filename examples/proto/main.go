@@ -16,11 +16,7 @@ import (
 func main() {
 	smallData := generateSmallProtoData()
 
-	medium := &protos.FetchProtoDataResponse{
-		AString: "medium",
-	}
-
-	mediumData, _ := proto.Marshal(medium)
+	mediumData := generateMediumProtoData()
 
 	largeData := generateLargeProtoData()
 
@@ -56,6 +52,35 @@ func generateLargeProtoData() []byte {
 	}
 
 	return largeData
+}
+
+func generateMediumProtoData() []byte {
+	jsonFileData, err := os.ReadFile("../json/medium.json")
+	if err != nil {
+		panic(err)
+	}
+
+	weapons := &protos.Weapons{
+		Weapons: map[string]*protos.Weapons_Weapon{},
+	}
+
+	err = json.Unmarshal(jsonFileData, &weapons.Weapons)
+	if err != nil {
+		panic(err)
+	}
+
+	validateGeneratedProto(jsonFileData, weapons.Weapons)
+
+	medium := &protos.FetchProtoDataResponse{
+		Weapons: weapons,
+	}
+
+	mediumData, err := proto.Marshal(medium)
+	if err != nil {
+		panic(err)
+	}
+
+	return mediumData
 }
 
 func generateSmallProtoData() []byte {
